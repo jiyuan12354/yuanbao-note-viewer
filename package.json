@@ -1,0 +1,21 @@
+{
+  "name": "yuanbao-note-viewer",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "generate-notes": "node generateNoteFiles.js",
+    "dev": "yarn generate-notes && vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "tailwindcss": "^3.3.3",
+    "vite": "^4.4.0"
+  }
+}
