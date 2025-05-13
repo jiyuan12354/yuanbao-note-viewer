@@ -6,12 +6,12 @@
       clearInterval(checkElement);
       targetDivs.forEach(div => {
         // Avoid adding duplicate buttons
-        if (!div.querySelector('.save-to-note-btn')) {
+        if (!div.parentNode.querySelector('.save-to-note-btn')) {
           const button = document.createElement('button');
           button.className = 'save-to-note-btn';
           button.textContent = 'Save to Note';
           button.onclick = () => saveAsHTML(div);
-          div.appendChild(button);
+          div.insertAdjacentElement('afterend', button); // 添加为兄弟节点
         }
       });
     }
