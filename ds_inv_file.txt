@@ -1,6 +1,3 @@
 /Users/dengjianyuan/work/projects/study/react/yuanbao-note-viewer/package.json
-/Users/dengjianyuan/work/projects/study/react/yuanbao-note-viewer/src/hooks/useNotes.js
-/Users/dengjianyuan/work/projects/study/react/yuanbao-note-viewer/src/App.jsx
-/Users/dengjianyuan/work/projects/study/react/yuanbao-note-viewer/src/pages/Home.jsx
-/Users/dengjianyuan/work/projects/study/react/yuanbao-note-viewer/src/components/NoteContent.jsx
-/Users/dengjianyuan/work/projects/study/react/yuanbao-note-viewer/src/components/Sidebar.jsx
+/Users/dengjianyuan/work/projects/study/react/yuanbao-note-viewer/src/main.jsx
+/Users/dengjianyuan/work/projects/study/react/yuanbao-note-viewer/src/index.css

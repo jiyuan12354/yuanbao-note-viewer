@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { extractTitle } from '../utils/noteUtils.js'
 import { noteFiles } from '../utils/noteFiles.js'
+import sanitizeHtml from 'sanitize-html'
 
 export function useNotes() {
   const [notes, setNotes] = useState([])
@@ -14,12 +15,45 @@ export function useNotes() {
           noteFiles.map(async (file) => {
             const response = await fetch(`/notes/${file}`)
             const content = await response.text()
-            const title = extractTitle(content)
+            const cleanContent = sanitizeHtml(content, {
+              allowedTags: sanitizeHtml.defaults.allowedTags.concat(['h3', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'hr', 'ol', 'ul', 'li', 'blockquote']),
+              allowedAttributes: {
+                '*': ['class'],
+                div: ['style'],
+                table: ['style'],
+                th: ['style'],
+                td: ['style'],
+              },
+              allowedStyles: {
+                '*': {
+                  'font-family': [/^.*$/],
+                  'font-size': [/^.*$/],
+                  'color': [/^.*$/],
+                  'line-height': [/^.*$/],
+                  'padding': [/^.*$/],
+                  'margin': [/^.*$/],
+                  'text-align': [/^.*$/],
+                  'font-weight': [/^.*$/],
+                  'font-style': [/^.*$/],
+                  'background-color': [/^.*$/],
+                  'border': [/^.*$/],
+                  'width': [/^.*$/],
+                  'white-space': [/^.*$/],
+                  'word-break': [/^.*$/],
+                  'display': [/^.*$/],
+                  'box-sizing': [/^.*$/],
+                },
+              },
+              transformTags: {
+                style: () => ({ tagName: '', attribs: {}, text: '' }),
+              },
+            })
+            const title = extractTitle(cleanContent)
             const timestamp = parseTimestamp(file)
             return {
               id: file,
               title,
-              content,
+              content: cleanContent,
               createdAt: timestamp,
             }
           })
@@ -48,12 +82,45 @@ export function useNotes() {
   }
 
   const addNote = (filename, content) => {
-    const title = extractTitle(content)
+    const cleanContent = sanitizeHtml(content, {
+      allowedTags: sanitizeHtml.defaults.allowedTags.concat(['h3', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'hr', 'ol', 'ul', 'li', 'blockquote']),
+      allowedAttributes: {
+        '*': ['class'],
+        div: ['style'],
+        table: ['style'],
+        th: ['style'],
+        td: ['style'],
+      },
+      allowedStyles: {
+        '*': {
+          'font-family': [/^.*$/],
+          'font-size': [/^.*$/],
+          'color': [/^.*$/],
+          'line-height': [/^.*$/],
+          'padding': [/^.*$/],
+          'margin': [/^.*$/],
+          'text-align': [/^.*$/],
+          'font-weight': [/^.*$/],
+          'font-style': [/^.*$/],
+          'background-color': [/^.*$/],
+          'border': [/^.*$/],
+          'width': [/^.*$/],
+          'white-space': [/^.*$/],
+          'word-break': [/^.*$/],
+          'display': [/^.*$/],
+          'box-sizing': [/^.*$/],
+        },
+      },
+      transformTags: {
+        style: () => ({ tagName: '', attribs: {}, text: '' }),
+      },
+    })
+    const title = extractTitle(cleanContent)
     const timestamp = parseTimestamp(filename) || Date.now()
     const newNote = {
       id: filename,
       title,
-      content,
+      content: cleanContent,
       createdAt: timestamp,
     }
     setNotes((prevNotes) => {

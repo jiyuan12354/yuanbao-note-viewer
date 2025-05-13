@@ -6,7 +6,7 @@ function NoteContent({ note }) {
   }
 
   return (
-    <div className="bg-white p-6 rounded shadow max-h-[calc(100vh-200px)] overflow-y-auto">
+    <div className="bg-white p-6 rounded shadow h-full overflow-y-auto">
       <div
         className="note-content"
         style={{ maxWidth: '100%', boxSizing: 'border-box' }}

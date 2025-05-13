@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Scope note content to prevent style leaks */
+.note-content {
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+
+/* Override note's global styles */
+.note-content * {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  width: auto !important;
+  overflow-wrap: break-word !important;
+}
+
+/* Ensure tables are responsive */
+.note-content table {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: auto;
+  display: block;
+}
+
+/* Prevent save button from appearing */
+.save-to-note-btn {
+  display: none !important;
+}
+
+/* Ensure note content respects container height */
+.note-content div.hyc-component-reasoner__text {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
