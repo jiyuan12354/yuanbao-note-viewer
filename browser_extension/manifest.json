@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Yuanbao Note Saver",
+  "version": "3.2",
+  "description": "Saves div.hyc-component-reasoner__text content as HTML fragments for Yuanbao Note Viewer",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://yuanbao.tencent.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
