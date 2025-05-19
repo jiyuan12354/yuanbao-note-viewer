@@ -1,0 +1,1069 @@
+@font-face {
+  font-family: "iconfont";
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5c49c546becf26ca643e.woff2?t=81f3a98269757e766ab5ab61f3aced0f); /* IE9 */
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5c49c546becf26ca643e.woff2?t=81f3a98269757e766ab5ab61f3aced0f#iefix) format('woff2');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-right:before {
+  content: "\e002";
+}
+.icon-attention:before {
+  content: "\e003";
+}
+.icon-close:before {
+  content: "\e005";
+}
+.icon-code:before {
+  content: "\e006";
+}
+.icon-setting:before {
+  content: "\e007";
+}
+.icon-vs:before {
+  content: "\e008";
+}
+.icon-copy2:before {
+  content: "\e009";
+}
+.icon-correct:before {
+  content: "\e00a";
+}
+.icon-consult:before {
+  content: "\e00b";
+}
+.icon-delete:before {
+  content: "\e00c";
+}
+.icon-edit:before {
+  content: "\e00e";
+}
+.icon-textscan:before {
+  content: "\e010";
+}
+.icon-expire:before {
+  content: "\e011";
+}
+.icon-feedback:before {
+  content: "\e012";
+}
+.icon-file:before {
+  content: "\e013";
+}
+.icon-chat-square:before {
+  content: "\e015";
+}
+.icon-copy:before {
+  content: "\e016";
+}
+.icon-home:before {
+  content: "\e019";
+}
+.icon-info:before {
+  content: "\e01c";
+}
+.icon-instruct:before {
+  content: "\e01d";
+}
+.icon-keyboard:before {
+  content: "\e01e";
+}
+.icon-like:before {
+  content: "\e01f";
+}
+.icon-line:before {
+  content: "\e020";
+}
+.icon-menu:before {
+  content: "\e022";
+}
+.icon-select:before {
+  content: "\e024";
+}
+.icon-next:before {
+  content: "\e025";
+}
+.icon-notice:before {
+  content: "\e026";
+}
+.icon-play:before {
+  content: "\e028";
+}
+.icon-add:before {
+  content: "\e029";
+}
+.icon-refresh:before {
+  content: "\e02a";
+}
+.icon-time:before {
+  content: "\e031";
+}
+.icon-mic:before {
+  content: "\e032";
+}
+.icon-like-active:before {
+  content: "\e035";
+}
+.icon-arrow-down:before {
+  content: "\e036";
+}
+.icon-arrow-left:before {
+  content: "\e037";
+}
+.icon-dislike:before {
+  content: "\e038";
+}
+.icon-arrow-up:before {
+  content: "\e039";
+}
+.icon-dislike-active:before {
+  content: "\e03b";
+}
+.icon-transfer:before {
+  content: "\e03c";
+}
+.icon-cancel:before {
+  content: "\e03d";
+}
+.icon-check:before {
+  content: "\e03e";
+}
+.icon-default:before {
+  content: "\e03f";
+}
+.icon-error:before {
+  content: "\e040";
+}
+.icon-info-circle:before {
+  content: "\e041";
+}
+.icon-mic-f:before {
+  content: "\e042";
+}
+.icon-pdf:before {
+  content: "\e043";
+}
+.icon-question:before {
+  content: "\e044";
+}
+.icon-success:before {
+  content: "\e045";
+}
+.icon-touzi:before {
+  content: "\e046";
+}
+.icon-warning:before {
+  content: "\e047";
+}
+.icon-warning1:before {
+  content: "\e048";
+}
+.icon-helper:before {
+  content: "\e04a";
+}
+.icon-lock:before {
+  content: "\e04f";
+}
+.icon-search:before {
+  content: "\e050";
+}
+.icon-stop:before {
+  content: "\e051";
+}
+.icon-simple-instruct:before {
+  content: "\e052";
+}
+.icon-more:before {
+  content: "\e056";
+}
+.icon-pre:before {
+  content: "\e057";
+}
+.icon-complete-instruct:before {
+  content: "\e058";
+}
+.icon-error2:before {
+  content: "\e059";
+}
+.icon-privacy:before {
+  content: "\e05a";
+}
+.icon-protocol1:before {
+  content: "\e05b";
+}
+.icon-version:before {
+  content: "\e05c";
+}
+.icon-thumb:before {
+  content: "\e05d";
+}
+.icon-pause:before {
+  content: "\e05e";
+}
+.icon-send:before {
+  content: "\e05f";
+}
+.icon-image:before {
+  content: "\e060";
+}
+.icon-chat:before {
+  content: "\e061";
+}
+.icon-inspiration:before {
+  content: "\e062";
+}
+.icon-smile:before {
+  content: "\e064";
+}
+.icon-share:before {
+  content: "\e065";
+}
+.icon-history:before {
+  content: "\e067";
+}
+.icon-sort:before {
+  content: "\e06a";
+}
+.icon-download:before {
+  content: "\e06e";
+}
+.icon-add-image-1:before {
+  content: "\e06f";
+}
+.icon-edit-image-1:before {
+  content: "\e070";
+}
+.icon-del:before {
+  content: "\e072";
+}
+.icon-light:before {
+  content: "\e073";
+}
+.icon-mountain:before {
+  content: "\e075";
+}
+.icon-set:before {
+  content: "\e077";
+}
+.icon-voice-play:before {
+  content: "\e07b";
+}
+.icon-star:before {
+  content: "\e07d";
+}
+.icon-my:before {
+  content: "\e081";
+}
+.icon-swap:before {
+  content: "\e083";
+}
+.icon-Vector5:before {
+  content: "\e084";
+}
+.icon-image-error:before {
+  content: "\e085";
+}
+.icon-time-filled:before {
+  content: "\e087";
+}
+.icon-model:before {
+  content: "\e088";
+}
+.icon-phone:before {
+  content: "\e089";
+}
+.icon-evaluate:before {
+  content: "\e08a";
+}
+.icon-refresh2:before {
+  content: "\e08b";
+}
+.icon-dot:before {
+  content: "\e08c";
+}
+.icon-func:before {
+  content: "\e08d";
+}
+.icon-style:before {
+  content: "\e08f";
+}
+.icon-none:before {
+  content: "\e090";
+}
+.icon-template:before {
+  content: "\e091";
+}
+.icon-me:before {
+  content: "\e092";
+}
+.icon-upload2:before {
+  content: "\e096";
+}
+.icon-upload:before {
+  content: "\e097";
+}
+.icon-chajian:before {
+  content: "\e099";
+}
+.icon-folder:before {
+  content: "\e09a";
+}
+.icon-xiaochengxuma:before {
+  content: "\e09e";
+}
+.icon-upload3:before {
+  content: "\e0a0";
+}
+.icon-camera:before {
+  content: "\e0a1";
+}
+.icon-volume_up:before {
+  content: "\e0a2";
+}
+.icon-volume_off:before {
+  content: "\e0a3";
+}
+.icon-btn1:before {
+  content: "\e0a8";
+}
+.icon-link:before {
+  content: "\e0a9";
+}
+.icon-draw_switch:before {
+  content: "\e0b1";
+}
+.icon-paraphrase:before {
+  content: "\e0b2";
+}
+.icon-art_style:before {
+  content: "\e0b3";
+}
+.icon-proportion:before {
+  content: "\e0b4";
+}
+.icon-resolution:before {
+  content: "\e0b5";
+}
+.icon-lianjie:before {
+  content: "\e0b6";
+}
+.icon-share_pin:before {
+  content: "\e0b7";
+}
+.icon-ai_beauty:before {
+  content: "\e0b8";
+}
+.icon-speaker:before {
+  content: "\e0b9";
+}
+.icon-shezhi:before {
+  content: "\e0bd";
+}
+.icon-up_ed:before {
+  content: "\e0c0";
+}
+.icon-up:before {
+  content: "\e0c1";
+}
+.icon-up_cancle:before {
+  content: "\e0c2";
+}
+.icon-arrow:before {
+  content: "\e0c7";
+}
+
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.index__page___Nk0QV {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.index__page-wrapper___yK9jW {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.index__page-header___TrodB {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 24px;
+}
+.index__page-content___AQmYs {
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.index__page-icon___YyPO2 {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-bubble_web);
+  color: var(--text-text_secondary);
+  margin-bottom: 16px;
+}
+.index__page-title___pIe3d {
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--text-text_primary);
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+.index__page-description___HnYMP {
+  color: var(--text-text_tertiary);
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 12px;
+}
+.index__page-description___HnYMP p {
+  text-align: center;
+}
+.index__page-action___wl5uP {
+  margin-bottom: 16px;
+}
+.index__page-action___wl5uP .t-button {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+}
+.index__page-footer___QbrtF {
+  width: 346px;
+  margin-top: 12px;
+}
+.index__page-footer-tip___Y54gD {
+  margin-top: 24px;
+  background-color: var(--background-container);
+  padding: 16px;
+  border-radius: 8px;
+  color: var(--text-text_secondary);
+  font-size: 14px;
+  line-height: 20px;
+  border: 1px solid var(--widget-line);
+}
+.index__goLoginPage___nd_XP {
+  color: var(--text-text_tertiary);
+  text-align: center;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  height: 26px;
+  line-height: 26px;
+  cursor: pointer;
+}
+.index__goLoginPage___nd_XP:hover {
+  color: var(--text-text_primary);
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.index__input-box-element-color-transition___rcRYz {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.styles__layout___MuKz9 {
+  position: relative;
+  display: flex;
+  height: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+.styles__layout___MuKz9 *::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+}
+.styles__layout___MuKz9 *::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(93, 94, 95, 0.15);
+  cursor: pointer;
+}
+.styles__layout-main___mzT4k {
+  flex: auto;
+  height: 100%;
+  overflow: hidden;
+  transition: 0.4s ease;
+}
+.styles__layout-rside___H0vti {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 100;
+  opacity: 0;
+  overflow: hidden;
+  transform: translate3d(100%, 0, 0);
+  transition: 0.4s ease;
+}
+.styles__layout-rside--show___uLFV4 {
+  opacity: 1;
+  transform: none;
+}
+.styles__layout--mobile___OPUH0 .styles__layout-rside___H0vti {
+  opacity: 1;
+  background-color: #fff;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.styles__input-box-element-color-transition___b0PaZ {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.styles__wrapper___ZYnT2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100%;
+  border-left: 1px solid #eee;
+  overflow: hidden;
+}
+.styles__wrapper--mobile___K_tjK {
+  border: 0;
+}
+.styles__content___wSNDA {
+  flex: auto;
+  margin-right: 4px;
+  padding: 24px 20px 24px 24px;
+  line-height: 1.5;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  overflow: hidden auto;
+}
+.styles__detail-block___Ahtcs + .styles__detail-block___Ahtcs {
+  margin-top: 24px;
+}
+.styles__detail-title___o9zOP {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.9);
+}
+.styles__detail-use___t3EMF {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+.styles__detail-links___Gsw5Y {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 8px 0;
+}
+.styles__detail-link___CRmfw {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.9);
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  cursor: default;
+}
+.styles__detail-link___CRmfw img {
+  width: 18px;
+  height: 18px;
+}
+.styles__detail-link___CRmfw span {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.styles__detail-link-tag___sEzyT {
+  flex: unset !important;
+  height: 16px;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 400;
+  border-radius: 3px;
+  background: rgba(243, 243, 243);
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.styles__input-box-element-color-transition___UyOMw {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+@font-face {
+  font-family: "iconfont";
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5c49c546becf26ca643e.woff2?t=81f3a98269757e766ab5ab61f3aced0f); /* IE9 */
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5c49c546becf26ca643e.woff2?t=81f3a98269757e766ab5ab61f3aced0f#iefix) format('woff2');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-right:before {
+  content: "\e002";
+}
+.icon-attention:before {
+  content: "\e003";
+}
+.icon-close:before {
+  content: "\e005";
+}
+.icon-code:before {
+  content: "\e006";
+}
+.icon-setting:before {
+  content: "\e007";
+}
+.icon-vs:before {
+  content: "\e008";
+}
+.icon-copy2:before {
+  content: "\e009";
+}
+.icon-correct:before {
+  content: "\e00a";
+}
+.icon-consult:before {
+  content: "\e00b";
+}
+.icon-delete:before {
+  content: "\e00c";
+}
+.icon-edit:before {
+  content: "\e00e";
+}
+.icon-textscan:before {
+  content: "\e010";
+}
+.icon-expire:before {
+  content: "\e011";
+}
+.icon-feedback:before {
+  content: "\e012";
+}
+.icon-file:before {
+  content: "\e013";
+}
+.icon-chat-square:before {
+  content: "\e015";
+}
+.icon-copy:before {
+  content: "\e016";
+}
+.icon-home:before {
+  content: "\e019";
+}
+.icon-info:before {
+  content: "\e01c";
+}
+.icon-instruct:before {
+  content: "\e01d";
+}
+.icon-keyboard:before {
+  content: "\e01e";
+}
+.icon-like:before {
+  content: "\e01f";
+}
+.icon-line:before {
+  content: "\e020";
+}
+.icon-menu:before {
+  content: "\e022";
+}
+.icon-select:before {
+  content: "\e024";
+}
+.icon-next:before {
+  content: "\e025";
+}
+.icon-notice:before {
+  content: "\e026";
+}
+.icon-play:before {
+  content: "\e028";
+}
+.icon-add:before {
+  content: "\e029";
+}
+.icon-refresh:before {
+  content: "\e02a";
+}
+.icon-time:before {
+  content: "\e031";
+}
+.icon-mic:before {
+  content: "\e032";
+}
+.icon-like-active:before {
+  content: "\e035";
+}
+.icon-arrow-down:before {
+  content: "\e036";
+}
+.icon-arrow-left:before {
+  content: "\e037";
+}
+.icon-dislike:before {
+  content: "\e038";
+}
+.icon-arrow-up:before {
+  content: "\e039";
+}
+.icon-dislike-active:before {
+  content: "\e03b";
+}
+.icon-transfer:before {
+  content: "\e03c";
+}
+.icon-cancel:before {
+  content: "\e03d";
+}
+.icon-check:before {
+  content: "\e03e";
+}
+.icon-default:before {
+  content: "\e03f";
+}
+.icon-error:before {
+  content: "\e040";
+}
+.icon-info-circle:before {
+  content: "\e041";
+}
+.icon-mic-f:before {
+  content: "\e042";
+}
+.icon-pdf:before {
+  content: "\e043";
+}
+.icon-question:before {
+  content: "\e044";
+}
+.icon-success:before {
+  content: "\e045";
+}
+.icon-touzi:before {
+  content: "\e046";
+}
+.icon-warning:before {
+  content: "\e047";
+}
+.icon-warning1:before {
+  content: "\e048";
+}
+.icon-helper:before {
+  content: "\e04a";
+}
+.icon-lock:before {
+  content: "\e04f";
+}
+.icon-search:before {
+  content: "\e050";
+}
+.icon-stop:before {
+  content: "\e051";
+}
+.icon-simple-instruct:before {
+  content: "\e052";
+}
+.icon-more:before {
+  content: "\e056";
+}
+.icon-pre:before {
+  content: "\e057";
+}
+.icon-complete-instruct:before {
+  content: "\e058";
+}
+.icon-error2:before {
+  content: "\e059";
+}
+.icon-privacy:before {
+  content: "\e05a";
+}
+.icon-protocol1:before {
+  content: "\e05b";
+}
+.icon-version:before {
+  content: "\e05c";
+}
+.icon-thumb:before {
+  content: "\e05d";
+}
+.icon-pause:before {
+  content: "\e05e";
+}
+.icon-send:before {
+  content: "\e05f";
+}
+.icon-image:before {
+  content: "\e060";
+}
+.icon-chat:before {
+  content: "\e061";
+}
+.icon-inspiration:before {
+  content: "\e062";
+}
+.icon-smile:before {
+  content: "\e064";
+}
+.icon-share:before {
+  content: "\e065";
+}
+.icon-history:before {
+  content: "\e067";
+}
+.icon-sort:before {
+  content: "\e06a";
+}
+.icon-download:before {
+  content: "\e06e";
+}
+.icon-add-image-1:before {
+  content: "\e06f";
+}
+.icon-edit-image-1:before {
+  content: "\e070";
+}
+.icon-del:before {
+  content: "\e072";
+}
+.icon-light:before {
+  content: "\e073";
+}
+.icon-mountain:before {
+  content: "\e075";
+}
+.icon-set:before {
+  content: "\e077";
+}
+.icon-voice-play:before {
+  content: "\e07b";
+}
+.icon-star:before {
+  content: "\e07d";
+}
+.icon-my:before {
+  content: "\e081";
+}
+.icon-swap:before {
+  content: "\e083";
+}
+.icon-Vector5:before {
+  content: "\e084";
+}
+.icon-image-error:before {
+  content: "\e085";
+}
+.icon-time-filled:before {
+  content: "\e087";
+}
+.icon-model:before {
+  content: "\e088";
+}
+.icon-phone:before {
+  content: "\e089";
+}
+.icon-evaluate:before {
+  content: "\e08a";
+}
+.icon-refresh2:before {
+  content: "\e08b";
+}
+.icon-dot:before {
+  content: "\e08c";
+}
+.icon-func:before {
+  content: "\e08d";
+}
+.icon-style:before {
+  content: "\e08f";
+}
+.icon-none:before {
+  content: "\e090";
+}
+.icon-template:before {
+  content: "\e091";
+}
+.icon-me:before {
+  content: "\e092";
+}
+.icon-upload2:before {
+  content: "\e096";
+}
+.icon-upload:before {
+  content: "\e097";
+}
+.icon-chajian:before {
+  content: "\e099";
+}
+.icon-folder:before {
+  content: "\e09a";
+}
+.icon-xiaochengxuma:before {
+  content: "\e09e";
+}
+.icon-upload3:before {
+  content: "\e0a0";
+}
+.icon-camera:before {
+  content: "\e0a1";
+}
+.icon-volume_up:before {
+  content: "\e0a2";
+}
+.icon-volume_off:before {
+  content: "\e0a3";
+}
+.icon-btn1:before {
+  content: "\e0a8";
+}
+.icon-link:before {
+  content: "\e0a9";
+}
+.icon-draw_switch:before {
+  content: "\e0b1";
+}
+.icon-paraphrase:before {
+  content: "\e0b2";
+}
+.icon-art_style:before {
+  content: "\e0b3";
+}
+.icon-proportion:before {
+  content: "\e0b4";
+}
+.icon-resolution:before {
+  content: "\e0b5";
+}
+.icon-lianjie:before {
+  content: "\e0b6";
+}
+.icon-share_pin:before {
+  content: "\e0b7";
+}
+.icon-ai_beauty:before {
+  content: "\e0b8";
+}
+.icon-speaker:before {
+  content: "\e0b9";
+}
+.icon-shezhi:before {
+  content: "\e0bd";
+}
+.icon-up_ed:before {
+  content: "\e0c0";
+}
+.icon-up:before {
+  content: "\e0c1";
+}
+.icon-up_cancle:before {
+  content: "\e0c2";
+}
+.icon-arrow:before {
+  content: "\e0c7";
+}
+
+
+/*# sourceMappingURL=sourcemap/index.71682454219a9ff569a2.css.map*/

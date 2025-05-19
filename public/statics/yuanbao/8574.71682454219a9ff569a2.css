@@ -1,0 +1,1559 @@
+.hyc-page-tools-customizeHeaders__item {
+  position: relative;
+  padding: 32px;
+  padding-left: 16px;
+  margin-bottom: 24px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+.hyc-page-tools-customizeHeaders__item__close.t-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  transition: none;
+  z-index: 1;
+}
+.hyc-page-tools-customizeHeaders__item__close.t-button .t-ripple {
+  display: none;
+}
+.hyc-page-tools-customizeHeaders__item__close.t-button:hover {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  color: var(--td-brand-color);
+}
+.lane-change {
+  position: relative;
+}
+.hyc-page-tools-pop {
+  position: fixed;
+  text-align: center;
+  transition: 0.3s;
+}
+.hyc-page-tools-pop .hyc-page-tools-btn.t-button {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border-width: 2px;
+  border-radius: 18px;
+  font-size: 15px;
+  font-weight: normal;
+}
+.hyc-page-tools-pop .hyc-page-tools-btn.t-button:hover {
+  width: 100px;
+  border-radius: 18px;
+}
+.hyc-page-tools-pop .hyc-page-tools-btn.t-button:hover .t-icon + .t-button__text:not(:empty) {
+  width: 4em;
+  margin-left: 4px;
+}
+.hyc-page-tools-pop .hyc-page-tools-btn.t-button .t-icon + .t-button__text:not(:empty) {
+  width: 0;
+  overflow: hidden;
+  margin-left: 0;
+  transition: width 0.2s linear, margin-left 0.2s linear;
+}
+.hyc-page-tools-drawer.t-drawer .t-drawer__body {
+  padding: 0;
+  overflow: hidden;
+}
+.hyc-page-tools-drawer__header {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hyc-page-tools-drawer__header .t-ripple {
+  display: none;
+}
+.hyc-page-tools-tabs.t-tabs {
+  display: flex;
+  flex-direction: column;
+  height: calc(100%);
+}
+.hyc-page-tools-tabs.t-tabs .t-tabs__content {
+  flex: 1;
+  overflow: hidden auto;
+}
+.hyc-page-tools-tabs.t-tabs .t-tabs__content .t-tab-panel {
+  padding: 16px;
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.yuanbao-oversea-input {
+  position: relative;
+  min-height: 66px;
+}
+.yuanbao-oversea-input__wrap {
+  width: 100%;
+  z-index: 1;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid var(--widget-line);
+}
+.yuanbao-oversea-input__wrap_showList {
+  position: absolute;
+}
+.yuanbao-oversea-input__wrap:hover,
+.yuanbao-oversea-input__wrap:focus,
+.yuanbao-oversea-input__wrap:active {
+  border: 1px solid var(--widget-btn_click_2);
+}
+.yuanbao-oversea-input__wrap__formitem {
+  display: flex;
+  padding: 8px 13px;
+  box-sizing: border-box;
+  align-items: center;
+}
+.yuanbao-oversea-input__wrap__formitem__areaCode {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--text-text_primary);
+  white-space: nowrap;
+}
+.yuanbao-oversea-input__wrap__formitem__areaCode_disabled {
+  cursor: default !important;
+}
+.yuanbao-oversea-input__wrap__arealist {
+  background-color: var(--background-container);
+}
+.yuanbao-oversea-input__wrap__arealist__item {
+  text-align: left;
+  cursor: pointer;
+  padding: 8px 10px;
+  margin: 5px 6px;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--text-text_primary);
+}
+.yuanbao-oversea-input__wrap__arealist__item__icon {
+  display: none !important;
+}
+.yuanbao-oversea-input__wrap__arealist__item_active {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+  background: var(--background-list_background);
+}
+.yuanbao-oversea-input__wrap__arealist__item_active .yuanbao-oversea-input__wrap__arealist__item__icon {
+  display: block !important;
+}
+.yuanbao-oversea-input__wrap__arealist__item:hover {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+  background: var(--background-list_background);
+}
+.yuanbao-oversea-input .t-input {
+  border: none;
+  background-color: transparent;
+  color: var(--text-text_primary);
+  font-family: "PingFang SC";
+  font-size: 16px;
+  line-height: 22px;
+}
+.yuanbao-oversea-input .t-input:-webkit-autofill,
+.yuanbao-oversea-input .t-input:-webkit-autofill:hover,
+.yuanbao-oversea-input .t-input:-webkit-autofill:focus,
+.yuanbao-oversea-input .t-input:-webkit-autofill:active {
+  box-shadow: none;
+  border: 0 none;
+  background-color: transparent;
+}
+.yuanbao-oversea-input .t-input:focus {
+  box-shadow: none;
+}
+.yuanbao-oversea-input .t-input--focused {
+  box-shadow: none;
+}
+.yuanbao-oversea-input .t-input__inner {
+  box-shadow: 0 0 0px 1000px var(--background-container) inset;
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.hyc-phone-login__grey {
+  color: var(--text-text_primary);
+  padding-right: 8px;
+  font-size: 16px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.hyc-phone-login__input-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-left: 12px;
+  width: 320px;
+  border: 1px solid var(--widget-line);
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border 0.2s;
+}
+.hyc-phone-login__input-row .t-input__inner:-webkit-autofill,
+.hyc-phone-login__input-row .t-input__inner:-webkit-autofill:hover,
+.hyc-phone-login__input-row .t-input__inner:-webkit-autofill:focus,
+.hyc-phone-login__input-row .t-input__inner:-webkit-autofill:active {
+  -webkit-box-shadow: inset 0 0 0 1000px transparent !important;
+  background-color: transparent;
+  background-image: none;
+  -webkit-transition: background-color 50000s ease-in-out 0s;
+  transition: background-color 50000s ease-in-out 0s;
+}
+.hyc-phone-login__input-row:hover {
+  border: 1px solid var(--widget-btn_click_2);
+}
+.hyc-phone-login__input-row:hover .outline-placeholder {
+  border-color: var(--widget-btn_click_2);
+}
+.hyc-phone-login__input-row .outline-placeholder {
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s opacity;
+}
+.hyc-phone-login__input-row .outline-placeholder:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid var(--td-brand-color);
+  border-radius: 8px;
+}
+.hyc-phone-login__input-row .t-input {
+  background-color: transparent;
+  border: 0;
+  height: 48px;
+  font-size: 16px;
+}
+.hyc-phone-login__input-row .t-input__inner {
+  width: 100%;
+}
+.hyc-phone-login__input-row .t-input:-webkit-autofill,
+.hyc-phone-login__input-row .t-input:-webkit-autofill:hover,
+.hyc-phone-login__input-row .t-input:-webkit-autofill:focus,
+.hyc-phone-login__input-row .t-input:-webkit-autofill:active {
+  box-shadow: none;
+  background-color: transparent;
+}
+.hyc-phone-login__input-row .t-input--focused {
+  box-shadow: none;
+  border-color: var(--widget-btn_click_2);
+}
+.hyc-phone-login__input-row .t-input:focus {
+  box-shadow: none;
+  border-color: var(--widget-btn_click_2);
+}
+.hyc-phone-login__input-row .t-input:hover {
+  border-color: var(--widget-btn_click_2);
+}
+.hyc-phone-login__input-row .t-input input::-webkit-outer-spin-button,
+.hyc-phone-login__input-row .t-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.hyc-phone-login__input-row .t-input__wrap:has(> .t-input--focused) + .outline-placeholder {
+  border-color: var(--widget-btn_click_1);
+}
+.hyc-phone-login__send-code {
+  display: block;
+  width: 100px;
+  color: var(--text-text_primary);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  font-size: 16px;
+}
+.hyc-phone-login__send-code-sep {
+  color: var(--widget-line);
+}
+.hyc-phone-login__send-code.is-disabled {
+  cursor: not-allowed;
+  color: var(--text-text_tertiary);
+}
+.hyc-phone-login__btn {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  height: 48px;
+  width: 320px;
+  padding: 4px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background: var(--brand-black_1);
+  color: var(--text-text_white);
+  cursor: pointer;
+  outline: none;
+}
+.hyc-phone-login__btn:hover {
+  background: var(--widget-btn_click_3);
+}
+.hyc-login__agreement {
+  width: 100%;
+  padding: 0 62px;
+  box-sizing: border-box;
+  white-space: normal !important;
+}
+.hyc-login__agreement .t-is-checked .t-checkbox__input {
+  border-color: var(--brand-black_2);
+  background-color: var(--brand-black_2);
+}
+.hyc-login__agreement .t-is-checked .t-checkbox__input::after {
+  border: 2px solid var(--background-container);
+  border-top: 0;
+  border-left: 0;
+}
+.hyc-login__agreement .t-checkbox__input {
+  padding-right: 14px;
+}
+.hyc-mobile-login-form_other-type {
+  text-align: center;
+  width: 100%;
+  max-width: 368px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+.hyc-mobile-login-form_left-arrow {
+  position: absolute;
+  left: 16px;
+  top: 24px;
+}
+.hyc-mobile-login-form_default-type {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 22px;
+  box-sizing: border-box;
+}
+.hyc-mobile-login-form_default-type .hyc-phone-login {
+  padding: 0;
+  padding-bottom: 24px;
+}
+.hyc-mobile-login-form_qq-icon {
+  width: 70px;
+  height: 70px;
+  background: url(https://cdn-bot.hunyuan.tencent.com/assets/f56efbb73741c83e94c0.png) no-repeat center / contain;
+}
+.hyc-mobile-login-form_wx-login,
+.hyc-mobile-login-form_qq-login {
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 39px;
+  box-sizing: border-box;
+}
+.hyc-mobile-login-form_split {
+  margin-bottom: 24px;
+  text-align: center;
+  position: relative;
+}
+.hyc-mobile-login-form_split::after,
+.hyc-mobile-login-form_split::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  transform: translateY(-50%);
+  height: 1px;
+  background-color: var(--background-container);
+}
+.hyc-mobile-login-form_split::after {
+  left: 24px;
+}
+.hyc-mobile-login-form_split::before {
+  right: 24px;
+}
+.hyc-mobile-login-form_split span {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--text-text_secondary);
+  background-color: var(--background-container);
+  padding: 0 12px;
+  position: relative;
+  z-index: 1;
+}
+.hyc-mobile-login-form_other-type__items {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 34px;
+}
+.hyc-mobile-login-form_other-type__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hyc-mobile-login-form_other-type__item span {
+  color: var(--text-text_secondary);
+  font-size: 12px;
+  line-height: 24px;
+  margin-top: 6px;
+}
+.hyc-mobile-login-form_icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hyc-mobile-login-form .hyc-login__agreement {
+  padding: 0;
+}
+.hyc-login__dialog .t-dialog {
+  padding: 0;
+  border-radius: 16px;
+  border: 0;
+  overflow: hidden;
+}
+.hyc-login__dialog .t-dialog__header {
+  display: none;
+}
+.hyc-login__dialog .t-dialog__body {
+  display: flex;
+  padding: 0;
+  height: 440px;
+  overflow: hidden;
+}
+.hyc-login__dialog--mobile .t-dialog__body {
+  height: auto;
+}
+.hyc-login__dialog--mobile .hyc-login__title {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+.hyc-login__dialog--mobile .hyc-login__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--background-container);
+}
+.hyc-login__dialog--mobile .hyc-login__content--mobile {
+  width: 100%;
+}
+.hyc-login__dialog--mobile .hyc-login__agreement {
+  display: flex;
+  justify-content: center;
+  white-space: normal;
+  width: calc(100% - 48px);
+}
+.hyc-login__dialog--mobile .hyc-login__agreement .t-checkbox__input {
+  flex-shrink: 0;
+}
+.hyc-login__dialog--mobile .hyc-login__protocol {
+  white-space: nowrap;
+}
+.hyc-login__dialog--mobile .hyc-login__agreement {
+  bottom: 24px;
+}
+.hyc-login__dialog--mobile .hyc-phone-login {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 368px;
+  padding-bottom: 24px;
+}
+.hyc-login__dialog--mobile .hyc-phone-login__input-row,
+.hyc-login__dialog--mobile .hyc-phone-login__btn {
+  width: 100%;
+}
+.hyc-login__dialog--mobile .hyc-phone-login__input-row {
+  margin-bottom: 8px;
+}
+.hyc-login__dialog--mobile .hyc-phone-login__btn {
+  margin-top: 16px;
+  height: 40px;
+  font-weight: 500;
+}
+.hyc-login__dialog--mobile .hyc-phone-login .t-input__inner::placeholder {
+  color: #bdbdbd;
+}
+.hyc-login__close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  color: var(--td-text-color-primary);
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 0;
+  outline: none;
+  z-index: 1;
+}
+.hyc-login__close:hover {
+  color: var(--td-text-color-secondary);
+}
+.hyc-login__close--mobile {
+  right: 18px;
+  top: 24px;
+  width: 24px;
+  height: 24px;
+  font-weight: 600;
+}
+.hyc-login__left {
+  width: 200px;
+  background-color: #e0f8fa;
+  background-image: url(https://cdn-bot.hunyuan.tencent.com/assets/94e491897c7bbba23dba.png);
+  background-size: 100% 100%;
+}
+.hyc-login__left--banner-en {
+  background-image: url(https://cdn-bot.hunyuan.tencent.com/assets/e1f4473748f544db68b6.png);
+}
+.hyc-login__left--banner-zh-hk {
+  background-image: url(https://cdn-bot.hunyuan.tencent.com/assets/9d1eb0b3c010bbd9e395.png);
+}
+.hyc-login__left--download {
+  width: 240px;
+  background-color: #e0f8fa;
+  background-image: url(https://cdn-bot.hunyuan.tencent.com/assets/7ce14b27aeb2c8a0eb48.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hyc-login__left--download-zh-hk {
+  background-image: url(https://cdn-bot.hunyuan.tencent.com/assets/4010c262693041dd8a81.png);
+}
+.hyc-login__left--download-en {
+  background-image: url(https://cdn-bot.hunyuan.tencent.com/assets/6830f358c6c21169cf4c.png);
+}
+.hyc-login__content {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 460px;
+  background-color: var(--background-container);
+}
+.hyc-login__protocol {
+  color: #576B95;
+  text-decoration: none;
+}
+.hyc-login__agreement {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  flex-shrink: 0;
+  line-height: 16px;
+  font-size: 12px;
+  text-align: center;
+}
+.hyc-login__agreement > label.t-checkbox {
+  vertical-align: top;
+  display: flex;
+  align-items: flex-start;
+}
+.hyc-login__agreement .t-checkbox__input {
+  margin-right: 7px;
+}
+.hyc-login__agreement .t-checkbox__label {
+  line-height: 16px;
+  font-size: 12px;
+  margin-left: 0;
+  color: var(--td-text-color-secondary);
+}
+.hyc-login__switch {
+  position: relative;
+  margin: 32px 0;
+}
+.hyc-login__last-tag {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  min-width: 52px;
+  height: 22px;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-top: 6px;
+  line-height: 22px;
+  text-align: center;
+  white-space: nowrap;
+  color: var(--text-text_secondary);
+  background: var(--widget-btn_hover_2);
+  border-radius: 22px;
+  transform: translateX(-50%);
+}
+.hyc-login__last-tag--wechat {
+  margin-left: -100px;
+}
+.hyc-login__last-tag--qq {
+  margin-left: 100px;
+}
+.hyc-login__last-tag:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 6px;
+  height: 6px;
+  margin: -3px 0 0 -3px;
+  background: var(--widget-btn_hover_2);
+  transform: rotate(45deg);
+}
+.hyc-login__last-tag__txt {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  transform: scale(83.333%);
+}
+.hyc-login__switch-type.t-radio-group.t-radio-group--filled {
+  padding: 4px;
+  border-radius: 44px;
+  background-color: var(--background-left_navigation_web);
+}
+.hyc-login__switch-type.t-radio-group.t-radio-group--filled .t-radio-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  color: var(--td-text-color-placeholder);
+  box-sizing: border-box;
+}
+.hyc-login__switch-type.t-radio-group.t-radio-group--filled .t-radio-button.t-is-checked {
+  color: var(--td-text-color-primary);
+  font-weight: 500;
+}
+.hyc-login__switch-type.t-radio-group.t-radio-group--filled .t-radio-button.t-is-checked .hyc-common-icon--wechat {
+  color: #07c160;
+}
+.hyc-login__switch-type.t-radio-group.t-radio-group--filled .t-radio-button.t-is-checked .hyc-common-icon--qq {
+  color: #00b1ff;
+}
+.hyc-login__switch-type.t-radio-group.t-radio-group--filled .t-radio-button:before {
+  display: none !important;
+}
+.hyc-login__switch-type.t-radio-group.t-radio-group--filled .t-radio-button .t-radio-button__label {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+  font-size: 14px;
+}
+.hyc-login__switch-type.t-radio-group.t-radio-group--filled .t-radio-button .hyc-common-icon {
+  width: 18px;
+  height: 18px;
+}
+.hyc-login__switch-type.t-radio-group.t-radio-group--filled .t-radio-group__bg-block {
+  border-radius: 36px;
+  background-color: var(--widget-btn_normal);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05);
+}
+.hyc-login__title {
+  margin: 8px 0 24px 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  color: var(--td-text-color-primary);
+}
+.hyc-wechat-login {
+  width: 200px;
+  height: 400px;
+}
+.hyc-wechat-login > iframe {
+  width: 100%;
+}
+.hyc-login__bind-chat,
+.hyc-login__bind-phone {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hyc-login__bind-chat__title,
+.hyc-login__bind-phone__title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+  color: var(--td-text-color-primary);
+}
+.hyc-login__bind-chat__desc,
+.hyc-login__bind-phone__desc {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+.hyc-login__bind-chat__skip,
+.hyc-login__bind-phone__skip {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 22px;
+  cursor: pointer;
+  color: var(--td-text-color-placeholder);
+}
+.hyc-login__bind-chat {
+  padding-top: 16px;
+}
+.hyc-login__bind-chat .hyc-wechat-login {
+  height: 235px;
+}
+.hyc-login__bind-phone__desc {
+  margin-bottom: 48px;
+}
+:root[yb-theme-mode="dark"] .hyc-login__close--mobile svg {
+  filter: invert();
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+@font-face {
+  font-family: "iconfont-yb";
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/2c74df5fc9cd94052797.woff2?t=e485015a270835093023f1ef15a5778d); /* IE9 */
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/2c74df5fc9cd94052797.woff2?t=e485015a270835093023f1ef15a5778d) format('woff2'), /* IE6-IE8 */
+}
+
+.iconfont-yb {
+  font-family: "iconfont-yb" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-yb-ic_impression_management:before {
+  content: "\e002";
+}
+.icon-yb-ic_add:before {
+  content: "\e003";
+}
+.icon-yb-ic_check_circle_filled:before {
+  content: "\e004";
+}
+.icon-yb-ic_close_circle_filled:before {
+  content: "\e005";
+}
+.icon-yb-ic_error_circle_filled:before {
+  content: "\e007";
+}
+.icon-yb-ic_fold-down:before {
+  content: "\e008";
+}
+.icon-yb-ic_fold-left:before {
+  content: "\e009";
+}
+.icon-yb-ic_fold-right:before {
+  content: "\e00a";
+}
+.icon-yb-ic_fold-up:before {
+  content: "\e00b";
+}
+.icon-yb-ic_help_circle_filled:before {
+  content: "\e00c";
+}
+.icon-yb-ic_info_circle_filled:before {
+  content: "\e00d";
+}
+.icon-yb-ic_jump:before {
+  content: "\e00e";
+}
+.icon-yb-ic_ellipsis:before {
+  content: "\e012";
+}
+.icon-yb-ic_add_origin:before {
+  content: "\e013";
+}
+.icon-yb-ic_arrow_rightup:before {
+  content: "\e014";
+}
+.icon-yb-ic_check:before {
+  content: "\e015";
+}
+.icon-yb-ic_chevron_right_double:before {
+  content: "\e016";
+}
+.icon-yb-ic_close:before {
+  content: "\e017";
+}
+.icon-yb-ic_delete:before {
+  content: "\e018";
+}
+.icon-yb-ic_download:before {
+  content: "\e019";
+}
+.icon-yb-ic_expire:before {
+  content: "\e01a";
+}
+.icon-yb-ic_image:before {
+  content: "\e01b";
+}
+.icon-yb-ic_image_filled:before {
+  content: "\e01c";
+}
+.icon-yb-ic_minus:before {
+  content: "\e01e";
+}
+.icon-yb-ic_notification:before {
+  content: "\e01f";
+}
+.icon-yb-ic_save:before {
+  content: "\e020";
+}
+.icon-yb-ic_search:before {
+  content: "\e021";
+}
+.icon-yb-ic_setting:before {
+  content: "\e022";
+}
+.icon-yb-ic_unfold:before {
+  content: "\e024";
+}
+.icon-yb-ic_write:before {
+  content: "\e025";
+}
+.icon-yb-ic_copy:before {
+  content: "\e026";
+}
+.icon-yb-ic_copy_all:before {
+  content: "\e027";
+}
+.icon-yb-ic_deepanswering:before {
+  content: "\e028";
+}
+.icon-yb-ic_deepsearching_outline:before {
+  content: "\e029";
+}
+.icon-yb-ic_draw_paraphrasing:before {
+  content: "\e02a";
+}
+.icon-yb-ic_draw_platte:before {
+  content: "\e02b";
+}
+.icon-yb-ic_draw_proportion:before {
+  content: "\e02c";
+}
+.icon-yb-ic_draw_resolution:before {
+  content: "\e02d";
+}
+.icon-yb-ic_draw_style:before {
+  content: "\e02e";
+}
+.icon-yb-ic_earth:before {
+  content: "\e02f";
+}
+.icon-yb-ic_fire:before {
+  content: "\e030";
+}
+.icon-yb-ic_fire_filled:before {
+  content: "\e031";
+}
+.icon-yb-ic_idea:before {
+  content: "\e032";
+}
+.icon-yb-ic_input_add:before {
+  content: "\e033";
+}
+.icon-yb-ic_input_call:before {
+  content: "\e034";
+}
+.icon-yb-ic_input_file_add:before {
+  content: "\e035";
+}
+.icon-yb-ic_input_keyboard:before {
+  content: "\e036";
+}
+.icon-yb-ic_input_pause:before {
+  content: "\e037";
+}
+.icon-yb-ic_input_photo:before {
+  content: "\e038";
+}
+.icon-yb-ic_input_picture:before {
+  content: "\e039";
+}
+.icon-yb-ic_input_send_nor:before {
+  content: "\e03a";
+}
+.icon-yb-ic_input_voice:before {
+  content: "\e03b";
+}
+.icon-yb-ic_link_jump:before {
+  content: "\e03c";
+}
+.icon-yb-ic_link_search:before {
+  content: "\e03d";
+}
+.icon-yb-ic_lock:before {
+  content: "\e03e";
+}
+.icon-yb-ic_logo_internet:before {
+  content: "\e03f";
+}
+.icon-yb-ic_logo_wechat:before {
+  content: "\e040";
+}
+.icon-yb-ic_logo_wechat_friendcircle:before {
+  content: "\e041";
+}
+.icon-yb-ic_magicwand:before {
+  content: "\e042";
+}
+.icon-yb-ic_mindmap:before {
+  content: "\e043";
+}
+.icon-yb-ic_newchat:before {
+  content: "\e044";
+}
+.icon-yb-ic_outlined_star:before {
+  content: "\e045";
+}
+.icon-yb-ic_outlined_star_filled:before {
+  content: "\e046";
+}
+.icon-yb-ic_pause_circle:before {
+  content: "\e047";
+}
+.icon-yb-ic_people:before {
+  content: "\e048";
+}
+.icon-yb-ic_picture_circle_filled:before {
+  content: "\e049";
+}
+.icon-yb-ic_play_circle:before {
+  content: "\e04a";
+}
+.icon-yb-ic_preview_close:before {
+  content: "\e04b";
+}
+.icon-yb-ic_refresh:before {
+  content: "\e04c";
+}
+.icon-yb-ic_relevant:before {
+  content: "\e04d";
+}
+.icon-yb-ic_schedule:before {
+  content: "\e04e";
+}
+.icon-yb-ic_settop:before {
+  content: "\e04f";
+}
+.icon-yb-ic_settop_off:before {
+  content: "\e050";
+}
+.icon-yb-ic_settop_on:before {
+  content: "\e051";
+}
+.icon-yb-ic_star_filled:before {
+  content: "\e052";
+}
+.icon-yb-ic_thumb_down:before {
+  content: "\e053";
+}
+.icon-yb-ic_thumb_up:before {
+  content: "\e054";
+}
+.icon-yb-ic_time-1:before {
+  content: "\e055";
+}
+.icon-yb-ic_tips:before {
+  content: "\e056";
+}
+.icon-yb-ic_translate:before {
+  content: "\e057";
+}
+.icon-yb-ic_transpond:before {
+  content: "\e058";
+}
+.icon-yb-ic_voice:before {
+  content: "\e059";
+}
+.icon-yb-ic_voice_off:before {
+  content: "\e05a";
+}
+.icon-yb-ic_voice_on:before {
+  content: "\e05b";
+}
+.icon-yb-add:before {
+  content: "\e064";
+}
+.icon-yb-setting:before {
+  content: "\e068";
+}
+.icon-yb-info:before {
+  content: "\e06d";
+}
+.icon-yb-nav:before {
+  content: "\e06e";
+}
+.icon-yb-downapp:before {
+  content: "\e070";
+}
+.icon-yb-history:before {
+  content: "\e075";
+}
+.icon-yb-refresh:before {
+  content: "\e076";
+}
+.icon-yb-arrow-left:before {
+  content: "\e077";
+}
+.icon-yb-chat-fill:before {
+  content: "\e078";
+}
+.icon-yb-chat:before {
+  content: "\e079";
+}
+.icon-yb-find-fill:before {
+  content: "\e07a";
+}
+.icon-yb-find:before {
+  content: "\e07b";
+}
+.icon-yb-market-fill:before {
+  content: "\e07c";
+}
+.icon-yb-market:before {
+  content: "\e07d";
+}
+.icon-yb-me-fill:before {
+  content: "\e07e";
+}
+.icon-yb-me:before {
+  content: "\e07f";
+}
+.icon-yb-upload:before {
+  content: "\e083";
+}
+.icon-yb-download:before {
+  content: "\e084";
+}
+.icon-yb-image:before {
+  content: "\e085";
+}
+.icon-yb-link:before {
+  content: "\e086";
+}
+.icon-yb-history-file:before {
+  content: "\e087";
+}
+.icon-yb-Uploading-file:before {
+  content: "\e088";
+}
+.icon-yb-ai-draw:before {
+  content: "\e089";
+}
+.icon-yb-ai-read:before {
+  content: "\e08a";
+}
+.icon-yb-ai-search:before {
+  content: "\e08b";
+}
+.icon-yb-ai-write:before {
+  content: "\e08c";
+}
+.icon-yb-top:before {
+  content: "\e08d";
+}
+.icon-yb-deepthink:before {
+  content: "\e08e";
+}
+.icon-yb-newchat:before {
+  content: "\e092";
+}
+.icon-yb-right:before {
+  content: "\e093";
+}
+.icon-yb-app:before {
+  content: "\e094";
+}
+.icon-yb-phonenav:before {
+  content: "\e096";
+}
+.icon-yb-newchat2:before {
+  content: "\e097";
+}
+.icon-yb-linksearch:before {
+  content: "\e098";
+}
+.icon-yb-copy:before {
+  content: "\e099";
+}
+.icon-yb-rebuild:before {
+  content: "\e09a";
+}
+.icon-yb-unlike:before {
+  content: "\e09b";
+}
+.icon-yb-like:before {
+  content: "\e09c";
+}
+.icon-yb-volume:before {
+  content: "\e09d";
+}
+.icon-yb-share:before {
+  content: "\e09e";
+}
+.icon-yb-unlike-sel:before {
+  content: "\e09f";
+}
+.icon-yb-like-sel:before {
+  content: "\e0a0";
+}
+.icon-yb-gongzhonghao:before {
+  content: "\e0a1";
+}
+.icon-yb-weblink:before {
+  content: "\e0a2";
+}
+.icon-yb-Eye:before {
+  content: "\e0a4";
+}
+.icon-yb-search-nol:before {
+  content: "\e0a6";
+}
+.icon-yb-temporarychat-sel:before {
+  content: "\e0a7";
+}
+.icon-yb-temporarychat:before {
+  content: "\e0a8";
+}
+.icon-yb-edit:before {
+  content: "\e0a9";
+}
+.icon-yb-collect-1:before {
+  content: "\e0af";
+}
+.icon-yb-collect-2:before {
+  content: "\e0b0";
+}
+.icon-yb-closenav:before {
+  content: "\e0b1";
+}
+.icon-yb-empty:before {
+  content: "\e0b2";
+}
+.icon-yb-blank:before {
+  content: "\e0b3";
+}
+.icon-yb-Pinpoint:before {
+  content: "\e0b4";
+}
+.icon-yb-ic_meeting:before {
+  content: "\e0b5";
+}
+.icon-yb-ic_audio:before {
+  content: "\e0b7";
+}
+.icon-yb-ic_enter:before {
+  content: "\e0b8";
+}
+.icon-yb-ic_trans:before {
+  content: "\e0ba";
+}
+.icon-yb-ic_transform_20:before {
+  content: "\e0bb";
+}
+.icon-yb-ic_video_20:before {
+  content: "\e0bc";
+}
+.icon-yb-r1:before {
+  content: "\e0bd";
+}
+.icon-yb-t1:before {
+  content: "\e0be";
+}
+.icon-yb-ic_Minus:before {
+  content: "\e0bf";
+}
+.icon-yb-ic_project_new:before {
+  content: "\e0c0";
+}
+.icon-yb-ic_chat_project:before {
+  content: "\e0c1";
+}
+.icon-yb-ic_check_circle:before {
+  content: "\e0c2";
+}
+.icon-yb-ic_check_circle_filled-1:before {
+  content: "\e0c3";
+}
+.icon-yb-ic_arrow_left_2504:before {
+  content: "\e0cf";
+}
+.icon-yb-ic_arrow_right_2504:before {
+  content: "\e0d0";
+}
+.icon-yb-ic_collect_2504:before {
+  content: "\e0d1";
+}
+.icon-yb-ic_copy_2504:before {
+  content: "\e0d2";
+}
+.icon-yb-ic_edit_2504:before {
+  content: "\e0d3";
+}
+.icon-yb-ic_refresh_2504:before {
+  content: "\e0d4";
+}
+.icon-yb-ic_share_2504:before {
+  content: "\e0d5";
+}
+.icon-yb-ic_like_2504:before {
+  content: "\e0d6";
+}
+.icon-yb-ic_like_fill_2504:before {
+  content: "\e0d7";
+}
+.icon-yb-ic_unlike_2504:before {
+  content: "\e0d8";
+}
+.icon-yb-ic_unlike_fill_2504:before {
+  content: "\e0d9";
+}
+.icon-yb-ic_project_add_24:before {
+  content: "\e0da";
+}
+.icon-yb-ic_move_add:before {
+  content: "\e0db";
+}
+.icon-yb-ic_move_Minus:before {
+  content: "\e0dc";
+}
+.icon-yb-pj_edit:before {
+  content: "\e0dd";
+}
+.icon-yb-pj_library:before {
+  content: "\e0de";
+}
+.icon-yb-pj_tyzl_dark:before {
+  content: "\e0df";
+}
+.icon-yb-pj_tyzl:before {
+  content: "\e0e0";
+}
+.icon-yb-ic_return_16:before {
+  content: "\e0e8";
+}
+.icon-yb-ic_forward_16:before {
+  content: "\e0e9";
+}
+.icon-yb-ic_preview_16:before {
+  content: "\e0ea";
+}
+.icon-yb-ic_running_16:before {
+  content: "\e0eb";
+}
+.icon-yb-ic_delete_16:before {
+  content: "\e0ed";
+}
+.icon-yb-ic_close_16:before {
+  content: "\e0ee";
+}
+.icon-yb-ic_expand_16:before {
+  content: "\e0ef";
+}
+.icon-yb-ic_running_fill_16:before {
+  content: "\e0f3";
+}
+.icon-yb-ic_stop_fill_16:before {
+  content: "\e0f4";
+}
+.icon-yb-ic_code_20:before {
+  content: "\e0f5";
+}
+.icon-yb-pj_more_doc:before {
+  content: "\e0f6";
+}
+
+.yb-safe-waterwall-mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.6);
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.index_pc_download__IjaBf {
+  display: flex;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: var(--widget-btn_normal);
+  margin: 12px 12px 0;
+  cursor: pointer;
+}
+.index_pc_download__IjaBf .index_content__UPjm2 {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+}
+.index_pc_download__IjaBf .index_content__UPjm2 .icon-yb-download {
+  margin-right: 2px;
+  color: var(--text-text_primary);
+}
+.index_pc_download__IjaBf .index_content__UPjm2 .index_text__vNxg0 {
+  color: var(--text-text_primary);
+  text-align: center;
+  font-family: "PingFang SC";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+.index_pc_download__IjaBf .index_content__UPjm2 .index_version__VyNyG {
+  display: flex;
+  padding: 2px 4px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: #F3F3F3;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "PingFang SC";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.index_pc_download_ads__0eHNI {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 12px;
+  position: relative;
+  background-image: url(https://cdn-bot.hunyuan.tencent.com/assets/b726c05401b48cb9640e.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 160px;
+  z-index: 3;
+}
+.index_pc_download_ads__0eHNI .index_close__0veCQ {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 4px;
+}
+.index_pc_download_ads__0eHNI .index_close__0veCQ .index_icon__Pq91c {
+  width: 16px;
+  height: 16px;
+}
+.index_pc_download_ads__0eHNI .index_button__JwyZh {
+  border-radius: 8px;
+  margin-top: 68px;
+  color: rgba(0, 0, 0, 0.9);
+  background-color: #FFF;
+  font-family: "PingFang SC";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  width: 172px;
+  height: 36px;
+  line-height: 36px;
+}
+.index_pc_download_ads__0eHNI .index_button__JwyZh:hover {
+  background: #F5F5F5;
+  background: var(--yb_color_bg-active_1, #F5F5F5);
+}
+.index_pc_download_not_login_modal__3SFt5 {
+  border-radius: 8px;
+  background: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 208px;
+  height: 36px;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  font-family: "PingFang SC";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  position: absolute;
+  bottom: 51px;
+  margin: 0 16px;
+  cursor: pointer;
+}
+.index_pc_download_not_login_modal__3SFt5:hover {
+  background: #F5F5F5;
+}
+.index_pc_download_ads_card_banner__vp970 {
+  position: relative;
+  z-index: 13;
+  width: 260px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+}
+.index_pc_download_ads_card_banner__vp970 .index_content__UPjm2 .index_headerImageWrapper__9bdjP {
+  pointer-events: none;
+  width: 100%;
+  height: 169px;
+  background-color: #DEECE7;
+}
+.index_pc_download_ads_card_banner__vp970 .index_content__UPjm2 .index_headerImageWrapper__9bdjP .index_headerImage__ZP9Lc {
+  width: 100%;
+  height: 100%;
+}
+.index_pc_download_ads_card_banner__vp970 .index_content__UPjm2 .index_main__NU\+Y4 {
+  background-color: var(--background-container);
+  padding: 12px 14px 14px 14px;
+}
+.index_pc_download_ads_card_banner__vp970 .index_content__UPjm2 .index_main__NU\+Y4 .index_title__0w2ws {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+  color: var(--text-text_primary);
+}
+.index_pc_download_ads_card_banner__vp970 .index_content__UPjm2 .index_main__NU\+Y4 .index_desc__KjTnC {
+  margin-top: 6px;
+  color: var(--text-text_secondary);
+  font-size: 12px;
+  line-height: 20px;
+}
+.index_pc_download_ads_card_banner__vp970 .index_close__0veCQ {
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 14;
+}
+.index_pc_download_ads_card_banner__vp970 .index_close__0veCQ .index_icon__Pq91c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+.index_pc_download_ads_card_banner__vp970 .index_close__0veCQ .index_icon__Pq91c:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.index_pc_download_ads_card_banner__vp970 .index_button__JwyZh {
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 8px;
+  color: var(--text-text_white);
+  background: var(--brand-black_1);
+  font-family: "PingFang SC";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+}
+
+
+/*# sourceMappingURL=sourcemap/8574.71682454219a9ff569a2.css.map*/

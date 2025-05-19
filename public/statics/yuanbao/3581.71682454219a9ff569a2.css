@@ -1,0 +1,1912 @@
+.hyc-link-card {
+  display: flex;
+  align-items: center;
+  width: 176px;
+  height: 34px;
+  padding: 12px 8px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-sizing: content-box;
+  border: 1px solid var(---yb_divider_primary, #DEDEDE);
+  background: var(---yb_background_tertiary, #FFF);
+}
+.hyc-link-card__left {
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hyc-link-card__left__img {
+  width: auto;
+  height: 100%;
+}
+.hyc-link-card__right {
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  justify-content: space-between;
+}
+.hyc-link-card__right__title {
+  width: 136px;
+  overflow: hidden;
+  color: var(--text-text_primary, rgba(0, 0, 0, 0.9));
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "PingFang SC";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.hyc-link-card__right__app-info {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+}
+.hyc-link-card__right__app-icon {
+  height: 10px;
+  width: auto;
+  min-width: 10px;
+}
+.hyc-link-card__right__app-name {
+  margin-left: 2px;
+  color: var(---yb_text_tertiary, #999);
+  font-family: "PingFang SC";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 12px */
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.hyc-html-summary-card {
+  display: flex;
+  align-items: center;
+  width: 178px;
+  height: 36px;
+  padding: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-sizing: content-box;
+  background: #fff;
+}
+.hyc-html-summary-card__left {
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+  border: 1px solid var(--widget-line);
+  background: var(--background-page_background_web);
+  overflow: hidden;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hyc-html-summary-card__left__img {
+  width: 100%;
+  max-height: 100%;
+}
+.hyc-html-summary-card__left__img-default {
+  padding: 4px;
+  width: 16px;
+  height: 16px;
+}
+.hyc-html-summary-card__right {
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  justify-content: space-between;
+}
+.hyc-html-summary-card__right__title {
+  width: 146px;
+  white-space: nowrap;
+  overflow: hidden;
+  color: var(--text-text_primary, rgba(0, 0, 0, 0.9));
+  text-overflow: ellipsis;
+  font-family: "PingFang SC";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  /* 150% */
+}
+.hyc-html-summary-card__right__desc {
+  width: 146px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: var(--text-text_secondary, rgba(0, 0, 0, 0.6));
+  font-family: "PingFang SC";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+:root[yb-theme-mode="dark"] .hyc-html-summary-card {
+  background: var(--background-bubble_web);
+}
+@media (prefers-color-scheme: dark) {
+  :root[yb-theme-mode="system"] .hyc-html-summary-card {
+    background: var(--background-bubble_web);
+  }
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.hyc-wx-article-card {
+  border-radius: 14px;
+  padding: 0 12px 0 10px;
+  min-height: 64px;
+  padding: 12px 12px 12px 10px;
+  display: flex;
+  align-items: center;
+  width: 240px;
+  box-sizing: border-box;
+  background: var(--yb-bubble-human-bg-color);
+}
+.hyc-wx-article-card + .hyc-wx-article-card {
+  margin-top: 8px;
+}
+.hyc-wx-article-card:active {
+  filter: brightness(0.98);
+}
+.hyc-wx-article-card > i {
+  width: 40px;
+  height: 40px;
+  background: url(https://cdn-bot.hunyuan.tencent.com/assets/2a7b299ea2ab731d535d.png) center / 100%;
+}
+.hyc-wx-article-card--official > i {
+  background: url(https://cdn-bot.hunyuan.tencent.com/assets/c848378a40df6e63c9f6.png) center / 100%;
+}
+.hyc-wx-article-card__tit {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285;
+  flex: 1;
+  margin-left: 8px;
+  color: var(--text-text_primary);
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.t-timeline {
+  font: var(--td-font-body-medium);
+  color: var(--td-text-color-primary);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.t-timeline-item {
+  min-height: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+.t-timeline-item__label.t-timeline-item__label--alternate {
+  position: absolute;
+}
+.t-timeline-item__wrapper {
+  width: 8px;
+  position: relative;
+}
+.t-timeline-item__wrapper .t-timeline-item__dot {
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  top: 8px;
+}
+.t-timeline-item__wrapper .t-timeline-item__dot--primary {
+  border-color: var(--td-brand-color);
+}
+.t-timeline-item__wrapper .t-timeline-item__dot--default {
+  border-color: var(--td-component-border);
+}
+.t-timeline-item__wrapper .t-timeline-item__dot--success {
+  border-color: var(--td-success-color);
+}
+.t-timeline-item__wrapper .t-timeline-item__dot--warning {
+  border-color: var(--td-warning-color);
+}
+.t-timeline-item__wrapper .t-timeline-item__dot--error {
+  border-color: var(--td-error-color);
+}
+.t-timeline-item__wrapper .t-timeline-item__dot--custom {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 4px;
+  border: 0;
+}
+.t-timeline-item__wrapper .t-timeline-item__dot--custom .t-timeline-item__dot-content {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 0;
+}
+.t-timeline-item__wrapper .t-timeline-item__tail {
+  position: absolute;
+  border-left: 2px solid transparent;
+  left: 50%;
+  height: calc(100% - (8px * 2 + 8px));
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding-bottom: var(--td-comp-size-s);
+  border-color: var(--td-component-border);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.t-timeline-item__wrapper .t-timeline-item__tail--theme-dot {
+  border-style: dashed;
+  border-right: 0;
+}
+.t-timeline-item__label {
+  color: var(--td-text-color-secondary);
+  font-size: var(--td-font-size-body-medium);
+}
+.t-timeline-item__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: var(--td-comp-margin-l);
+  font-size: var(--td-font-size-body-large);
+}
+.t-timeline-item--last .t-timeline-item__tail {
+  display: none;
+}
+.t-timeline-label.t-timeline-label--alternate.t-timeline-left .t-timeline-item__label {
+  text-align: right;
+  left: 0;
+}
+.t-timeline-label.t-timeline-label--alternate.t-timeline-left .t-timeline-item__wrapper {
+  margin-left: 100px;
+}
+.t-timeline-label.t-timeline-label--alternate.t-timeline-right .t-timeline-item__label {
+  text-align: left;
+  right: 0;
+}
+.t-timeline-label.t-timeline-label--alternate.t-timeline-right .t-timeline-item__wrapper {
+  margin-right: 100px;
+}
+.t-timeline-right .t-timeline-item {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.t-timeline-right .t-timeline-item__content {
+  text-align: right;
+  padding-left: 0;
+  padding-right: var(--td-comp-margin-l);
+}
+.t-timeline-alternate .t-timeline-item-left {
+  margin-left: calc(50% - (8px / 2));
+}
+.t-timeline-alternate .t-timeline-item-right {
+  text-align: right;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-right: calc(50% - (8px / 2));
+}
+.t-timeline-alternate .t-timeline-item-right .t-timeline-item__content {
+  padding-right: var(--td-comp-margin-l);
+  padding-left: 0;
+}
+.t-timeline-label.t-timeline-alternate .t-timeline-item__label {
+  width: 100%;
+}
+.t-timeline-label.t-timeline-alternate .t-timeline-item-left .t-timeline-item__label--alternate {
+  left: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  text-align: right;
+  padding-right: var(--td-comp-margin-l);
+}
+.t-timeline-label.t-timeline-alternate .t-timeline-item-right .t-timeline-item__label--alternate {
+  right: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  text-align: left;
+  padding-left: var(--td-comp-margin-l);
+}
+.t-timeline-horizontal {
+  min-height: 200px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.t-timeline-horizontal .t-timeline-item {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 8px;
+  min-width: 160px;
+}
+.t-timeline-horizontal .t-timeline-item__wrapper {
+  width: 100%;
+  height: 8px;
+}
+.t-timeline-horizontal .t-timeline-item__wrapper .t-timeline-item__dot {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: unset;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+.t-timeline-horizontal .t-timeline-item__wrapper .t-timeline-item__dot--custom {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border: 0;
+}
+.t-timeline-horizontal .t-timeline-item__wrapper .t-timeline-item__dot--custom .t-timeline-item__dot-content {
+  position: absolute;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+}
+.t-timeline-horizontal .t-timeline-item__wrapper .t-timeline-item__tail {
+  left: calc(8px + var(--td-comp-margin-s));
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: calc(100% - calc(8px + var(--td-comp-margin-s)));
+  border: 0;
+  border-top: 2px solid transparent;
+  padding-bottom: 0;
+  border-color: var(--td-component-border);
+}
+.t-timeline-horizontal .t-timeline-item__wrapper .t-timeline-item__tail--theme-dot {
+  border-style: dashed;
+  border-right: 0;
+}
+.t-timeline-horizontal .t-timeline-item__content {
+  padding-left: unset;
+  padding-top: var(--td-comp-margin-l);
+  -webkit-box-flex: unset;
+      -ms-flex: unset;
+          flex: unset;
+}
+.t-timeline-vertical .t-timeline-item__content {
+  padding-bottom: var(--td-comp-margin-l);
+}
+.t-timeline-label.t-timeline-horizontal.t-timeline-top .t-timeline-item__label--alternate {
+  top: 0;
+  width: 100%;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  padding-bottom: 0;
+}
+.t-timeline-label.t-timeline-horizontal.t-timeline-bottom .t-timeline-item {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+.t-timeline-label.t-timeline-horizontal.t-timeline-bottom .t-timeline-item__wrapper {
+  padding-top: 0;
+}
+.t-timeline-label.t-timeline-horizontal.t-timeline-bottom .t-timeline-item__label--alternate {
+  padding-top: var(--td-comp-margin-l);
+  bottom: 0;
+  width: 100%;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+.t-timeline-label.t-timeline-horizontal.t-timeline-bottom .t-timeline-item__content {
+  padding-top: 0;
+  padding-bottom: var(--td-comp-margin-l);
+}
+.t-timeline-label.t-timeline-horizontal.t-timeline-alternate .t-timeline-item-top .t-timeline-item__label--alternate {
+  top: 0;
+  width: 100%;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  padding-bottom: var(--td-comp-margin-l);
+}
+.t-timeline-label.t-timeline-horizontal.t-timeline-alternate .t-timeline-item-bottom {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  position: relative;
+  -webkit-transform: translateY(calc(-100% + 8px));
+          transform: translateY(calc(-100% + 8px));
+}
+.t-timeline-label.t-timeline-horizontal.t-timeline-alternate .t-timeline-item-bottom .t-timeline-item__content {
+  padding-bottom: var(--td-comp-margin-l);
+  padding-top: unset;
+}
+.t-timeline-label.t-timeline-horizontal.t-timeline-alternate .t-timeline-item-bottom .t-timeline-item__label--alternate {
+  bottom: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  padding-top: var(--td-comp-margin-l);
+}
+
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.hyc-component-outline__content--readonly .hyc-component-outline__content__chapter__drag {
+  display: none;
+}
+.hyc-component-outline__content--readonly .hyc-component-outline__content__header__view:hover {
+  background-color: transparent;
+}
+.hyc-component-outline__content--readonly .hyc-component-outline__content__chapter__value .hyc-component-outline__content__chapter__control {
+  display: none;
+}
+.hyc-component-outline__content--readonly .hyc-component-outline__content__chapter__value:hover {
+  background-color: transparent;
+}
+.hyc-component-outline__content--readonly .hyc-component-outline__content__chapter__add-indicator {
+  display: none;
+}
+.hyc-component-outline__content--readonly .hyc-component-outline__content__header--ppt,
+.hyc-component-outline__content--readonly .hyc-component-outline__content__footer--ppt {
+  padding-left: 0;
+}
+.hyc-component-outline__content--disabled .hyc-component-outline__content__chapter__value .hyc-component-outline__content__chapter__control {
+  display: none;
+}
+.hyc-component-outline__content--disabled .hyc-component-outline__content__chapter__value .hyc-component-outline__content__chapter__control__item {
+  pointer-events: none;
+  opacity: 0;
+}
+.hyc-component-outline__content--disabled .hyc-component-outline__content__chapter__add-indicator {
+  display: none;
+}
+.hyc-component-outline__content--loading:not(.hyc-component-outline__content--readonly) .hyc-component-outline__content__chapter__value .hyc-component-outline__content__chapter__control {
+  display: flex;
+}
+.outline-drag-stop-scroll.agent-chat__list__content-wrapper {
+  overflow-y: hidden;
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.hyc-component-outline__content__input {
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.hyc-component-outline__content__input__value {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  white-space: pre-line;
+}
+.hyc-component-outline__content__input textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 0;
+  display: block;
+  font: inherit;
+  font-family: var(--hy-font-family);
+  resize: none;
+  min-height: 24px;
+  overflow: hidden;
+  background: transparent;
+  color: var(--text-text_primary);
+}
+.hyc-component-outline__content__input textarea::placeholder {
+  /* Modern browsers */
+  color: var(--text-text_tertiary);
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.hyc-component-outline__content__header--ppt {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 16px;
+  position: relative;
+}
+.hyc-component-outline__content__header--ppt .hyc-component-outline__content__header__edit {
+  flex: 1;
+  min-width: 0;
+  padding: 9px 7px;
+}
+.hyc-component-outline__content__header--ppt .hyc-component-outline__content__header__edit .hyc-component-outline__content__input {
+  font-size: 16px;
+  line-height: 24px;
+}
+.hyc-component-outline__content__header--ppt .hyc-component-outline__content__header__edit .hyc-component-outline__content__input textarea {
+  min-height: 24px;
+}
+.hyc-component-outline__content__header--ppt .hyc-component-outline__content__header__view {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px;
+  flex: 1;
+  min-width: 0;
+}
+.hyc-component-outline__content__header--ppt .hyc-component-outline__content__chapter__ppt-type {
+  flex: none;
+}
+.hyc-component-outline__content__header__view {
+  padding: 8px;
+  color: var(--text-text_primary);
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  border-radius: 12px;
+  cursor: default;
+}
+.hyc-component-outline__content__header__view:hover {
+  background: var(--widget-btn_hover_2);
+}
+.hyc-component-outline__content__header__view--empty {
+  color: var(--text-text_tertiary);
+}
+.hyc-component-outline__content__header__edit {
+  padding: 7px;
+  border: 1px solid var(--widget-btn_click_1);
+  border-radius: 12px;
+}
+.hyc-component-outline__content__header__edit .hyc-component-outline__content__input {
+  font-size: 20px;
+  line-height: 30px;
+}
+.hyc-component-outline__content__header__edit .hyc-component-outline__content__input textarea {
+  color: var(--text-text_primary);
+  min-height: 30px;
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.hyc-component-outline__content__chapter__ppt-type {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: 64px;
+  height: 40px;
+  margin-left: 2px;
+  justify-content: flex-end;
+}
+.hyc-component-outline__content__chapter__ppt-type__text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.4);
+  width: 32px;
+  flex: none;
+}
+.hyc-component-outline__content__chapter__ppt-type__icon {
+  line-height: 18px;
+  font-size: 12px;
+  border-radius: 4px;
+  padding: 0 4px;
+  flex: none;
+}
+.hyc-component-outline__content__chapter__ppt-type__icon--1 {
+  color: rgba(0, 82, 217, 0.9);
+  background-color: #F2F3FF;
+}
+.hyc-component-outline__content__chapter__ppt-type__icon--0 {
+  color: rgba(0, 0, 0, 0.9);
+  background-color: #EEFBF5;
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.hyc-component-outline__content__chapter__add-indicator {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 12px;
+  bottom: -12px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+.hyc-component-outline__content__chapter__add-indicator:hover {
+  opacity: 1;
+}
+.hyc-component-outline__content__chapter__add-indicator::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  content: '';
+  display: block;
+  border-bottom: 1px dashed var(--widget-line);
+  transform: translateY(-50%);
+}
+.hyc-component-outline__content__chapter__add-indicator__text {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--brand-black_1);
+  color: var(--text-text_white);
+  font-size: 12px;
+  line-height: 18px;
+  border-radius: 16px;
+  padding: 4px 6px;
+  font-weight: 500;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.hyc-component-outline__content__chapter__add-indicator__text .hyc-common-icon {
+  margin-right: 2px;
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.hyc-component-outline__content__loading {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 8px;
+  margin-right: 8px;
+  position: relative;
+}
+.hyc-component-outline__content__loading::before,
+.hyc-component-outline__content__loading::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.hyc-component-outline__content__loading::before {
+  background: rgba(0, 0, 0, 0.9);
+  margin-left: -5px;
+  margin-top: -5px;
+  animation: inner 1.4s linear infinite;
+}
+.hyc-component-outline__content__loading::after {
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  left: 50%;
+  top: 50%;
+  box-sizing: border-box;
+  animation: outer 1.4s linear infinite;
+  transform: translate(-50%, -50%);
+}
+@keyframes inner {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.8);
+  }
+  70%,
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes outer {
+  0%,
+  69% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+  }
+  100% {
+    opacity: 0;
+    width: 24px;
+    height: 24px;
+  }
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.hyc-component-outline__content__footer--ppt {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 16px;
+}
+.hyc-component-outline__content__footer--ppt .hyc-component-outline__content__chapter__ppt-type {
+  flex: none;
+}
+.hyc-component-outline__content__footer--ppt .hyc-component-outline__content__footer__view {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px;
+  flex: 1;
+  min-width: 0;
+}
+.hyc-component-outline__content__footer__view {
+  padding: 8px;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  border-radius: 12px;
+  cursor: default;
+}
+.hyc-component-outline__content__footer__view:hover {
+  background: #F5F6F8;
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.hyc-component-outline__content__chapter__control {
+  display: flex;
+  align-items: center;
+  top: 8px;
+  right: 8px;
+  gap: 8px;
+  opacity: 0;
+}
+.hyc-component-outline__content__chapter__control__item {
+  line-height: 24px;
+  color: var(--text-text_secondary);
+  cursor: pointer;
+}
+.hyc-component-outline__content__chapter__control__item .hyc-common-icon {
+  display: block;
+}
+.hyc-component-outline__content__chapter__control__item svg {
+  display: block;
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.hyc-component-outline__content__chapter__value {
+  padding: 8px 4px;
+  cursor: default;
+  border-radius: 8px;
+  white-space: pre-line;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.hyc-component-outline__content__chapter__value:hover {
+  background-color: var(--background-bubble_web);
+}
+.hyc-component-outline__content__chapter__value:hover .hyc-component-outline__content__chapter__control {
+  opacity: 1;
+}
+.hyc-component-outline__content__chapter__value__content {
+  flex: 1;
+  min-width: 0;
+}
+.hyc-component-outline__content__chapter__title {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-text_primary);
+  font-weight: 500;
+}
+.hyc-component-outline__content__chapter__title--empty {
+  color: var(--text-text_tertiary);
+}
+.hyc-component-outline__content__chapter__desc {
+  font-size: 14px;
+  line-height: 22px;
+  line-height: 20px;
+  color: var(--text-text_tertiary);
+  margin-top: 4px;
+}
+.hyc-component-outline__content__chapter__desc--empty {
+  color: var(--text-text_tertiary);
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.hyc-component-outline__content__chapter__edit {
+  padding: 7px 3px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.hyc-component-outline__content__chapter__edit__content {
+  flex: 1;
+  min-width: 0;
+}
+.hyc-component-outline__content__chapter__edit__desc {
+  margin-top: 4px;
+}
+.hyc-component-outline__content__chapter__edit__desc .hyc-component-outline__content__input {
+  line-height: 20px;
+  font-size: 14px;
+  color: var(--text-text_tertiary);
+  font-weight: 400;
+}
+.hyc-component-outline__content__chapter__edit__desc .hyc-component-outline__content__input textarea {
+  color: var(--text-text_tertiary);
+  min-height: 20px;
+}
+.hyc-component-outline__content__chapter__edit__desc .hyc-component-outline__content__input textarea::placeholder {
+  color: var(--text-text_tertiary);
+}
+.hyc-component-outline__content__chapter__edit .hyc-component-outline__content__chapter__control {
+  opacity: 1;
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.hyc-component-outline__content__chapter {
+  position: relative;
+  cursor: default;
+}
+.hyc-component-outline__content__chapter--edit .hyc-component-outline__content__chapter__edit {
+  border: 1px solid var(--brand-black_1);
+  border-radius: 8px;
+}
+.hyc-component-outline__content__chapter--edit > .hyc-component-outline__content__chapter__wrapper .hyc-component-outline__content__chapter__drag {
+  cursor: not-allowed;
+}
+.hyc-component-outline__content__chapter--dragging .hyc-component-outline__content__chapter__wrapper {
+  opacity: 0.2;
+}
+.hyc-component-outline__content__chapter--dragging .hyc-component-outline__content__chapter__add-indicator {
+  display: none;
+}
+.hyc-component-outline__content__chapter--no-drag .hyc-component-outline__content__chapter__drag {
+  opacity: 0;
+  pointer-events: none;
+}
+.hyc-component-outline__content__chapter--no-drop .hyc-component-outline__content__chapter__content--hover-up::before,
+.hyc-component-outline__content__chapter--no-drop .hyc-component-outline__content__chapter__content--hover-down::before {
+  display: none;
+}
+.hyc-component-outline__content__chapter--ppt[data-hyc-outline-level="1"] .hyc-component-outline__content__chapter__wrapper {
+  position: relative;
+}
+.hyc-component-outline__content__chapter--ppt .hyc-component-outline__content__chapter__wrapper {
+  padding-top: 4px;
+}
+.hyc-component-outline__content__chapter--ppt .hyc-component-outline__content__chapter__children .hyc-component-outline__content__chapter__wrapper {
+  padding-top: 4px;
+}
+.hyc-component-outline__content__chapter--ppt .hyc-component-outline__content__chapter__content {
+  display: flex;
+  align-items: flex-start;
+}
+.hyc-component-outline__content__chapter--ppt .hyc-component-outline__content__chapter__ppt-type {
+  flex: none;
+}
+.hyc-component-outline__content__chapter--ppt .hyc-component-outline__content__chapter__value,
+.hyc-component-outline__content__chapter--ppt .hyc-component-outline__content__chapter__edit {
+  flex: 1;
+  min-width: 0;
+}
+.hyc-component-outline__content__chapter--ppt .hyc-component-outline__content__chapter__drag {
+  margin-top: 10px;
+}
+.hyc-component-outline__content__chapter--ppt .hyc-component-outline__content__chapter__edit {
+  padding: 7px 3px;
+}
+.hyc-component-outline__content__chapter--ppt .hyc-component-outline__content__chapter__num {
+  padding: 8px 4px 8px 8px;
+}
+.hyc-component-outline__content__chapter__wrapper {
+  padding-top: 12px;
+}
+.hyc-component-outline__content__chapter__wrapper__content {
+  display: flex;
+  align-items: flex-start;
+}
+.hyc-component-outline__content__chapter__content {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+.hyc-component-outline__content__chapter__content--hover-up::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--brand-black_1);
+}
+.hyc-component-outline__content__chapter__content--hover-up .hyc-component-outline__content__chapter__value {
+  background-color: var(--widget-btn_hover_2);
+}
+.hyc-component-outline__content__chapter__content--hover-up .hyc-component-outline__content__chapter__value .hyc-component-outline__content__chapter__control {
+  opacity: 1;
+}
+.hyc-component-outline__content__chapter__content--hover-down::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--brand-black_1);
+}
+.hyc-component-outline__content__chapter__content--hover-down--child::before {
+  left: 24px;
+}
+.hyc-component-outline__content__chapter__content--hover-down .hyc-component-outline__content__chapter__value {
+  background-color: var(--widget-btn_hover_2);
+}
+.hyc-component-outline__content__chapter__content--hover-down .hyc-component-outline__content__chapter__value .hyc-component-outline__content__chapter__control {
+  opacity: 1;
+}
+.hyc-component-outline__content__chapter__content .hyc-component-outline__content__chapter__value,
+.hyc-component-outline__content__chapter__content .hyc-component-outline__content__chapter__edit {
+  flex: 1;
+  min-width: 0;
+}
+.hyc-component-outline__content__chapter__drag {
+  color: var(--text-text_tertiary);
+  cursor: move;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+.hyc-component-outline__content__chapter__drag svg {
+  display: block;
+}
+.hyc-component-outline__content__chapter__children .hyc-component-outline__content__chapter__drag {
+  left: 6px;
+}
+.hyc-component-outline__content__chapter__children .hyc-component-outline__content__chapter__wrapper {
+  padding-top: 6px;
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.hyc-component-outline__content__chapter__num {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-text_primary);
+  font-weight: 500;
+  padding: 8px 4px 8px 8px;
+}
+.hyc-component-outline__content__chapter__num--level-1 {
+  padding-right: 7px;
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.hyc-component-outline__content__drag-layer {
+  position: fixed;
+  pointer-events: none;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.hyc-component-outline__content__drag-layer__box {
+  background-color: var(--background-container);
+  border-radius: 8px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
+}
+.hyc-component-outline__content__drag-layer__box > .hyc-component-outline__content__chapter > .hyc-component-outline__content__chapter__wrapper {
+  padding-top: 0;
+}
+.agent-layout--outline-dragging * {
+  cursor: grabbing !important;
+  user-select: none !important;
+}
+.agent-layout__content--outline-dragging {
+  z-index: 8;
+}
+.agent-layout__content--outline-dragging .hyc-component-outline__content__chapter__add-indicator {
+  display: none !important;
+}
+.agent-layout__content--outline-scrolling .hyc-component-outline__content__chapter__content--hover-up::before,
+.agent-layout__content--outline-scrolling .hyc-component-outline__content__chapter__content--hover-down::before {
+  display: none !important;
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.hyc-component-reasoner__searc-list .hyc-card-box-search-ref {
+  margin-bottom: 12px;
+}
+.hyc-component-reasoner__think {
+  border-radius: var(--yb-radius-default);
+  margin-bottom: 12px;
+}
+.hyc-component-reasoner__think-header {
+  display: flex;
+  align-items: center;
+  color: var(--yb-component-ref-list-item-color);
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.75;
+}
+.hyc-component-reasoner__think-header__content {
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: 4px;
+}
+@media (any-hover: hover) {
+  .hyc-component-reasoner__think-header__content:hover {
+    color: var(--yb-component-ref-list-item-hover-color);
+  }
+}
+.hyc-component-reasoner__think-header__toggle {
+  color: var(--yb-component-ref-list-header-arrow-color);
+  display: flex;
+  transform: rotate(180deg);
+}
+.hyc-component-reasoner__think-header__toggle > svg {
+  width: 16px;
+}
+.hyc-component-reasoner__think-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 0 0 16px;
+  border-left: 2px solid var(--widget-line);
+}
+.hyc-component-reasoner__think-content .hyc-common-markdown-style {
+  --yb-md-text-color: #666666;
+  --yb-md-h-color: #666666;
+  --yb-md-font-body-large: 14px / 1.6 var(--yb-font-family);
+  --yb-md-font-title-1: 700 20px / 1.6 var(--yb-font-family);
+  --yb-md-font-title-2: 600 18px / 1.6 var(--yb-font-family);
+  --yb-md-font-title-3: 600 16px / 1.6 var(--yb-font-family);
+  --yb-md-content-gap-main: 0 0 16px 0;
+}
+.hyc-component-reasoner__think--expand {
+  margin-bottom: 20px;
+}
+.hyc-component-reasoner__think--expand .hyc-component-reasoner__think-header__toggle {
+  transform: rotate(0deg);
+}
+.hyc-component-reasoner__think--expand .hyc-component-reasoner__think-content {
+  max-height: none;
+  margin-top: 8px;
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.hyc-component-deepsearch-cot__think {
+  font: var(--yb-font-body-medium);
+  color: var(--yb-color-text-secondary-1);
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+.hyc-component-deepsearch-cot__think__icon {
+  cursor: pointer;
+  padding: 0 2px;
+  display: flex;
+  align-items: center;
+}
+.hyc-component-deepsearch-cot__think__icon svg {
+  width: 16px;
+  height: 16px;
+}
+.hyc-component-deepsearch-cot__think__icon__fold {
+  transform: rotate(-180deg);
+}
+.hyc-component-deepsearch-cot__think--expand .hyc-component-deepsearch-cot__think__content {
+  max-height: none;
+  margin-top: 8px;
+  overflow: visible;
+}
+.hyc-component-deepsearch-cot__think--expand .hyc-component-deepsearch-cot__think__header__toggle {
+  transform: rotate(0);
+}
+.hyc-component-deepsearch-cot__think__header {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  max-width: 100%;
+}
+.hyc-component-deepsearch-cot__think__header__title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: var(--text-text_secondary);
+}
+.hyc-component-deepsearch-cot__think__header__title:hover {
+  color: var(--text-text_primary);
+}
+.hyc-component-deepsearch-cot__think__header__toggle {
+  display: flex;
+  align-items: center;
+  transform: rotate(180deg);
+}
+.hyc-component-deepsearch-cot__think__header__toggle .hyc-component-deepsearch-cot__think__arrow__icon svg {
+  margin: 0;
+}
+.hyc-component-deepsearch-cot__think__content {
+  max-height: 0;
+  overflow: hidden;
+  border-left: 2px solid var(--widget-line);
+  padding-left: 12px;
+}
+.hyc-component-deepsearch-cot__think__content .hyc-common-markdown-style {
+  --yb-md-text-color: var(--text-text_secondary);
+  --yb-md-font-body-large: var(--yb-font-body-medium);
+  padding-bottom: 0;
+}
+.hyc-component-deepsearch-cot__think__content__item {
+  margin-bottom: 12px;
+}
+.hyc-component-deepsearch-cot__think__content__item--last {
+  margin-bottom: 0;
+}
+.hyc-component-deepsearch-cot__think__content__item__title {
+  font-size: 14px;
+  font-style: normal;
+  color: var(--text-text_secondary);
+  margin-bottom: 6px;
+  display: flex;
+  align-items: flex-start;
+}
+.hyc-component-deepsearch-cot__think__content__item__title .hyc-common-markdown-style p {
+  font-weight: bold !important;
+}
+.hyc-component-deepsearch-cot__think__content__item__title__words span {
+  font-weight: bold !important;
+  color: var(--text-text_secondary);
+  font-size: 14px;
+}
+.hyc-component-deepsearch-cot__think__content__item__title__svg {
+  width: 18px;
+  margin-left: 4px;
+  display: inline-block;
+  vertical-align: sub;
+}
+.hyc-component-deepsearch-cot__think__content__item__title__icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  margin-top: 3px;
+}
+.hyc-component-deepsearch-cot__think__content__item__title__icon svg path {
+  fill: var(--text-text_secondary);
+}
+.hyc-component-deepsearch-cot__think__content__item__title__click .hyc-component-deepsearch-cot__think__content__item__title__words {
+  cursor: pointer;
+}
+.hyc-component-deepsearch-cot__think__content__item__title__loading {
+  color: var(--text-text_primary);
+  display: flex;
+  align-items: flex-start;
+}
+.hyc-component-deepsearch-cot__think__content__item__title__loading .hyc-content-loading {
+  height: 22px;
+}
+.hyc-component-deepsearch-cot__think__content__item__title__loading .hyc-content-loading__dots__container {
+  width: 18px;
+  flex: 0 0 18px;
+  margin-left: 4px;
+  height: 22px;
+  margin-top: 6px;
+}
+.hyc-component-deepsearch-cot__think__content__item__msg {
+  margin-bottom: 8px;
+}
+.hyc-component-deepsearch-cot__think__content__item__msg__fold {
+  display: none;
+}
+.hyc-component-deepsearch-cot__think__content__item__docs {
+  color: var(--text-text_secondary);
+}
+.hyc-component-deepsearch-cot__think__content__item__docs:last-child {
+  margin-bottom: 0;
+}
+.hyc-component-deepsearch-cot__think__content__item__docs__fold {
+  max-height: 0;
+  display: none;
+}
+.hyc-component-deepsearch-cot__think__content__item__docs__number {
+  color: var(--text-text_secondary);
+  display: flex;
+  align-items: center;
+}
+.hyc-component-deepsearch-cot__think__content__item__docs__number__words {
+  cursor: pointer;
+}
+.hyc-component-deepsearch-cot__think__content__item__docs__number__words__main {
+  color: var(--text-text_secondary);
+  font-size: 14px;
+  font-weight: bold !important;
+}
+.hyc-component-deepsearch-cot__think__content__item__docs__number__fold svg {
+  transform: rotate(-180deg);
+}
+.hyc-component-deepsearch-cot__think__content__item__doc {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  max-width: 100%;
+}
+.hyc-component-deepsearch-cot__think__content__item__doc-container {
+  margin-top: 4px;
+}
+.hyc-component-deepsearch-cot__think__content__item__doc__unlink {
+  cursor: text;
+}
+.hyc-component-deepsearch-cot__think__content__item__doc__unlink .hyc-component-deepsearch-cot__think__content__item__doc__title:hover {
+  text-decoration: unset;
+}
+.hyc-component-deepsearch-cot__think__content__item__doc__num {
+  text-align: right;
+  flex: none;
+}
+.hyc-component-deepsearch-cot__think__content__item__doc__title {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  line-height: 1;
+  min-width: 0;
+}
+.hyc-component-deepsearch-cot__think__content__item__doc__title:hover {
+  text-decoration: underline;
+}
+.hyc-component-deepsearch-cot__think__content__item__doc__title__text {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hyc-component-deepsearch-cot__think__content__item__doc__icon {
+  font-size: 0;
+  display: inline-block;
+  width: 20px;
+  height: 12px;
+  margin-top: 1px;
+}
+.hyc-component-deepsearch-cot__think__content__item__doc__icon svg path {
+  stroke: var(--text-text_tertiary);
+}
+.hyc-component-deepsearch-cot__think__content__loading__svg {
+  width: 18px;
+  display: inline-block;
+  vertical-align: sub;
+}
+.hyc-component-deepsearch-cot__think__arrow__icon svg {
+  vertical-align: sub;
+  width: 16px;
+  height: 16px;
+  margin: 0 2px;
+}
+.hyc-component-deepsearch-cot__think__arrow__icon svg path {
+  stroke: var(--text-text_tertiary);
+}
+.hyc-component-deepsearch-cot .hyc-card-box-search-ref {
+  margin-bottom: 20px;
+}
+.hyc-component-deepsearch-cot .hyc-card-box-search-ref__content__header-wrapper .hyc-card-box-search-ref__content__header {
+  margin-right: 2px;
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.hyc-component-task-card {
+  position: relative;
+  width: 268px;
+  padding: 10px 44px 10px 16px;
+  border-radius: 8px;
+  background: var(--background-container, #ffffff);
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border: 1px solid var(--widget-line, rgba(0, 0, 0, 0.08));
+  transition: all 0.3s ease;
+}
+.hyc-component-task-card .hyc-component-task-card__card-content .hyc-component-task-card__card-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-text_primary, rgba(255, 255, 255, 0.9));
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hyc-component-task-card .hyc-component-task-card__card-content .hyc-component-task-card__card-time {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--text-text_secondary, rgba(255, 255, 255, 0.6));
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+.hyc-component-task-card .hyc-component-task-card__card-content .hyc-component-task-card__status-text {
+  font-size: 14px;
+  color: #ed7b2f;
+  margin-top: 8px;
+}
+.hyc-component-task-card .hyc-component-task-card__more-btn {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 12px;
+  top: 10px;
+}
+.hyc-component-task-card .hyc-component-task-card__more-btn .yb-icon {
+  transform: rotate(90deg);
+}
+@media (any-hover: hover) {
+  .hyc-component-task-card .hyc-component-task-card__more-btn:hover {
+    background: var(--widget-btn_hover_2, #424242);
+  }
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.hyc-component-meeting-files {
+  display: flex;
+  margin-top: 14px;
+  overflow-x: auto;
+}
+.hyc-component-meeting-files__item {
+  box-sizing: border-box;
+  padding: 10px 12px 10px 16px;
+  border: 1px solid var(--widget-line, rgba(0, 0, 0, 0.08));
+  background: var(--background-container, #ffffff);
+  border-radius: 8px;
+  width: 240px;
+  flex-shrink: 0;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+@media (any-hover: hover) {
+  .hyc-component-meeting-files__item:hover {
+    background: rgba(0, 0, 0, 0.05);
+  }
+}
+.hyc-component-meeting-files__item + .hyc-component-meeting-files__item {
+  margin-left: 16px;
+}
+.hyc-component-meeting-files__item--header .t-tag {
+  background: var(--background-list_background, #f8f8f8);
+  color: var(--text-text_secondary, rgba(0, 0, 0, 0.6));
+  font-size: 10px;
+}
+.hyc-component-meeting-files__item--body {
+  margin-top: 8px;
+}
+.hyc-component-meeting-files__item .hyc-component-meeting-files__item--title {
+  color: var(--text-text_primary, rgba(0, 0, 0, 0.9));
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.hyc-component-meeting-files__item--desc {
+  color: var(--text-text_tertiary, rgba(0, 0, 0, 0.4));
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.hyc-component-meeting-files__item--tag {
+  display: flex;
+  align-items: center;
+}
+.hyc-component-meeting-files__item--tag .yb-icon {
+  margin-right: 4px;
+}
+.hyc-component-meeting-files__item--icon {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  line-height: 16px;
+  color: var(--td-text-color-disabled, rgba(0, 0, 0, 0.26));
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.hyc-component-meeting-bot__guide {
+  color: var(--text-text_tertiary, rgba(255, 255, 255, 0.4));
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.hyc-component-meeting-bot__guide .yb-icon {
+  margin-right: 4px;
+}
+.hyc-component-meeting-bot--select-mode .hyc-component-task-card,
+.hyc-component-meeting-bot--select-mode .hyc-component-meeting-files {
+  display: none;
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+
+/*# sourceMappingURL=sourcemap/3581.71682454219a9ff569a2.css.map*/
