@@ -1,3 +1,0 @@
-/Users/dengjianyuan/work/projects/study/react/yuanbao-note-viewer/package.json
-/Users/dengjianyuan/work/projects/study/react/yuanbao-note-viewer/src/main.jsx
-/Users/dengjianyuan/work/projects/study/react/yuanbao-note-viewer/src/index.css

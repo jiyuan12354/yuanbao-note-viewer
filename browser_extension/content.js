@@ -1,41 +1,22 @@
 (function () {
-  // Check for target elements
-  const checkElement = setInterval(() => {
+  function addSaveButtons() {
     const targetDivs = document.querySelectorAll('div.hyc-component-reasoner__text');
-    if (targetDivs.length > 0) {
-      clearInterval(checkElement);
-      targetDivs.forEach(div => {
-        // Avoid adding duplicate buttons
-        if (!div.parentNode.querySelector('.save-to-note-btn')) {
-          const button = document.createElement('button');
-          button.className = 'save-to-note-btn';
-          button.textContent = 'Save to Note';
-          button.onclick = () => saveAsHTML(div);
-          div.insertAdjacentElement('afterend', button); // 添加为兄弟节点
-        }
-      });
-    }
-  }, 500);
+    targetDivs.forEach(div => {
+      if (!div.parentNode.querySelector('.save-to-note-btn')) {
+        const button = document.createElement('button');
+        button.className = 'save-to-note-btn';
+        button.textContent = 'Save to Note';
+        button.onclick = () => saveAsHTML(div);
+        div.insertAdjacentElement('afterend', button);
+      }
+    });
+  }
 
   function saveAsHTML(div) {
-    // Get content and styles
     const content = div.innerHTML;
-
-    // Generate timestamp-based filename
-    const timestamp = new Date()
-      .toISOString()
-      .replace(/[-:T.]/g, '')
-      .slice(0, 14); // YYYYMMDDHHMMSS
+    const timestamp = new Date().toISOString().replace(/[-:T.]/g, '').slice(0, 14);
     const filename = `note-${timestamp}.html`;
-
-    // Create HTML fragment
-    const htmlContent = `
-      <div class="hyc-component-reasoner__text">
-        ${content}
-      </div>
-    `;
-
-    // Download HTML file
+    const htmlContent = `<div class="hyc-component-reasoner__text">${content}</div>`;
     const blob = new Blob([htmlContent], { type: 'text/html' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -46,4 +27,11 @@
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
   }
+
+  // 初始插入
+  addSaveButtons();
+
+  // 监听 DOM 变化
+  const observer = new MutationObserver(addSaveButtons);
+  observer.observe(document.body, { childList: true, subtree: true });
 })();
