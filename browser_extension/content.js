@@ -1,6 +1,6 @@
 (function () {
   function addSaveButtons() {
-    const targetDivs = document.querySelectorAll('div.hyc-component-reasoner__text');
+    const targetDivs = document.querySelectorAll('div.hyc-component-reasoner__text, div.agent-chat__bubble--ai div.hyc-component-text');
     targetDivs.forEach(div => {
       if (!div.parentNode.querySelector('.save-to-note-btn')) {
         const button = document.createElement('button');
@@ -16,7 +16,8 @@
     const content = div.innerHTML;
     const timestamp = new Date().toISOString().replace(/[-:T.]/g, '').slice(0, 14);
     const filename = `note-${timestamp}.html`;
-    const htmlContent = `<div class="hyc-component-reasoner__text">${content}</div>`;
+    const className = div.className;
+    const htmlContent = `<div class="${className}">${content}</div>`;
     const blob = new Blob([htmlContent], { type: 'text/html' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');

@@ -147,5 +147,11 @@ function parseTimestamp(filename) {
     match[1].slice(10, 12),
     match[1].slice(12, 14),
   ]
-  return new Date(`${year}-${month}-${day}T${hour}:${minute}:${second}`).getTime()
+  // 文件名中的时间是UTC时间，需要转换为Asia/Shanghai时区显示
+  const dateStr = `${year}-${month}-${day}T${hour}:${minute}:${second}Z`
+  const utcDate = new Date(dateStr)
+  
+  // 转换为Asia/Shanghai时区
+  const shanghaiDate = new Date(utcDate.toLocaleString("en-US", {timeZone: "Asia/Shanghai"}))
+  return shanghaiDate.getTime()
 }
