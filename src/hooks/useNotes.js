@@ -16,14 +16,29 @@ export function useNotes() {
             const response = await fetch(`/notes/${file}`)
             const content = await response.text()
             const cleanContent = sanitizeHtml(content, {
-              allowedTags: sanitizeHtml.defaults.allowedTags.concat(['h3', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'hr', 'ol', 'ul', 'li', 'blockquote']),
+              allowedTags: sanitizeHtml.defaults.allowedTags.concat([
+                'h3', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'hr', 'ol', 'ul', 'li', 'blockquote',
+                'pre', 'code', 'span', 'svg', 'g', 'path', 'rect', 'circle', 'ellipse', 'polygon',
+                'foreignObject', 'marker', 'defs', 'style'
+              ]),
               allowedAttributes: {
-                '*': ['class'],
-                div: ['style'],
+                '*': ['class', 'id', 'style'],
+                div: ['style', 'data-*'],
+                pre: ['class'],
+                code: ['class'],
+                span: ['class'],
+                svg: ['width', 'height', 'viewBox', 'xmlns', 'role', 'aria-roledescription', 'xmlns:xlink', 'xmlns:ev'],
+                g: ['id', 'class', 'transform'],
+                path: ['d', 'class', 'style', 'fill', 'stroke', 'stroke-width', 'marker-end'],
+                rect: ['x', 'y', 'width', 'height', 'class', 'style', 'fill', 'stroke', 'rx', 'ry'],
+                circle: ['cx', 'cy', 'r', 'class', 'style', 'fill', 'stroke'],
+                foreignObject: ['width', 'height'],
+                marker: ['id', 'class', 'viewBox', 'refX', 'refY', 'markerUnits', 'markerWidth', 'markerHeight', 'orient'],
                 table: ['style'],
                 th: ['style'],
                 td: ['style'],
               },
+              allowedSchemes: ['http', 'https', 'data'],
               allowedStyles: {
                 '*': {
                   'font-family': [/^.*$/],
@@ -38,10 +53,24 @@ export function useNotes() {
                   'background-color': [/^.*$/],
                   'border': [/^.*$/],
                   'width': [/^.*$/],
+                  'height': [/^.*$/],
+                  'max-width': [/^.*$/],
+                  'max-height': [/^.*$/],
                   'white-space': [/^.*$/],
                   'word-break': [/^.*$/],
                   'display': [/^.*$/],
                   'box-sizing': [/^.*$/],
+                  'position': [/^.*$/],
+                  'top': [/^.*$/],
+                  'left': [/^.*$/],
+                  'right': [/^.*$/],
+                  'bottom': [/^.*$/],
+                  'transform': [/^.*$/],
+                  'stroke': [/^.*$/],
+                  'stroke-width': [/^.*$/],
+                  'stroke-dasharray': [/^.*$/],
+                  'fill': [/^.*$/],
+                  'overflow': [/^.*$/],
                 },
               },
               transformTags: {

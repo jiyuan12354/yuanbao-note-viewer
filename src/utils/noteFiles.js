@@ -61,5 +61,7 @@ export const noteFiles = [
   "note-20250721074722.html",
   "note-20250721091214.html",
   "note-20250721100913.html",
-  "note-20250721101231.html"
+  "note-20250721101231.html",
+  "note-20250721102718.html",
+  "note-20250721104603.html"
 ];
