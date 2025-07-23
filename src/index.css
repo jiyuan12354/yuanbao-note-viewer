@@ -7,6 +7,41 @@
   display: none;
 }
 
+/* Enhanced list styles to ensure proper numbering */
+.hyc-common-markdown-style ol {
+  list-style: decimal !important;
+  padding-left: 20px !important;
+  margin: 16px 0 !important;
+}
+
+.hyc-common-markdown-style ol li {
+  list-style: decimal !important;
+  margin-left: 0 !important;
+  padding-left: 8px !important;
+  display: list-item !important;
+}
+
+.hyc-common-markdown-style ul {
+  list-style: disc !important;
+  padding-left: 20px !important;
+  margin: 16px 0 !important;
+}
+
+.hyc-common-markdown-style ul li {
+  list-style: disc !important;
+  margin-left: 0 !important;
+  padding-left: 8px !important;
+  display: list-item !important;
+}
+
+.hyc-common-markdown-style ul ul {
+  list-style: circle !important;
+}
+
+.hyc-common-markdown-style ul ul ul {
+  list-style: square !important;
+}
+
 /* Mermaid diagram styles */
 .mermaid-diagram {
   background: white;

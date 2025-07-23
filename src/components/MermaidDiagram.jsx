@@ -102,7 +102,7 @@ const MermaidDiagram = React.memo(({ chart, id }) => {
       } catch (error) {
         console.error('Mermaid rendering error:', error);
         console.error('Original chart content:', chart);
-        console.error('Processed chart content:', processedChart);
+        console.error('Processed chart content:', processedChart || chart);
         
         // 渲染失败，移除标记
         container.dataset.rendering = 'false';
