@@ -4,6 +4,25 @@ import mermaid from 'mermaid';
 const MermaidDiagram = React.memo(({ chart, id }) => {
   const mermaidRef = useRef(null);
 
+  // 转义特殊字符的函数
+  const escapeSpecialChars = (text) => {
+    if (!text) return text;
+    
+    return text
+      // 转义双引号
+      .replace(/"/g, '&quot;')
+      // 转义单引号（在某些上下文中可能有问题）
+      .replace(/'/g, '&#39;')
+      // 转义反斜杠
+      .replace(/\\/g, '\\\\')
+      // 转义其他可能影响 Mermaid 语法的字符
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      // 转义换行符（在节点标签中可能有问题）
+      .replace(/\n/g, '\\n')
+      .replace(/\r/g, '\\r');
+  };
+
   useEffect(() => {
     // 初始化 Mermaid
     mermaid.initialize({
@@ -41,6 +60,31 @@ const MermaidDiagram = React.memo(({ chart, id }) => {
         
         // 预处理图表内容，确保语法正确
         let processedChart = chart.trim();
+        
+        // 对图表内容进行特殊字符转义处理
+        // 使用正则表达式匹配节点标签并转义其中的特殊字符
+        processedChart = processedChart.replace(
+          /(\[)([^\]]*?)(\])/g, 
+          (match, leftBracket, content, rightBracket) => {
+            return leftBracket + escapeSpecialChars(content) + rightBracket;
+          }
+        );
+        
+        // 处理圆形节点 (内容)
+        processedChart = processedChart.replace(
+          /(\()([^)]*?)(\))/g,
+          (match, leftParen, content, rightParen) => {
+            return leftParen + escapeSpecialChars(content) + rightParen;
+          }
+        );
+        
+        // 处理连接线上的标签 |标签|
+        processedChart = processedChart.replace(
+          /(\|)([^|]*?)(\|)/g,
+          (match, leftPipe, content, rightPipe) => {
+            return leftPipe + escapeSpecialChars(content) + rightPipe;
+          }
+        );
         
         // 如果是 flowchart/graph 类型且是单行格式，需要添加适当的换行
         if ((processedChart.startsWith('graph ') || processedChart.startsWith('flowchart ')) && !processedChart.includes('\n')) {
@@ -118,14 +162,14 @@ const MermaidDiagram = React.memo(({ chart, id }) => {
             font-family: monospace;
           ">
             <strong>Diagram Error:</strong><br/>
-            ${error.message}
+            ${error.message.replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')}
             <details style="margin-top: 8px;">
               <summary>Show original diagram code</summary>
-              <pre style="margin-top: 8px; white-space: pre-wrap;">${chart}</pre>
+              <pre style="margin-top: 8px; white-space: pre-wrap;">${chart.replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')}</pre>
             </details>
             <details style="margin-top: 8px;">
               <summary>Show processed diagram code</summary>
-              <pre style="margin-top: 8px; white-space: pre-wrap;">${processedChart || chart}</pre>
+              <pre style="margin-top: 8px; white-space: pre-wrap;">${(processedChart || chart).replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')}</pre>
             </details>
           </div>
         `;
