@@ -1,34 +1,14 @@
-// 口诀提取工具函数
-export function extractMnemonic(htmlContent) {
-  if (!htmlContent) return null;
-  
-  // 步骤1: 先定位包含关键词的触发位置
-  const triggerPosition = findTriggerPosition(htmlContent);
-  if (triggerPosition === -1) return null;
-  
-  // 步骤2: 从触发位置切分，把后半部分当作纯文本处理
-  const afterTrigger = htmlContent.substring(triggerPosition);
-  
-  // 步骤3: 在纯文本中找第一个双引号包围的内容
-  const quotedContent = findFirstQuotedContentInText(afterTrigger);
-  if (!quotedContent) return null;
-  
-  // 步骤4: 清理HTML标签，返回纯文本口诀
-  return cleanHtmlTags(quotedContent);
-}
+const fs = require('fs');
+const path = require('path');
 
 // 查找触发词位置 - 使用优先级策略
 function findTriggerPosition(htmlContent) {
   // 定义触发词的优先级（数字越小优先级越高）
   const triggerPatterns = [
-    { pattern: /<h[3-4][^>]*>[^<]*?口诀[^<]*?<\/h[3-4]>/gi, priority: 1, name: "h3/h4口诀" },
-    { pattern: /<strong[^>]*>[^<]*?口诀[^<]*?<\/strong>/gi, priority: 2, name: "strong口诀" },
-    { pattern: /<h[3-4][^>]*>[^<]*?记忆技巧[^<]*?<\/h[3-4]>/gi, priority: 3, name: "h3/h4记忆技巧" },
-    { pattern: /<strong[^>]*>[^<]*?记忆技巧[^<]*?<\/strong>/gi, priority: 4, name: "strong记忆技巧" },
-    { pattern: /<h[3-4][^>]*>[^<]*?记忆核心要义[^<]*?<\/h[3-4]>/gi, priority: 5, name: "h3/h4记忆核心要义" },
-    { pattern: /<strong[^>]*>[^<]*?记忆核心要义[^<]*?<\/strong>/gi, priority: 6, name: "strong记忆核心要义" },
-    { pattern: /<h[3-4][^>]*>[^<]*?核心要义[^<]*?<\/h[3-4]>/gi, priority: 7, name: "h3/h4核心要义" },
-    { pattern: /<strong[^>]*>[^<]*?核心要义[^<]*?<\/strong>/gi, priority: 8, name: "strong核心要义" }
+    { pattern: /<(h[3-4]|strong)[^>]*>.*?(?:口诀).*?<\/\1>/gis, priority: 1, name: "口诀" },
+    { pattern: /<(h[3-4]|strong)[^>]*>.*?(?:记忆技巧).*?<\/\1>/gis, priority: 2, name: "记忆技巧" },
+    { pattern: /<(h[3-4]|strong)[^>]*>.*?(?:​记忆核心要义|记忆核心要义).*?<\/\1>/gis, priority: 3, name: "记忆核心要义" },
+    { pattern: /<(h[3-4]|strong)[^>]*>.*?(?:核心要义).*?<\/\1>/gis, priority: 4, name: "核心要义" }
   ];
   
   let bestPosition = -1;
@@ -45,7 +25,7 @@ function findTriggerPosition(htmlContent) {
       // 检查后续内容是否包含有效的引号内容
       const hasValidQuote = checkForValidQuote(remainingContent);
       
-      console.log(`找到 ${name} 触发词，位置: ${position}, 内容: ${match[0]}, 有效引号: ${hasValidQuote}`);
+      console.log(`找到 ${name} 触发词，位置: ${position}, 有效引号: ${hasValidQuote}`);
       
       if (hasValidQuote && priority < bestPriority) {
         bestPosition = position;
@@ -70,8 +50,11 @@ function checkForValidQuote(text) {
   const quotedContent = findFirstQuotedContentInText(text);
   if (!quotedContent) return false;
   
+  console.log('检查引号内容:', quotedContent);
+  
   // 先清理HTML标签再进行验证
   const cleanedContent = cleanHtmlTags(quotedContent);
+  console.log('清理后内容:', cleanedContent);
   
   // 过滤掉CSS类名、HTML属性等明显不是口诀的内容
   const invalidPatterns = [
@@ -84,38 +67,36 @@ function checkForValidQuote(text) {
   
   for (const pattern of invalidPatterns) {
     if (pattern.test(cleanedContent)) {
+      console.log('匹配到无效模式:', pattern);
       return false;
     }
   }
   
   // 检查是否包含中文字符（口诀通常包含中文）
   const hasChinese = /[\u4e00-\u9fa5]/.test(cleanedContent);
+  console.log('包含中文:', hasChinese, '长度:', cleanedContent.length);
   
   // 口诀应该至少4个字符且包含中文，且不能太长（避免整段文字）
-  return hasChinese && cleanedContent.length >= 4 && cleanedContent.length < 200;
+  const isValid = hasChinese && cleanedContent.length >= 4 && cleanedContent.length < 200;
+  console.log('验证结果:', isValid);
+  
+  return isValid;
 }
 
-// 在纯文本中查找第一个被双引号包围的内容
 function findFirstQuotedContentInText(text) {
-  // 不使用HTML解析，直接当作纯文本处理
-  // 查找距离最近的引号对，不管类型
-  
   let nearestQuote = null;
   let nearestDistance = Infinity;
   
-  // 定义所有引号类型
   const quoteTypes = [
-    { start: 34, end: 34 },     // 标准英文双引号 "内容"
-    { start: 8220, end: 8221 }, // 智能引号（左右双引号）"内容"
-    { start: 12300, end: 12301 }, // 中文双引号 「内容」
-    { start: 65294, end: 65294 }, // 全角双引号
+    { name: '标准双引号', start: 34, end: 34 },
+    { name: '智能引号', start: 8220, end: 8221 },
+    { name: '中文双引号', start: 12300, end: 12301 },
+    { name: '全角双引号', start: 65294, end: 65294 },
   ];
   
-  // 对每种引号类型，找到第一个完整的引号对
   for (const quoteType of quoteTypes) {
     let startIndex = -1;
     
-    // 查找开始引号
     for (let i = 0; i < text.length; i++) {
       if (text.charCodeAt(i) === quoteType.start) {
         startIndex = i;
@@ -123,14 +104,14 @@ function findFirstQuotedContentInText(text) {
       }
     }
     
-    // 如果找到开始引号，查找结束引号
     if (startIndex !== -1) {
       for (let i = startIndex + 1; i < text.length; i++) {
         if (text.charCodeAt(i) === quoteType.end) {
-          // 找到完整的引号对，检查是否比当前最近的更近
+          const content = text.substring(startIndex + 1, i);
+          
           if (startIndex < nearestDistance) {
             nearestDistance = startIndex;
-            nearestQuote = text.substring(startIndex + 1, i);
+            nearestQuote = content;
           }
           break;
         }
@@ -141,23 +122,58 @@ function findFirstQuotedContentInText(text) {
   return nearestQuote;
 }
 
-// 清理HTML标签
 function cleanHtmlTags(content) {
   if (!content) return '';
   
-  // 移除所有HTML标签
   let cleanText = content.replace(/<[^>]*>/g, '');
   
-  // 清理特殊字符和多余空白
   cleanText = cleanText
-    .replace(/&nbsp;/g, ' ')        // 替换&nbsp;
-    .replace(/&amp;/g, '&')         // 替换&amp;
-    .replace(/&lt;/g, '<')          // 替换&lt;
-    .replace(/&gt;/g, '>')          // 替换&gt;
-    .replace(/&quot;/g, '"')        // 替换&quot;
-    .replace(/[\u200B\uFEFF]/g, '') // 移除零宽字符
-    .replace(/\s+/g, ' ')           // 合并多个空白字符
-    .trim();                        // 去除首尾空白
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/[\u200B\uFEFF]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
   
   return cleanText;
+}
+
+function extractMnemonic(htmlContent) {
+  if (!htmlContent) return null;
+
+  console.log('开始提取口诀...');
+  
+  const triggerPosition = findTriggerPosition(htmlContent);
+  if (triggerPosition === -1) return null;
+
+  console.log('最终触发位置:', triggerPosition);
+  
+  const remainingContent = htmlContent.substring(triggerPosition);
+  console.log('触发位置后内容长度:', remainingContent.length);
+  
+  const quotedContent = findFirstQuotedContentInText(remainingContent);
+  
+  if (!quotedContent) return null;
+
+  const cleanContent = cleanHtmlTags(quotedContent);
+  console.log('最终提取内容:', cleanContent);
+  
+  return cleanContent || null;
+}
+
+// 测试指定文件
+const testFile = process.argv[2] || '/Users/dengjianyuan/work/projects/study/react/yuanbao-note-viewer/public/notes/note-20250723075406.html';
+
+try {
+  console.log('测试文件:', testFile);
+  const content = fs.readFileSync(testFile, 'utf8');
+  const result = extractMnemonic(content);
+  
+  console.log('\n=== 最终结果 ===');
+  console.log('提取结果:', result);
+  
+} catch (error) {
+  console.error('测试失败:', error.message);
 }
