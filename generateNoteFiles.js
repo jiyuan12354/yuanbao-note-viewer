@@ -29,16 +29,40 @@ async function generateNoteFiles() {
     const files = await fs.readdir(notesDir);
     const noteFiles = files.filter((file) => /^note-\d{14}\.html$/.test(file));
 
-    // Step 3: Generate JavaScript content
-    const content = `export const noteFiles = ${JSON.stringify(
-      noteFiles,
-      null,
-      2
-    )};\n`;
+    // Step 3: Read and process note files
+    const processedNotes = await Promise.all(
+      noteFiles.map(async (file) => {
+        const filePath = path.join(notesDir, file);
+        const content = await fs.readFile(filePath, 'utf-8');
+        // Extract title from HTML content (assuming it's in a specific format)
+        const titleMatch = content.match(/<title>(.*?)<\/title>/);
+        const title = titleMatch ? titleMatch[1] : file;
+        // Extract date from filename
+        const dateMatch = file.match(/note-(\d{14})/);
+        const date = dateMatch ? dateMatch[1] : '';
+        return {
+          file,
+          title,
+          date,
+          path: `/notes/${file}`
+        };
+      })
+    );
 
-    // Step 4: Write to src/utils/noteFiles.js
+    // Sort notes by date, newest first
+    processedNotes.sort((a, b) => b.date.localeCompare(a.date));
+
+    // Step 4: Generate JavaScript content
+    const content = `export default ${JSON.stringify(processedNotes, null, 2)};\n`;
+
+    // Step 5: Write to src/utils/noteFiles.js
     await fs.writeFile(outputFile, content);
     console.log(`Generated ${outputFile} with ${noteFiles.length} notes`);
+
+    // Step 6: Write notes index for build
+    const notesIndexPath = path.join(notesDir, 'index.json');
+    await fs.writeFile(notesIndexPath, JSON.stringify(processedNotes, null, 2));
+    console.log(`Generated ${notesIndexPath}`);
   } catch (error) {
     console.error("Error generating note files:", error);
     process.exit(1);

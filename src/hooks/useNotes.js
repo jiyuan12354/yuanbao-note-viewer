@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { extractTitle } from '../utils/noteUtils.js'
-import { noteFiles } from '../utils/noteFiles.js'
+import noteFiles from '../utils/noteFiles.js'
 import sanitizeHtml from 'sanitize-html'
 
 export function useNotes() {
@@ -12,8 +12,9 @@ export function useNotes() {
     const loadNotes = async () => {
       try {
         const loadedNotes = await Promise.all(
-          noteFiles.map(async (file) => {
-            const response = await fetch(`/notes/${file}`)
+          noteFiles.map(async (note) => {
+            const basePath = import.meta.env.BASE_URL || '/'
+            const response = await fetch(`${basePath}${note.path.replace(/^\//, '')}`)
             const content = await response.text()
             const cleanContent = sanitizeHtml(content, {
               allowedTags: sanitizeHtml.defaults.allowedTags.concat([
@@ -78,9 +79,9 @@ export function useNotes() {
               },
             })
             const title = extractTitle(cleanContent)
-            const timestamp = parseTimestamp(file)
+            const timestamp = parseTimestamp(note.file)
             return {
-              id: file,
+              id: note.file,
               title,
               content: cleanContent,
               createdAt: timestamp,

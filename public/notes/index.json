@@ -1,4 +1,4 @@
-export default [
+[
   {
     "file": "note-20250802131841.html",
     "title": "note-20250802131841.html",
@@ -851,4 +851,4 @@ export default [
     "date": "20250514110146",
     "path": "/notes/note-20250514110146.html"
   }
-];
+]

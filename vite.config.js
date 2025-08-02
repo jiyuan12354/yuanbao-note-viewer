@@ -4,6 +4,20 @@ import { VitePWA } from 'vite-plugin-pwa';
 
 export default {
   base: '/yuanbao-note-viewer/', // GitHub Pages 的基础路径
+  build: {
+    rollupOptions: {
+      input: {
+        main: 'index.html'
+      },
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            return 'vendor';
+          }
+        }
+      }
+    }
+  },
   plugins: [
     react(),
     GenerateNotesPlugin(),
