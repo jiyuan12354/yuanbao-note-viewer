@@ -1,0 +1,994 @@
+.new-chat-and-temp-mode-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  color: var(--text-text_primary);
+  cursor: pointer;
+}
+@media (hover: hover) and (pointer: fine) {
+  .new-chat-and-temp-mode-trigger:hover {
+    background: var(--widget-btn_hover_1);
+  }
+}
+.new-chat-and-temp-mode-trigger:active {
+  background: var(--widget-btn_hover_1);
+}
+.new-chat-and-temp-mode-trigger.active {
+  background: var(--widget-btn_hover_1);
+}
+.new-chat-and-temp-mode-trigger .iconfont-yb {
+  font-size: 24px;
+  line-height: 0;
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.temp-mode-guide {
+  padding: 12px 8px;
+  width: 228px;
+}
+.temp-mode-guide-popup[data-popper-placement="right-start"] .t-popup__arrow {
+  top: 14px;
+}
+.temp-mode-guide-popup[data-popper-placement="bottom-end"] .t-popup__arrow {
+  left: calc(100% - 11px * 2);
+}
+.temp-mode-guide__header {
+  font: var(--yb-font-title-4);
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.temp-mode-guide__info {
+  font: var(--yb-font-body-medium);
+  color: var(--text-text_tertiary);
+  margin-bottom: 8px;
+  word-break: break-word;
+}
+.temp-mode-guide .t-button {
+  padding: 0;
+  height: 30px;
+  font: var(--yb-font-body-medium);
+  font-weight: 600;
+  border-radius: var(--yb-radius-default);
+  color: var(--text-text_tertiary) !important;
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+.layout-mobile .agent-dialogue__content--common__header {
+  box-sizing: border-box;
+  padding: 0 14px;
+  height: 56px;
+}
+.layout-mobile .agent-dialogue__content--common__header__mobile {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.layout-mobile .agent-dialogue__content--common__header__mobile .header__name {
+  margin-left: 4px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.layout-mobile .agent-dialogue__content--common__header__mobile .header__name .t-button {
+  padding: 0;
+}
+.layout-mobile .agent-dialogue__content--common__header__mobile .header__name .t-button__text {
+  display: block;
+  max-width: calc(100vw - 236px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.layout-mobile .agent-dialogue__content--common__input-box {
+  display: flex;
+  flex-direction: column;
+}
+.layout-mobile .agent-dialogue__content--common__input-box .agent-dialogue__tool-input {
+  height: 0;
+  order: -1;
+  align-self: flex-end;
+  margin-bottom: 8px;
+  color: #20C57D;
+  bottom: unset;
+  right: unset;
+}
+.layout-mobile .agent-dialogue__content--common__input-box .agent-dialogue__tool__item {
+  width: auto;
+  height: auto;
+  background: #fff;
+  border-radius: 30px;
+  position: absolute;
+  transform: translate(-100%, -100%);
+  z-index: 10;
+  top: -8px;
+}
+.layout-mobile .agent-dialogue__content--common__input-box .agent-dialogue__tool__item > .iconfont {
+  height: 24px;
+  width: 24px;
+  padding: 12px;
+  border-radius: 50%;
+  box-shadow: 0px 4.36px 43.64px 0px rgba(0, 0, 0, 0.2);
+}
+.layout-mobile .agent-dialogue__content--common__input-box .truing-selected-options {
+  flex-direction: row;
+  gap: 4px;
+}
+.layout-mobile .agent-dialogue__content--common__input-box .truing-selected-options > img {
+  width: 44px;
+  height: 44px;
+  border: none;
+  box-sizing: content-box;
+}
+.layout-mobile .agent-dialogue__content--common__input-box .truing-selected-options > .truing-selected-options__text {
+  width: auto;
+  margin-right: 12px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.layout-mobile .agent-dialogue__tool {
+  top: 30px;
+  transform: translateY(-50%);
+  right: 16px;
+}
+.body-mobile .agent-dialogue__content--common {
+  overflow: hidden;
+}
+.body-mobile .agent-dialogue__content--common__input__content {
+  padding: 0 12px;
+}
+.body-mobile .agent-dialogue__content--common__input--text2Image {
+  background-color: var(--background-container);
+  border: 0;
+  border-bottom: none;
+  border-radius: 12px 12px 0 0;
+}
+.body-mobile .agent-dialogue__content--common__input--with-files {
+  padding-top: 68px;
+}
+.body-mobile .agent-dialogue__content--common__input--text2image .agent-dialogue__content--common__input-box {
+  width: var(--hunyuan-chat-list-width);
+}
+.body-mobile .agent-dialogue__content--common__input-box {
+  padding-top: 8px;
+}
+.body-mobile .truing-params-settings .t-drawer__mask {
+  background: rgba(0, 0, 0, 0.5);
+}
+.body-mobile .truing-params-settings .agent-dialogue__tool__sider__header {
+  height: 52px;
+}
+.body-mobile .truing-params-settings .agent-dialogue__tool__sider__title {
+  text-align: center;
+  font-size: 16px;
+}
+.body-mobile .truing-params-settings .agent-dialogue__tool__sider__body {
+  display: flex;
+  flex-direction: column;
+}
+.body-mobile .truing-params-settings .truing-wrapper {
+  min-height: 0;
+  flex: 1;
+}
+.body-mobile .truing-params-settings .t-drawer__content-wrapper {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  background-image: none;
+}
+.body-mobile .truing-params-settings .truing-content {
+  width: 100%;
+  height: 100%;
+  overflow-y: overlay;
+}
+.body-mobile .truing-params-settings .truing-content::-webkit-scrollbar {
+  display: none;
+}
+.body-mobile .truing-params-settings .turing-section-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.body-mobile .truing-params-settings .turing-section-content {
+  width: auto;
+  overflow-x: overlay;
+  gap: 8px;
+  grid-auto-flow: column;
+  grid-template-columns: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 76px);
+  justify-content: start;
+}
+.body-mobile .truing-params-settings .turing-section-content::-webkit-scrollbar {
+  display: none;
+}
+.body-mobile .truing-params-settings .turing-option {
+  height: 76px;
+  width: 76px;
+}
+.body-mobile .truing-params-settings .turing-option:not(.turing-option__active) {
+  border-color: #f3f3f3;
+  background-color: #f3f3f3;
+}
+.body-mobile .truing-params-settings .turing-option-desc {
+  bottom: 1px;
+}
+.body-mobile .truing-params-settings .truing-rectangle {
+  transform: translateY(-6px);
+}
+.body-mobile .truing-params-settings .turing-option__active {
+  border-width: 2px;
+}
+.body-mobile .truing-params-settings .turing-option__active .turing-option-desc {
+  bottom: 0;
+}
+.body-mobile .truing-params-settings .turing-option__blur-cover {
+  height: 76px;
+  width: 76px;
+}
+.body-mobile .truing-params-settings .turing-option__active-checked::after {
+  content: none;
+}
+.body-mobile .truing-params-settings .turing-option__rect {
+  height: 30px;
+  line-height: 30px;
+}
+.body-mobile .truing-params-settings .turing-option-detached-text {
+  margin-bottom: 0;
+}
+.body-mobile .truing-params-settings .turing-close-btn {
+  height: 48px;
+  line-height: 48px;
+}
+.body-mobile .t2i-assets_history .t-drawer__content-wrapper {
+  background-position: top;
+  background-size: 100% auto;
+}
+.body-mobile .t2i-assets_history .agent-dialogue__tool__sider__header {
+  height: 60px;
+  padding: 0 8px;
+}
+.body-mobile .t2i-assets_history .agent-dialogue__tool__sider__title {
+  font-size: 16px;
+  font-weight: 500;
+}
+.body-mobile .t2i-assets_history .agent-dialogue__tool__sider__title .t2i-assets__footer-btn--edit {
+  float: right;
+  padding-right: 8px;
+  color: var(--text-text_secondary);
+  cursor: pointer;
+}
+.body-mobile .t2i-assets_history .agent-dialogue__tool__sider__body {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.body-mobile .t2i-assets_history .agent-dialogue__tool__sider__header {
+  display: flex;
+}
+.body-mobile .t2i-assets_history .t2i-assets__container {
+  overflow: overlay;
+}
+.body-mobile .t2i-assets_history .t2i-assets__timeline {
+  text-align: center;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+.body-mobile .t2i-assets_history .t2i-assets__list {
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2px;
+  gap: 2px;
+}
+.body-mobile .t2i-assets_history .t2i-assets__item * {
+  width: 100%;
+  height: 100%;
+}
+.body-mobile .t2i-assets_history .hyc-content-img img {
+  width: 100%;
+  height: 100%;
+  min-width: unset;
+  min-height: unset;
+}
+.body-mobile .t2i-assets_history .t2i-assets__item--selected:after,
+.body-mobile .t2i-assets_history .t2i-assets__item--selectable:after {
+  top: 4px;
+  right: 4px;
+}
+.body-mobile .t2i-assets_history .t2i-assets__footer {
+  border-top: 1px solid var(--widget-line);
+  color: var(--text-text_secondary);
+}
+.body-mobile .t2i-assets_history .t2i-assets__footer .t2i-assets__footer-btn {
+  margin: 12px auto;
+}
+.body-mobile .t2i-assets_history .t2i-assets__footer .t2i-assets__footer-btn.t2i-assets__footer-btn--disabled {
+  opacity: 1;
+}
+.body-mobile .t2i-assets_history .t2i-assets__footer > .t2i-assets__footer-btn:not(:last-of-type) {
+  border-right: 1px solid var(--widget-line);
+}
+/*
+ * 搜狗定制化样式
+ */
+.agent-dialogue__content--common--sougou {
+  background-color: #F8F8F8;
+}
+.agent-dialogue__content--common--sougou .agent-chat__list__item {
+  padding: 8px 12px;
+}
+.agent-dialogue__content--common--sougou .agent-dialogue__content--common__input {
+  padding: 0 12px!important;
+}
+.agent-dialogue__content--common--sougou .agent-dialogue__content--common__input .input-guide {
+  margin-bottom: 8px;
+}
+.agent-dialogue__content--common--sougou .agent-dialogue__content--common__input .t2i-toolbar {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.agent-dialogue__content--common--sougou .agent-dialogue__content--common__input .agent-dialogue__content--common__input-box {
+  padding-top: 0px;
+}
+.agent-dialogue__content--common--sougou .agent-dialogue__content--common__input .agent-dialogue__content--common__input-box .agent-input-text-area div[class^='style__text-area__wrapper'] {
+  gap: 12px;
+}
+.agent-dialogue__content--common--sougou .agent-dialogue__content--common__input .agent-dialogue__content--common__input-box .agent-input-text-area div[class^='style__text-area__start'] {
+  width: 100%;
+}
+.agent-dialogue__content--common--sougou .agent-dialogue__content--common__input .agent-dialogue__content--common__input-box .agent-input-text-area .input-file-list__swiper-page__bg {
+  width: 32px;
+}
+.agent-dialogue__content--common--sougou__header {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #181818;
+  flex: none;
+  width: 100%;
+  padding: 24px 24px 20px;
+  box-sizing: border-box;
+}
+.agent-dialogue__content--common--sougou__header .header__icon {
+  height: 32px;
+  width: 32px;
+}
+.agent-dialogue__content--common--sougou__header .header__name {
+  font-family: PingFang SC;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: left;
+  margin-left: 8px;
+}
+.agent-dialogue__content--common--sougou .agent-dialogue__tool {
+  top: 36px!important;
+  right: 12px!important;
+}
+.agent-dialogue__content--common--sougou .agent-dialogue__tool .agent-dialogue__tool__new-chat {
+  border-radius: 16px;
+}
+.agent-dialogue__content--common--sougou .t2i-toolbar {
+  background-color: #fff;
+}
+.agent-dialogue__content--common {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+  overflow-y: hidden;
+  /*
+  涉及敏感话题的样式可以在这里加
+  */
+}
+.agent-dialogue__content--common::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  cursor: pointer;
+}
+.agent-dialogue__content--common::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(93, 94, 95, 0.1);
+  cursor: pointer;
+}
+.agent-dialogue__content--common--showRightDrawer .agent-dialogue__content--common__content,
+.agent-dialogue__content--common--showRightDrawer .agent-dialogue__content--common__input,
+.agent-dialogue__content--common--showRightDrawer .agent-chat__share-bar-container {
+  margin-right: 340px;
+}
+.agent-dialogue__content--common .agent-dialogue__content--common__content,
+.agent-dialogue__content--common .agent-dialogue__content--common__input,
+.agent-dialogue__content--common .agent-chat__share-bar-container {
+  transition: 0.3s ease margin;
+}
+.agent-dialogue__content--common .agent-dialogue__content--common__header {
+  transition: 0.3s ease padding;
+}
+.agent-dialogue__content--common-new .agent-chat__conv--agent-tpl__info {
+  display: block;
+}
+.agent-dialogue__content--common-new .agent-chat__conv--agent-tpl .agent-chat__bubble--ai .agent-chat__bubble__avatar {
+  display: flex;
+  margin-bottom: 16px;
+}
+.agent-dialogue__content--common-new .agent-chat__conv--agent-tpl .agent-chat__bubble--ai .agent-chat__bubble__avatar__text {
+  font-size: 30px;
+  color: var(--text-text_primary);
+  font-weight: 500;
+}
+.agent-dialogue__content--common-new .agent-chat__list__placeholder {
+  display: none;
+}
+.agent-dialogue__content--common-new .agent-chat__list__content-wrapper {
+  margin-top: auto;
+  margin-bottom: auto;
+  flex-direction: column;
+}
+.agent-dialogue__content--common-new .agent-chat__bubble__avatar {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 32px;
+  gap: 0;
+}
+.agent-dialogue__content--common-new .agent-chat__bubble__avatar img {
+  width: 64px;
+  height: 64px;
+}
+.agent-dialogue__content--common-new .agent-chat__bubble__avatar__start {
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+.agent-dialogue__content--common-new .agent-chat__bubble__avatar__text {
+  font-size: 31px;
+  line-height: 1;
+}
+.agent-dialogue__content--common-new .agent-chat__bubble--ai .agent-chat__bubble__content {
+  margin-left: 0;
+}
+.agent-dialogue__content--common-new .agent-chat__conv--agent-tpl__options {
+  margin-top: 16px;
+  margin-left: 0;
+}
+.agent-dialogue__content--common-new .agent-chat__content-option__content__item {
+  background: #fff;
+}
+.agent-dialogue__content--common__header {
+  display: flex;
+  align-items: center;
+  font: var(--yb-font-title-3);
+  color: var(--yb-chat-nav-title-color);
+  flex: none;
+  width: 100%;
+  padding: 0 24px;
+  height: 70px;
+  box-sizing: border-box;
+  position: relative;
+  background: var(--yb-chat-nav-bg-color);
+  backdrop-filter: blur(var(--yb-chat-nav-bg-blur));
+}
+.agent-dialogue__content--common__header.nologin .agent-dialogue__content--common__header__name__title {
+  display: block;
+  max-width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-weight: 500;
+  visibility: hidden;
+}
+.agent-dialogue__content--common__header__split {
+  top: 50%;
+  height: 16px;
+  width: 1px;
+  background: var(--widget-line);
+  margin-right: 16px;
+}
+.agent-dialogue__content--common__header__name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--yb-chat-nav-color);
+  display: flex;
+  align-items: center;
+}
+.agent-dialogue__content--common__header__name .t-button .t-button__suffix:not(:empty) {
+  margin-left: 6px;
+}
+.agent-dialogue__content--common__header__name span:not(.agent-dialogue__content--common__header__name__title) {
+  display: block;
+  max-width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.agent-dialogue__content--common__header__name__title {
+  margin-right: 16px;
+  font: var(--yb-font-title-3);
+  color: var(--text-text_primary);
+}
+.agent-dialogue__content--common__header__name__title .t-button {
+  padding: 6px 8px;
+  color: inherit;
+}
+.agent-dialogue__content--common__header__name__title .t-popup-open {
+  background-color: var(--background-listbtn_background);
+}
+.agent-dialogue__content--common__header__name__desc {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: 48px;
+  display: none;
+}
+.agent-dialogue__content--common__header__name__desc--new-chat {
+  margin-right: 156px;
+}
+.agent-dialogue__content--common__content {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+}
+.agent-dialogue__content--common__content .agent-chat__list__content {
+  transform: translate3d(0, 0, 0);
+}
+.agent-dialogue__content--common__input {
+  flex: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.agent-dialogue__content--common__input-box {
+  position: relative;
+  max-width: var(--hunyuan-chat-list-max-width);
+  width: var(--hunyuan-chat-list-width);
+  padding-bottom: 40px;
+}
+.agent-dialogue__content--common__input__content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  padding: 0 24px;
+  width: var(--hunyuan-chat-list-width);
+  box-sizing: border-box;
+}
+.agent-dialogue__content--common__line {
+  position: absolute;
+  width: 100%;
+  width: calc(100% - 20px);
+  height: 24px;
+  background: linear-gradient(180deg, var(--background-transparent) 0%, var(--yb-color-content-bg) 100%);
+  left: 0;
+  top: 0;
+  transform: translateY(-100%);
+  z-index: 0;
+  pointer-events: none;
+}
+.agent-dialogue__content--common__line.agent-dialogue__content-input-guide {
+  height: 68px;
+  background: linear-gradient(180deg, var(--background-transparent) 0%, var(--yb-color-content-bg) 42%);
+}
+.agent-dialogue__content--common .good-question-chat-list-human-suffix {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+}
+.agent-dialogue__content--common .good-question-chat-list-human-suffix img {
+  width: 14px;
+  height: 14px;
+}
+.agent-dialogue__content--common .good-question-chat-list-human-suffix .expose-reason {
+  color: #20c57d;
+  line-height: 17px;
+  border-radius: 4px;
+  padding: 2px 4px;
+  background: rgba(7, 193, 96, 0.1);
+}
+.agent-dialogue__content--common .good-question-chat-list-human-suffix .expose-tags {
+  color: rgba(0, 0, 0, 0.4);
+}
+.agent-dialogue__content--common .good-question-chat-list {
+  border-radius: 12px;
+  height: 100%;
+}
+.agent-dialogue__content--common .good-question-chat-list .agent-chat__toolbar__right {
+  margin-top: 16px;
+}
+.agent-dialogue__content--common .good-question-chat-list .agent-chat__list__item--ai .agent-chat__list__item__checkbox {
+  visibility: hidden;
+}
+.agent-dialogue__content--common .good-question-chat-list .agent-chat__list__item--ai .agent-chat__bubble__avatar {
+  display: none;
+}
+.agent-dialogue__content--common .good-question-chat-list .agent-chat__list__content .agent-chat__list__placeholder {
+  height: 24px;
+}
+.agent-dialogue__content--common .good-question-chat-list .agent-chat__list__content .agent-chat__list__item__checkbox {
+  top: 32px;
+}
+.agent-dialogue__content--common .good-question-chat-list .agent-chat__list__content .agent-chat__list__item--human .hyc-content-text__deep-search-prefix {
+  display: block;
+  margin-bottom: 8px;
+  padding-top: -12px;
+}
+.agent-dialogue__content--common .good-question-chat-list .agent-chat__list__content .agent-chat__list__item--human .hyc-content-text {
+  line-height: 34px;
+}
+.agent-dialogue__content--common .good-question-chat-list .agent-chat__list__content .agent-chat__bubble__content {
+  background: unset;
+  padding: 12px 0px;
+}
+.agent-dialogue__content--common .good-question-chat-list .agent-chat__list__content .agent-chat__list__item--last .agent-chat__bubble__content {
+  padding-bottom: 12px;
+}
+.agent-dialogue__content--common .good-question-chat-list .agent-chat__list__content .agent-chat__list__item {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.agent-dialogue__content--common .good-question-chat-list .agent-chat__list__content .agent-chat__list__item--human:last-of-type .agent-chat__conv--human {
+  border-radius: 12px 12px 0 0;
+}
+.agent-dialogue__content--common .good-question-chat-list .agent-chat__bubble--ai {
+  background: var(--background-page_background_web);
+}
+.agent-dialogue__content--common .good-question-chat-list .agent-chat__bubble--ai .agent-chat__bubble__content {
+  width: 100%;
+}
+.agent-dialogue__content--common .good-question-chat-list .agent-chat__list__item--last .agent-chat__list__item__content {
+  border-radius: 0 0 12px 12px;
+}
+.agent-dialogue__content--common .good-question-chat-list .agent-chat__bubble--human {
+  align-items: flex-start;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: var(--background-page_background_web);
+  background-position: top;
+  padding-top: 12px;
+}
+.agent-dialogue__content--common .good-question-chat-list .agent-chat__bubble--human .agent-chat__bubble__content {
+  background: unset;
+}
+.agent-dialogue__content--common .good-question-chat-list .agent-chat__bubble--human .agent-chat__bubble__content .hyc-content-text {
+  color: var(--text-text_primary);
+  font-size: 24px;
+  font-weight: 600;
+}
+.agent-dialogue__content--common .good-question-chat-list .agent-chat__bubble--human .agent-chat__bubble__suffix {
+  padding: 0 16px;
+}
+.agent-dialogue__content--common .good-question-chat-list .agent-chat__bubble--human .agent-chat__bubble__suffix .hyc-content-file {
+  border: 1px solid #f5f6f8;
+}
+.agent-dialogue__content--common .good-question-chat-list .agent-chat__bubble--human .agent-chat__bubble__suffix .hyc-component-multi-modal__file-list {
+  justify-content: flex-start;
+}
+.agent-dialogue__content--common .good-question-chat-list .agent-chat__list--select .agent-chat__list__item--human {
+  padding-top: 16px;
+}
+.agent-dialogue__content--common .good-question-chat-list .agent-chat__list--select .agent-chat__list__item--selected .agent-chat__bubble--human {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.agent-dialogue__content--common .good-question-chat-list .agent-chat__list--select .agent-chat__list__item--selected .agent-chat__bubble--ai {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.agent-dialogue__content--common__login {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.agent-dialogue__content--common__login .t-button {
+  width: 88px;
+}
+.agent-dialogue__content--common__agents {
+  margin-top: 24px;
+}
+.agent-dialogue__content--common__agents__title {
+  font-size: 16px;
+  line-height: 24px;
+  color: #181818;
+  margin-bottom: 8px;
+}
+.agent-dialogue__content--common__agents__list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.agent-dialogue__content--common .hyc-event-card--item__title {
+  cursor: pointer;
+}
+.agent-dialogue__content--common .is-chat-sensitive .agent-chat__toolbar__left,
+.agent-dialogue__content--common .is-chat-sensitive .agent-chat__toolbar--mobile {
+  cursor: not-allowed;
+}
+.agent-dialogue__content--common .is-chat-sensitive .agent-chat__toolbar__left .agent-chat__gold-click-button__content,
+.agent-dialogue__content--common .is-chat-sensitive .agent-chat__toolbar--mobile .agent-chat__gold-click-button__content {
+  pointer-events: none;
+}
+.agent-dialogue__content--common .is-chat-sensitive .hyc-event-card--list .hyc-event-card--item {
+  pointer-events: none;
+}
+.agent-dialogue__content--common__visitor {
+  position: absolute;
+  bottom: 104px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.agent-dialogue__content--common .deep-search-share-all {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+.agent-dialogue__content--common .deep-search-share-all-mobile {
+  top: 66px;
+}
+.agent-dialogue__content--common .deep-search-share-all-icon {
+  padding: 6px;
+  color: var(--text-text_primary);
+  border-radius: var(--yb-radius-default);
+  background: var(--background-container);
+  cursor: pointer;
+}
+.agent-dialogue__content--common .deep-search-share-all-disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+.agent-dialogue__content--common .deep-search-share-all-disabled .deep-search-share-all-icon {
+  pointer-events: none;
+}
+.layout-mobile .good-question-chat-list .agent-chat__bubble--human {
+  background-position: unset;
+}
+.hyc-content-loading__dots {
+  gap: 0;
+  margin-bottom: calc(0px - 6px);
+  margin-right: calc(0px - 6px);
+}
+.hyc-content-loading__dots > * {
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+.hyc-deep-search-outline__inner .hyc-content-loading__icon--search::before {
+  aspect-ratio: unset;
+  padding-top: 120%;
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 2px), #bfefd6 0);
+}
+:root[yb-theme="dark"] .agent-dialogue__content--common__header__name__title .t-button:hover {
+  color: var(--text-text_primary);
+}
+.chat-app-download-dialog {
+  position: relative;
+}
+.chat-app-download-dialog .t-dialog__position.t-dialog--top {
+  padding-top: 30vh;
+}
+.chat-app-download-dialog__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
+.chat-app-download-dialog .t-dialog::after {
+  display: none;
+  content: '';
+  position: absolute;
+  width: 182px;
+  height: 247px;
+  background: url(https://cdn-bot.hunyuan.tencent.com/assets/f27a937e98eaaa6be659.png);
+  top: -28px;
+  left: -54px;
+}
+.chat-app-download-dialog .t-dialog .t-body {
+  padding: 0;
+}
+.chat-app-download-dialog__qrcode {
+  width: 100% !important;
+  height: 218px !important;
+}
+.chat-app-download-dialog__qrcode .yb-app-qrcode__img {
+  width: 170px;
+  height: 170px;
+  margin: 0 auto;
+}
+.chat-app-download-dialog__download-header {
+  text-align: center;
+}
+.chat-app-download-dialog__download-header__title {
+  color: var(--yb-md-file-title-color);
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  /* 120% */
+}
+.chat-app-download-dialog__download-header__sub-title {
+  color: var(--yb-md-file-desc-color);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  /* 150% */
+  margin-top: 5px;
+}
+.agent-dialogue__content-qrcode {
+  width: 128px;
+}
+.agent-dialogue__content-qrcode-content {
+  line-height: 0;
+  font-size: 0;
+  padding: 9px 7px 12px 7px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background: #FFF;
+  box-shadow: 0px 16px 24px 0px rgba(0, 0, 0, 0.02), 0px 6px 30px 0px rgba(0, 0, 0, 0.02);
+  text-align: center;
+}
+.agent-dialogue__content-qrcode-text {
+  margin-top: 6px;
+  font-size: 15px;
+  line-height: 22px;
+}
+.agent-dialogue__content-qrcode-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6px;
+}
+.agent-dialogue__content-qrcode-icon svg {
+  cursor: pointer;
+}
+.agent-dialogue__content-qrcode img {
+  width: 100%;
+}
+.agent-dialogue__content-qrcode.agent-dialogue__content-qrcode-en {
+  width: 211px;
+}
+.t-message.t-is-success.tencent-docs-toast {
+  color: #fff;
+  padding: 12px 16px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
+}
+.t-message.t-is-success.tencent-docs-toast .t-image__wrapper {
+  line-height: 14px;
+  background-color: inherit;
+  border-radius: 50%;
+}
+.t-message.t-is-success.tencent-docs-toast .t-icon-close {
+  color: #fff !important;
+  margin-left: 0px !important;
+  cursor: pointer;
+}
+.agent-dialogue__content--common__input__content:has(div[class*='style__text-area__start--mobile-popup___']) .ai-search-settings-mobile,
+.agent-dialogue__content--common__input__content:has(div[class*='style__text-area__start--mobile-popup___']) .agent-deepthink-panel--mobile,
+.agent-dialogue__content--common__input__content:has(div[class*='style__text-area__start--mobile-popup___']) .t2i-toolbar {
+  z-index: unset;
+}
+.agent-project-title-no-hover {
+  border: unset !important;
+  background-color: unset !important;
+  cursor: default !important;
+}
+.agent-project-title-no-hover .t-button__text {
+  cursor: default !important;
+}
+.agent-project-breadcrumb {
+  display: flex;
+  align-items: center;
+}
+.agent-project-breadcrumb .agent-project-breadcrumb--link {
+  color: var(--text-text_tertiary, rgba(0, 0, 0, 0.4));
+  display: inline-block;
+  overflow: hidden;
+  max-width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 4px 8px;
+}
+.agent-project-breadcrumb .agent-project-breadcrumb--link:hover {
+  color: var(--text-text_primary, rgba(0, 0, 0, 0.9));
+  background-color: var(--td-bg-color-container-hover);
+  border-radius: var(--yb-radius-default);
+  text-decoration: none;
+}
+.agent-project-breadcrumb .agent-project-breadcrumb--link::after {
+  visibility: hidden;
+}
+.agent-project-breadcrumb--split {
+  margin: 0 10px 0 14px;
+  display: block;
+  width: 1.5px;
+  height: 14px;
+  background-color: var(--text-text_tertiary, rgba(0, 0, 0, 0.4));
+  transform: rotate(30deg);
+}
+@font-face {
+  font-family: 'sim';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/5603bff098be82285942.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TCloud Number';
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf);
+  src: url(https://cdn-bot.hunyuan.tencent.com/assets/3b0997665b63cd5fcf24.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+30-39;
+}
+/* 会话内容宽度适配 */
+/* 智能体会话内容宽度适配 */
+.input-box-element-color-transition {
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow;
+  transition-timing-function: linear;
+}
+
+
+/*# sourceMappingURL=sourcemap/1403.71682454219a9ff569a2.css.map*/

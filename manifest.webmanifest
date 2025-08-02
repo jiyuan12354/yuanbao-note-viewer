@@ -1,0 +1,1 @@
+{"name":"Yuanbao Note Viewer","short_name":"YuanNote","description":"A note viewer application","start_url":"/yuanbao-note-viewer/","display":"standalone","background_color":"#ffffff","theme_color":"#ffffff","lang":"en","scope":"/yuanbao-note-viewer/","icons":[{"src":"statics/yuanbao/favicon.ico","sizes":"64x64 32x32 24x24 16x16","type":"image/x-icon"}]}
