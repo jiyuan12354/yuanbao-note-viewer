@@ -51,5 +51,6 @@ coverage/
 # Dependency directories
 /bower_components/
 
-# Optional: Local development files
-/public/notes/*.html  # If notes are generated or temporary
+# Keep the notes directory but ignore temporary files
+!/public/notes/
+/public/notes/*.tmp
