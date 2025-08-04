@@ -18,19 +18,27 @@ function NoteContent({ note, onClick }) {
     const doc = parser.parseFromString(note.content, 'text/html');
     
     // 查找所有Mermaid代码块
-    const mermaidCodeElements = doc.querySelectorAll('.language-mermaid, code.language-mermaid');
+    const mermaidCodeElements = doc.querySelectorAll('.language-mermaid, code.language-mermaid, .hyc-common-markdown__code-mermaid code');
     const charts = [];
     
     mermaidCodeElements.forEach((element, index) => {
       console.log(`Processing Mermaid element ${index}:`, element);
+      console.log('Element className:', element.className);
+      console.log('Element tagName:', element.tagName);
       
-      // 提取原始HTML内容，然后使用cleanMermaidCode处理
-      let rawHTML = element.innerHTML || element.textContent || element.innerText;
+      // 提取原始HTML内容
+      let rawContent = element.innerHTML || element.textContent || element.innerText;
       
-      console.log(`Raw HTML for chart ${index}:`, rawHTML);
+      console.log(`Raw content for chart ${index}:`, rawContent);
       
-      // 使用辅助函数清理代码，该函数会自动去除HTML标签
-      const mermaidCode = cleanMermaidCode(rawHTML);
+      // 如果没找到内容，尝试从父元素获取
+      if (!rawContent && element.parentElement) {
+        rawContent = element.parentElement.textContent || element.parentElement.innerText;
+        console.log(`Fallback content from parent for chart ${index}:`, rawContent);
+      }
+      
+      // 使用辅助函数清理代码
+      const mermaidCode = cleanMermaidCode(rawContent);
 
       if (mermaidCode && mermaidCode.trim().length > 0) {
         const chartId = `mermaid-chart-${index}`;
@@ -57,7 +65,11 @@ function NoteContent({ note, onClick }) {
           container.parentNode.replaceChild(placeholder, container);
         }
       } else {
-        console.warn(`No valid Mermaid code found in element ${index}`);
+        console.warn(`No valid Mermaid code found in element ${index}`, {
+          element,
+          rawContent,
+          cleanedCode: mermaidCode
+        });
       }
     });
     

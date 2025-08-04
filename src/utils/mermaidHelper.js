@@ -60,51 +60,59 @@ export function cleanMermaidCode(rawCode) {
   if (rawCode.includes('<') && rawCode.includes('>')) {
     console.log('检测到HTML标签，开始去除...');
     
-    // 首先处理特殊的HTML标签，将它们转换为Mermaid兼容的格式
+    // 首先处理特殊的HTML实体，确保箭头语法正确
     let preprocessed = rawCode
-      // 将 <br> 标签转换为特殊标记，而不是换行符
+      // 处理HTML实体
+      .replace(/&gt;/g, '>')
+      .replace(/&lt;/g, '<')
+      .replace(/&amp;/g, '&')
+      .replace(/&nbsp;/g, ' ')
+      .replace(/&quot;/g, '"')
+      .replace(/&#39;/g, "'")
+      // 将 <br> 标签转换为空格
       .replace(/<br\s*\/?>/gi, ' ')
-      // 将 &lt;br&gt; 实体也转换为空格
       .replace(/&lt;br\s*\/?&gt;/gi, ' ');
     
-    console.log('预处理后（br标签转换为空格）:', preprocessed);
+    console.log('HTML实体处理后:', preprocessed);
     
-    // 创建DOM元素来提取纯文本，这会自动去除所有剩余的HTML标签
+    // 创建DOM元素来提取纯文本，这会自动去除所有HTML标签
     const tempDiv = document.createElement('div');
     tempDiv.innerHTML = preprocessed;
     cleanCode = tempDiv.textContent || tempDiv.innerText || '';
     console.log('HTML标签去除后:', cleanCode);
   }
   
-  // 进一步清理HTML实体和空白字符
+  // 进一步清理和格式化
   const finalCode = cleanCode
-    // 解码HTML实体
-    .replace(/&gt;/g, '>')
-    .replace(/&lt;/g, '<')
-    .replace(/&amp;/g, '&')
-    .replace(/&nbsp;/g, ' ')
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
     // 清理多余的空白字符
     .replace(/[ \t]+/g, ' ')  // 将多个空格/制表符替换为单个空格
     .replace(/\r\n/g, '\n')   // 统一换行符
     .replace(/\r/g, '\n')     // 统一换行符
-    // 按行处理，修复 Mermaid 语法
+    // 按行处理，修复语法
     .split('\n')
     .map(line => {
-      const trimmedLine = line.trim();
+      let trimmedLine = line.trim();
       if (trimmedLine.length === 0) return null;
       
       console.log('处理行:', trimmedLine);
       
-      // 检查是否有节点标签后跟随的独立括号内容
-      // 匹配模式：[节点] -->|标签| [目标节点] 独立的（内容）
-      const match = trimmedLine.match(/^(\w+\[)([^\]]+)(\]\s*-->.*?\s+\w+\[)([^\]]+)(\])\s+([（(][^）)]*[）)])$/);
-      if (match) {
-        // 将括号内容合并到目标节点标签内
-        const fixed = `${match[1]}${match[2]}${match[3]}${match[4]}${match[6]}${match[5]}`;
-        console.log('修复后:', fixed);
-        return fixed;
+      // 特别处理序列图的箭头语法
+      if (trimmedLine.includes('sequenceDiagram') || 
+          trimmedLine.includes('->') || 
+          trimmedLine.includes('--') ||
+          trimmedLine.includes('loop') ||
+          trimmedLine.includes('end')) {
+        
+        // 修复序列图的箭头语法
+        trimmedLine = trimmedLine
+          // 处理 ->>+ 语法
+          .replace(/\s*-\s*>\s*>\s*\+/g, '->>+')
+          // 处理 ->> 语法
+          .replace(/\s*-\s*>\s*>/g, '->>')
+          // 处理 -->> 语法
+          .replace(/\s*-\s*-\s*>\s*>/g, '-->>');
+        
+        console.log('序列图语法修复后:', trimmedLine);
       }
       
       return trimmedLine;

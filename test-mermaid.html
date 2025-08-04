@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mermaid Sequence Diagram Test</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js"></script>
+</head>
+<body>
+    <h1>测试序列图渲染</h1>
+    
+    <h2>原始序列图代码</h2>
+    <div id="diagram1" class="mermaid">
+sequenceDiagram
+    检察官->>+检察长: 提交《组织辨认审批表》（附理由）
+    检察长-->>检察官: 批准（书面签字）
+    检察官->>仓库管理员: 提取同类物品（≥5件）
+    检察官->>见证人: 邀请2名无关公民见证
+    loop 辨认程序
+        检察官->>犯罪嫌疑人: 要求指认目标物
+        犯罪嫌疑人-->>检察官: 确认/否认
+        检察官->>书记员: 全程录音录像+笔录
+    end
+    见证人-->>笔录: 签名确认合法性
+    </div>
+
+    <h2>处理后的序列图代码</h2>
+    <div id="diagram2"></div>
+
+    <script>
+        // 初始化 Mermaid
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            securityLevel: 'loose',
+            sequence: {
+                diagramMarginX: 50,
+                diagramMarginY: 10,
+                actorMargin: 50,
+                width: 150,
+                height: 65,
+                boxMargin: 10,
+                boxTextMargin: 5,
+                noteMargin: 10,
+                messageMargin: 35,
+                mirrorActors: true,
+                bottomMarginAdj: 1,
+                useMaxWidth: true,
+                rightAngles: false,
+                showSequenceNumbers: false,
+                actorFontSize: 14,
+                actorFontFamily: '"trebuchet ms", verdana, arial, sans-serif',
+                noteFontSize: 12,
+                noteFontFamily: '"trebuchet ms", verdana, arial, sans-serif',
+                messageFontSize: 12,
+                messageFontFamily: '"trebuchet ms", verdana, arial, sans-serif'
+            }
+        });
+
+        // 测试从HTML中提取的代码
+        const rawHTML = `sequenceDiagram
+ 检察官<span class="hljs-punctuation">-&gt;</span>&gt;+检察长： 提交《组织辨认审批表》（附理由）
+ 检察长-<span class="hljs-punctuation">-&gt;</span>&gt;检察官： 批准（书面签字）
+  检察官<span class="hljs-punctuation">-&gt;</span>&gt;仓库管理员： 提取同类物品（≥<span class="hljs-number">5</span>件）
+  检察官<span class="hljs-punctuation">-&gt;</span>&gt;见证人： 邀请<span class="hljs-number">2</span>名无关公民见证
+  <span class="hljs-keyword">loop</span> 辨认程序
+    检察官<span class="hljs-punctuation">-&gt;</span>&gt;犯罪嫌疑人： 要求指认目标物
+    犯罪嫌疑人-<span class="hljs-punctuation">-&gt;</span>&gt;检察官： 确认/否认
+    检察官<span class="hljs-punctuation">-&gt;</span>&gt;书记员： 全程录音录像+笔录
+  end
+ 见证人-<span class="hljs-punctuation">-&gt;</span>&gt;笔录： 签名确认合法性`;
+
+        // 清理HTML标签
+        function cleanMermaidCode(rawCode) {
+            if (!rawCode) return '';
+            
+            // 处理HTML实体
+            let processed = rawCode
+                .replace(/&gt;/g, '>')
+                .replace(/&lt;/g, '<')
+                .replace(/&amp;/g, '&')
+                .replace(/&nbsp;/g, ' ')
+                .replace(/&quot;/g, '"')
+                .replace(/&#39;/g, "'");
+                
+            // 去除HTML标签
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = processed;
+            const cleanCode = tempDiv.textContent || tempDiv.innerText || '';
+            
+            // 修复序列图语法
+            return cleanCode
+                .replace(/[ \t]+/g, ' ')
+                .replace(/\r\n/g, '\n')
+                .replace(/\r/g, '\n')
+                .split('\n')
+                .map(line => {
+                    const trimmed = line.trim();
+                    if (!trimmed) return null;
+                    
+                    return trimmed
+                        .replace(/\s*-\s*>\s*>\s*\+/g, '->>+')
+                        .replace(/\s*-\s*>\s*>/g, '->>')
+                        .replace(/\s*-\s*-\s*>\s*>/g, '-->>');
+                })
+                .filter(line => line !== null)
+                .join('\n')
+                .trim();
+        }
+
+        const cleanedCode = cleanMermaidCode(rawHTML);
+        console.log('原始HTML:', rawHTML);
+        console.log('清理后的代码:', cleanedCode);
+
+        // 渲染清理后的图表
+        try {
+            const diagram2Container = document.getElementById('diagram2');
+            diagram2Container.className = 'mermaid';
+            diagram2Container.textContent = cleanedCode;
+            
+            // 重新初始化这个图表
+            mermaid.init(undefined, diagram2Container);
+        } catch (error) {
+            console.error('渲染错误:', error);
+            document.getElementById('diagram2').innerHTML = `<p style="color: red;">渲染失败: ${error.message}</p>`;
+        }
+    </script>
+</body>
+</html>
