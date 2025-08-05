@@ -37,6 +37,13 @@ const MermaidDiagram = React.memo(({ chart, id }) => {
         htmlLabels: true,
         curve: "linear",
       },
+      pie: {
+        useMaxWidth: true,
+        useMaxHeight: true,
+        textPosition: 0.75,
+        useWidth: 600,
+        useHeight: 400,
+      },
       sequence: {
         diagramMarginX: 50,
         diagramMarginY: 10,
@@ -87,8 +94,50 @@ const MermaidDiagram = React.memo(({ chart, id }) => {
         // 预处理图表内容，确保语法正确
         let processedChart = chart.trim();
 
+        // 全局中文标点符号规范化 - 适用于所有图表类型
+        console.log("Applying global Chinese punctuation normalization");
+        processedChart = processedChart
+          // 替换中文引号为英文引号
+           .replace(/“/g, '"')   // 左双引号
+          .replace(/”/g, '"')   // 右双引号
+          // 替换中文冒号为英文冒号
+          .replace(/：/g, ":");
+
+        // 如果是饼图，进行特殊处理
+        if (processedChart.startsWith("pie")) {
+          console.log("Processing pie chart");
+
+          // 修复饼图语法错误（中文标点已在上面处理过）
+          processedChart = processedChart
+            // 确保每行格式正确：去掉多余的空格，确保键值对格式
+            .split('\n')
+            .map(line => {
+              let cleanLine = line.trim();
+              if (cleanLine.startsWith('title ') || cleanLine === 'pie') {
+                return cleanLine;
+              }
+              // 修复引号内的键值对格式，支持多种可能的空格组合
+              if (cleanLine.includes('"') && cleanLine.includes(':')) {
+                // 处理各种可能的格式
+                cleanLine = cleanLine
+                  // 处理 "键" : 值 格式（冒号前后有空格）
+                  .replace(/^(\s*)"([^"]+)"\s*:\s*(\d+)\s*$/, '"$2": $3')
+                  // 处理 "键": 值 格式（标准格式）
+                  .replace(/^(\s*)"([^"]+)":\s*(\d+)\s*$/, '"$2": $3')
+                  // 处理 "键" :值 格式（冒号前有空格，后面没有）
+                  .replace(/^(\s*)"([^"]+)"\s*:(\d+)\s*$/, '"$2": $3')
+                  // 确保最终格式统一
+                  .replace(/^(\s*)"([^"]+)"\s*:\s*(\d+)/, '"$2": $3');
+              }
+              return cleanLine;
+            })
+            .filter(line => line.length > 0)
+            .join('\n');
+
+          console.log("Processed pie chart:", processedChart);
+        }
         // 如果是序列图，进行特殊处理
-        if (processedChart.startsWith("sequenceDiagram")) {
+        else if (processedChart.startsWith("sequenceDiagram")) {
           console.log("Processing sequence diagram");
 
           // 对序列图进行行处理，确保每行语法正确
@@ -217,6 +266,16 @@ const MermaidDiagram = React.memo(({ chart, id }) => {
           svgElement.style.height = "auto";
           svgElement.style.display = "block";
           svgElement.style.visibility = "visible";
+          
+          // 特别处理饼图
+          if (processedChart.startsWith("pie")) {
+            svgElement.style.minHeight = "400px";
+            svgElement.style.maxWidth = "600px";
+            svgElement.style.margin = "0 auto";
+            container.style.textAlign = "center";
+            console.log("Applied pie chart specific styles");
+          }
+          
           console.log("SVG element configured successfully");
           console.log("SVG dimensions:", {
             width: svgElement.getAttribute("width"),
