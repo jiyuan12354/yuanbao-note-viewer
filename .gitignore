@@ -54,3 +54,5 @@ coverage/
 # Keep the notes directory but ignore temporary files
 !/public/notes/
 /public/notes/*.tmp
+
+switchyomega/
