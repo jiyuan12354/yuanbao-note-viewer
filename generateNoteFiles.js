@@ -7,6 +7,44 @@ import os from "os"; // 用于获取用户目录
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// 递归扫描文件夹
+async function scanNotesRecursively(dir, basePath = '/notes') {
+  const files = await fs.readdir(dir, { withFileTypes: true });
+  const allNotes = [];
+
+  for (const file of files) {
+    const fullPath = path.join(dir, file.name);
+    const relativePath = `${basePath}/${file.name}`;
+
+    if (file.isDirectory()) {
+      // 递归扫描子文件夹
+      const subNotes = await scanNotesRecursively(fullPath, relativePath);
+      allNotes.push(...subNotes);
+    } else if (file.isFile() && /^note-\d{14}\.html$/.test(file.name)) {
+      // 处理note文件
+      try {
+        const content = await fs.readFile(fullPath, 'utf-8');
+        const titleMatch = content.match(/<title>(.*?)<\/title>/);
+        const title = titleMatch ? titleMatch[1] : file.name;
+        const dateMatch = file.name.match(/note-(\d{14})/);
+        const date = dateMatch ? dateMatch[1] : '';
+        
+        allNotes.push({
+          file: file.name,
+          title,
+          date,
+          path: relativePath,
+          folder: basePath === '/notes' ? '' : basePath.replace('/notes/', '')
+        });
+      } catch (error) {
+        console.error(`Error processing file ${fullPath}:`, error);
+      }
+    }
+  }
+
+  return allNotes;
+}
+
 async function generateNoteFiles() {
   const downloadsDir = path.join(os.homedir(), "Downloads");
   const notesDir = path.join(__dirname, "public", "notes");
@@ -25,41 +63,20 @@ async function generateNoteFiles() {
       await fs.rename(sourcePath, destPath);
     }
 
-    // Step 2: Read all files in public/notes/
-    const files = await fs.readdir(notesDir);
-    const noteFiles = files.filter((file) => /^note-\d{14}\.html$/.test(file));
-
-    // Step 3: Read and process note files
-    const processedNotes = await Promise.all(
-      noteFiles.map(async (file) => {
-        const filePath = path.join(notesDir, file);
-        const content = await fs.readFile(filePath, 'utf-8');
-        // Extract title from HTML content (assuming it's in a specific format)
-        const titleMatch = content.match(/<title>(.*?)<\/title>/);
-        const title = titleMatch ? titleMatch[1] : file;
-        // Extract date from filename
-        const dateMatch = file.match(/note-(\d{14})/);
-        const date = dateMatch ? dateMatch[1] : '';
-        return {
-          file,
-          title,
-          date,
-          path: `/notes/${file}`
-        };
-      })
-    );
+    // Step 2: 递归扫描所有文件夹中的note文件
+    const processedNotes = await scanNotesRecursively(notesDir);
 
     // Sort notes by date, newest first
     processedNotes.sort((a, b) => b.date.localeCompare(a.date));
 
-    // Step 4: Generate JavaScript content
+    // Step 3: Generate JavaScript content
     const content = `export default ${JSON.stringify(processedNotes, null, 2)};\n`;
 
-    // Step 5: Write to src/utils/noteFiles.js
+    // Step 4: Write to src/utils/noteFiles.js
     await fs.writeFile(outputFile, content);
-    console.log(`Generated ${outputFile} with ${noteFiles.length} notes`);
+    console.log(`Generated ${outputFile} with ${processedNotes.length} notes`);
 
-    // Step 6: Write notes index for build
+    // Step 5: Write notes index for build
     const notesIndexPath = path.join(notesDir, 'index.json');
     await fs.writeFile(notesIndexPath, JSON.stringify(processedNotes, null, 2));
     console.log(`Generated ${notesIndexPath}`);

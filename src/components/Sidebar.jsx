@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { extractMnemonic } from "../utils/extractMnemonic.js";
+import FolderTree from "./FolderTree.jsx";
 
 function Sidebar({
   notes,
@@ -7,13 +9,90 @@ function Sidebar({
   isSidebarOpen,
   selectedNote,
   setIsSidebarOpen,
+  folderStructure,
+  currentFolder,
+  currentPath
 }) {
   const [searchQuery, setSearchQuery] = useState("");
   const [isMnemonicMode, setIsMnemonicMode] = useState(true);
+  const [showFolderTree, setShowFolderTree] = useState(false);
+  const navigate = useNavigate();
 
   const toggleSidebar = () => {
     const newState = !isSidebarOpen;
     setIsSidebarOpen(newState);
+  };
+
+  const navigateToParent = () => {
+    if (!currentPath) return;
+    
+    const pathParts = currentPath.split('/');
+    if (pathParts.length > 1) {
+      pathParts.pop(); // 移除最后一个文件夹
+      const parentPath = pathParts.join('/');
+      navigate(`/${parentPath}`);
+    } else {
+      // 返回根目录
+      navigate(`/`);
+    }
+  };
+
+  const renderBreadcrumb = () => {
+    if (!currentPath) {
+      return (
+        <div className="mb-2 text-xs text-gray-600 bg-gray-50 p-2 rounded">
+          📂 <span className="font-medium">根目录</span>
+        </div>
+      );
+    }
+
+    const pathParts = currentPath.split('/');
+    const breadcrumbItems = [];
+    
+    // 添加根目录
+    breadcrumbItems.push(
+      <button
+        key="root"
+        onClick={() => navigate('/')}
+        className="hover:text-blue-600 underline"
+      >
+        根目录
+      </button>
+    );
+
+    // 添加路径中的每个部分
+    let currentBreadcrumbPath = '';
+    pathParts.forEach((part, index) => {
+      currentBreadcrumbPath = currentBreadcrumbPath ? `${currentBreadcrumbPath}/${part}` : part;
+      const isLast = index === pathParts.length - 1;
+      
+      breadcrumbItems.push(
+        <span key={`separator-${index}`} className="text-gray-400 mx-1">/</span>
+      );
+      
+      if (isLast) {
+        breadcrumbItems.push(
+          <span key={part} className="font-medium text-blue-600">{part}</span>
+        );
+      } else {
+        const pathToNavigate = currentBreadcrumbPath;
+        breadcrumbItems.push(
+          <button
+            key={part}
+            onClick={() => navigate(`/${pathToNavigate}`)}
+            className="hover:text-blue-600 underline"
+          >
+            {part}
+          </button>
+        );
+      }
+    });
+
+    return (
+      <div className="mb-2 text-xs text-gray-600 bg-gray-50 p-2 rounded">
+        📂 {breadcrumbItems}
+      </div>
+    );
   };
 
   // Filter notes based on search query only (不根据口诀模式过滤)
@@ -52,7 +131,43 @@ function Sidebar({
         } md:translate-x-0 md:relative md:block`}
       >
         <div className="p-4">
-          <h2 className="text-lg font-semibold">Notes</h2>
+          <div className="flex items-center justify-between mb-2">
+            <h2 className="text-lg font-semibold">Notes</h2>
+            <div className="flex items-center space-x-1">
+              {/* 返回上级按钮 */}
+              {currentPath && (
+                <button
+                  onClick={navigateToParent}
+                  className="p-1 hover:bg-gray-200 rounded"
+                  title="返回上级文件夹"
+                >
+                  ⬆️
+                </button>
+              )}
+              {/* 文件夹树状图按钮 */}
+              <button
+                onClick={() => setShowFolderTree(!showFolderTree)}
+                className="p-1 hover:bg-gray-200 rounded"
+                title="文件夹导航"
+              >
+                📁
+              </button>
+            </div>
+          </div>
+          
+          {/* 显示当前文件夹路径 */}
+          {renderBreadcrumb()}
+          
+          {/* 文件夹树状图 */}
+          {showFolderTree && (
+            <div className="absolute top-16 left-0 right-0 z-20 mx-4">
+              <FolderTree
+                folderStructure={folderStructure}
+                currentPath={currentPath}
+                onClose={() => setShowFolderTree(false)}
+              />
+            </div>
+          )}
           
           {/* 显示笔记统计信息 */}
           <div className="mt-1 text-xs text-gray-500">
