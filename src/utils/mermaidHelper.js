@@ -88,6 +88,15 @@ export function cleanMermaidCode(rawCode) {
     .replace(/[ \t]+/g, ' ')  // 将多个空格/制表符替换为单个空格
     .replace(/\r\n/g, '\n')   // 统一换行符
     .replace(/\r/g, '\n')     // 统一换行符
+    // 处理中文特殊字符，避免Mermaid解析错误
+    .replace(/《/g, '「')      // 将书名号替换为日文引号
+    .replace(/》/g, '」')
+    .replace(/（/g, '(')       // 将中文括号替换为英文括号
+    .replace(/）/g, ')')
+    .replace(/：/g, ':')       // 将中文冒号替换为英文冒号
+    .replace(/；/g, ';')       // 将中文分号替换为英文分号
+    .replace(/，/g, ',')       // 将中文逗号替换为英文逗号
+    .replace(/。/g, '.')       // 将中文句号替换为英文句号
     // 按行处理，修复语法
     .split('\n')
     .map(line => {
@@ -95,6 +104,30 @@ export function cleanMermaidCode(rawCode) {
       if (trimmedLine.length === 0) return null;
       
       console.log('处理行:', trimmedLine);
+      
+      // 处理节点标签中的特殊字符
+      if (trimmedLine.includes('[') && trimmedLine.includes(']')) {
+        // 在方括号内的文本中，进一步清理可能导致解析错误的字符
+        trimmedLine = trimmedLine.replace(/\[([^\]]+)\]/g, (match, content) => {
+          // 清理方括号内容，移除可能导致解析问题的字符
+          const cleanContent = content
+            // 先处理书名号，避免与方括号冲突
+            .replace(/《/g, '"')        // 将《替换为双引号
+            .replace(/》/g, '"')        // 将》替换为双引号
+            .replace(/:/g, '-')         // 冒号可能导致解析问题，替换为短横线
+            .replace(/\[/g, '(')        // 嵌套方括号替换为圆括号
+            .replace(/\]/g, ')')        // 嵌套方括号替换为圆括号
+            .replace(/"/g, "'")         // 双引号替换为单引号
+            .replace(/`/g, "'")         // 反引号替换为单引号
+            // 处理特殊序号格式 如(一)、[一]等
+            .replace(/\(([一二三四五六七八九十]+)\)/g, '-$1-')  // (一) -> -一-
+            .replace(/\[([一二三四五六七八九十]+)\]/g, '-$1-')  // [一] -> -一-
+            .replace(/（([一二三四五六七八九十]+)）/g, '-$1-')  // （一） -> -一-
+            .trim();
+          return `[${cleanContent}]`;
+        });
+        console.log('节点标签清理后:', trimmedLine);
+      }
       
       // 特别处理序列图的箭头语法
       if (trimmedLine.includes('sequenceDiagram') || 

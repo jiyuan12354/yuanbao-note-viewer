@@ -6,6 +6,7 @@ import os from "os"; // 用于获取用户目录
 // Get __dirname equivalent in ES Modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const folderName = 'keguanshuati';
 
 // 递归扫描文件夹
 async function scanNotesRecursively(dir, basePath = '/notes') {
@@ -47,7 +48,8 @@ async function scanNotesRecursively(dir, basePath = '/notes') {
 
 async function generateNoteFiles() {
   const downloadsDir = path.join(os.homedir(), "Downloads");
-  const notesDir = path.join(__dirname, "public", "notes");
+  const notesDir = path.join(__dirname, "public", `notes/${folderName}`);
+  const notesRootDir = path.join(__dirname, "public", `notes`);
   const outputFile = path.join(__dirname, "src", "utils", "noteFiles.js");
 
   try {
@@ -64,7 +66,7 @@ async function generateNoteFiles() {
     }
 
     // Step 2: 递归扫描所有文件夹中的note文件
-    const processedNotes = await scanNotesRecursively(notesDir);
+    const processedNotes = await scanNotesRecursively(notesRootDir);
 
     // Sort notes by date, newest first
     processedNotes.sort((a, b) => b.date.localeCompare(a.date));
@@ -77,7 +79,7 @@ async function generateNoteFiles() {
     console.log(`Generated ${outputFile} with ${processedNotes.length} notes`);
 
     // Step 5: Write notes index for build
-    const notesIndexPath = path.join(notesDir, 'index.json');
+    const notesIndexPath = path.join(notesRootDir, 'index.json');
     await fs.writeFile(notesIndexPath, JSON.stringify(processedNotes, null, 2));
     console.log(`Generated ${notesIndexPath}`);
   } catch (error) {
