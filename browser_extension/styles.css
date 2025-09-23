@@ -1,3 +1,13 @@
+/* 优化大屏显示，内容宽度自适应并居中，左右留出 padding */
+.agent-chat__list__item__content {
+  width: 100% !important;
+  max-width: calc(100vw - 80px) !important; /* 80px 可调整为你想要的 padding 总宽度 */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+  position: relative !important;
+}
 .save-to-note-btn {
   display: inline-block;
   margin-top: 10px;
