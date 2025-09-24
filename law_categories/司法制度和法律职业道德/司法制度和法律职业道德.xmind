@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmap-content xmlns="urn:xmind:xmap:xmlns:content:2.0" xmlns:fo="http://www.w3.org/1999/XSL/Format" version="2.0">
+    <sheet id="sheet1" theme="resources/themes/default.xmt">
+        <topic id="root" structure-class="org.xmind.ui.logic.right">
+            <title>司法制度和法律职业道德</title>
+            <children>
+                <topics type="attached">
+                    <topic id="topic_1758727979732_u0pzxkg4f">
+                        <title>中华人民共和国人民法院组织法</title>
+                        <children>
+                            <topics type="attached">
+                    <topic id="topic_1758727979732_5b6hgz643">
+                        <title>第一章　总则</title>
+                        <notes>
+                            <plain>立法目的；法院性质（审判机关）；设置依据；独立审判；适用法律平等；司法公正；司法公开；司法责任制；负责与监督；审级监督；群众监督</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_vsfb1x8c9">
+                        <title>第二章　人民法院的设置和职权</title>
+                        <notes>
+                            <plain>法院分类（最高、地方、专门）；地方法院层级；专门法院（军事、海事等）；最高院职权（管辖、核准死刑、解释法律、巡回法庭）；高院与中院职权；基层法院与人民法庭</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_j4xaheazn">
+                        <title>第三章　人民法院的审判组织</title>
+                        <notes>
+                            <plain>审判组织（合议庭、独任制）；合议庭组成与评议；裁判文书签署；责任承担；人民陪审员；赔偿委员会；审判委员会（组成、职能、议事规则）</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_76iwd29hg">
+                        <title>第四章　人民法院的人员组成</title>
+                        <notes>
+                            <plain>审判人员构成；院长职责；人事任免（最高院、地方院）；院长任期与罢免；人员分类管理；法官员额制；法官选任；法官助理与书记员；司法警察</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_7vrkagqf6">
+                        <title>第五章　人民法院行使职权的保障</title>
+                        <notes>
+                            <plain>职责范围保障；干预记录报告；生效文书履行；法庭秩序维护；培训；编制与经费；信息化建设</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_njk8u9l61">
+                        <title>第六章　附则</title>
+                        <notes>
+                            <plain>施行日期</plain>
+                        </notes>
+                    </topic>
+                            </topics>
+                        </children>
+                    </topic>
+            <children>
+                <topics type="attached">
+                    <topic id="topic_1758727979732_6fnsrjmun">
+                        <title>中华人民共和国法官法</title>
+                        <children>
+                            <topics type="attached">
+                    <topic id="topic_1758727979732_alpnieygs">
+                        <title>第一章　总则</title>
+                        <notes>
+                            <plain>立法目的；法官定义；忠实执法；公正平等；职业道德；依法履职保障</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_4lf41xd5z">
+                        <title>第二章　法官的职责、义务和权利</title>
+                        <notes>
+                            <plain>法官职责（审判、司法协助）；院长等额外职责；义务（守法、秉公、保障权利等）；权利（职权条件、职务保障、待遇等）</plain>
+                        </notes>
+                    </topic>
+                            </topics>
+                        </children>
+                    </topic>
+            <children>
+                <topics type="attached">
+                    <topic id="topic_1758727979732_a8qo0y1rm">
+                        <title>中华人民共和国法官法</title>
+                        <children>
+                            <topics type="attached">
+                    <topic id="topic_1758727979732_bdk8wvl9i">
+                        <title>第三章　法官的条件和遴选</title>
+                        <notes>
+                            <plain>任职条件：国籍、拥护宪法党领导、品行素质、身体、学历学位（法学本科/非法本+法律硕士等+法律知识）、法律工作年限（5年，硕3年博2年）、法律职业资格；学历放宽情形。禁止任职：刑事处罚、开除公职、吊销律师公证员证等。遴选：初任（考试考核）；院长/副院长等任职要求；公开选拔（律师5年执业/法学教研5年+中级职称）。遴选委员会：省级/最高院设立，法官代表占比，日常工作承担。任职去向：初任到基层，上级逐级遴选</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_2fs0bc75g">
+                        <title>第四章　法官的任免</title>
+                        <notes>
+                            <plain>任免权限：最高院/地方各级法院人员任免主体（人大/常委会）。宪法宣誓。免职情形：丧失国籍、调出、职务变动、考核不称职、健康、退休、辞职辞退、违纪违法。任命撤销：违规任命的处理。任职回避：不得兼任人大常委会/行政监察检察/营利组织/律师仲裁员公证员；亲属关系（夫妻等）任职限制；配偶等辖区内律师从业回避</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_lpwiojtep">
+                        <title>第五章　法官的管理</title>
+                        <notes>
+                            <plain>员额制管理（总量控制动态）。单独职务序列：十二级法官等级。职前培训。考核：考评委员会。辞职辞退程序。离任限制：2年内不得律师身份代理辩护，终身不得原任职法院代理辩护（例外：监护人近亲属）；被开除后不得代理辩护（例外同前）</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_rentgy0wo">
+                        <title>第六章　法官的考核、奖励和惩戒</title>
+                        <notes>
+                            <plain>考核：考评委员会，平时+年度，内容（实绩、道德、专业、能力、作风），结果等次及用途。奖励：实绩显著、经验突出、重大案件贡献等情形。惩戒：贪污受贿、伪造证据、泄密、枉法裁判等情形；法官惩戒委员会（专业审查、当事法官权利）</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_waa637abf">
+                        <title>第七章　法官的职业保障</title>
+                        <notes>
+                            <plain>权益保障委员会。岗位调动限制（仅限回避、交流、机构调整、违纪违法等情形）。履职保障：拒绝超职责事务、干涉记录追责；人身安全、名誉保护；工资待遇（等级工资、定期增资、津贴福利）；退休保障；申诉与赔偿</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_al7yq5ij7">
+                        <title>第八章　附则</title>
+                        <notes>
+                            <plain>法律职业资格考试组织。法官助理职责（辅助事务）。未规定事项参照公务员。施行日期：2019.10.1</plain>
+                        </notes>
+                    </topic>
+                            </topics>
+                        </children>
+                    </topic>
+            <children>
+                <topics type="attached">
+                    <topic id="topic_1758727979732_txrn3kqoi">
+                        <title>中华人民共和国法官职业道德基本准则</title>
+                        <children>
+                            <topics type="attached">
+                    <topic id="topic_1758727979732_qnwcqkd8j">
+                        <title>第一章　总则</title>
+                        <notes>
+                            <plain>核心：公正、廉洁、为民。基本要求：忠诚司法事业、保证司法公正、确保司法廉洁、坚持司法为民、维护司法形象。适用：本职与业外活动</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_s2rissh9e">
+                        <title>第二章　忠诚司法事业</title>
+                        <notes>
+                            <plain>社会主义法治理念，忠于党国家人民法律。维护司法制度，尊崇法律。热爱事业，恪守良知，司法核心价值观。保守国家与审判秘密，不参与有损国家司法权威活动</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_j6rqwpfrf">
+                        <title>第三章　保证司法公正</title>
+                        <notes>
+                            <plain>独立审判，不受干涉。以事实法律为准，避免臆断滥用权。实体与程序公正并重，保障诉讼权利。效率，杜绝拖延。司法公开，接受监督。回避制度，中立平等。不干预评论他人办案</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_bugil6zcl">
+                        <title>第四章　确保司法廉洁</title>
+                        <notes>
+                            <plain>正确权力观，坚守廉洁底线。不接受请客送礼，不谋私利，不不正当交往。禁止营利活动与兼职，不提供未决案件咨询。妥善处理个人事务，如实报告，约束家人</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_btkos4ci2">
+                        <title>第五章　坚持司法为民</title>
+                        <notes>
+                            <plain>以人为本，重视诉求。能动司法，案结事了。司法便民，降低成本。尊重人格，避免不良作风，保障律师权利</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_dnxfxx9wu">
+                        <title>第六章　维护司法形象</title>
+                        <notes>
+                            <plain>精研业务，秉公办案。文明司法，遵守礼仪。培育道德操守，杜绝不良嗜好。退休后不干预办案，维护形象</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_zhynlaoos">
+                        <title>第七章　附则</title>
+                        <notes>
+                            <plain>人民陪审员适用，法院人员参照。实施督促与处分。最高院解释。施行日期，废止旧准则</plain>
+                        </notes>
+                    </topic>
+                            </topics>
+                        </children>
+                    </topic>
+            <children>
+                <topics type="attached">
+                    <topic id="topic_1758727979732_dxm00n7l5">
+                        <title>中华人民共和国人民检察院组织法</title>
+                        <children>
+                            <topics type="attached">
+                    <topic id="topic_1758727979732_si7kia0k9">
+                        <title>第一章　总则</title>
+                        <notes>
+                            <plain>性质：国家法律监督机关。职责：追诉犯罪、维护安全秩序、权益与公益、保障法律实施等。原则：独立行使检察权、适用法律平等、公正、公开、司法责任制。领导体制：最高检领导地方与专门院，上级领导下级。接受群众监督</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_n4jireug4">
+                        <title>第二章　人民检察院的设置和职权</title>
+                        <notes>
+                            <plain>分类：最高检、地方各级（省/市/基层）、专门（军事等）。派出机构：特定区域设派出院、检察室。职权：侦查、批捕、公诉、公益诉讼、诉讼监督、执行监督、监管场所监督等。上级职权：指令纠正、指定管辖、办理案件、调用人员。人民监督员监督</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_3hm9b8grr">
+                        <title>第三章　人民检察院的办案组织</title>
+                        <notes>
+                            <plain>办案组织：独任、办案组（主办检察官）。检察委员会：组成（检察长等资深检察官），职能（总结经验、重大案件与问题），议事规则（民主集中制）。司法责任制：检察官对决定负责，检察长/检委会决定担责</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_pqexrwkoq">
+                        <title>第四章　人民检察院的人员组成</title>
+                        <notes>
+                            <plain>检察人员：检察长、副检察长、检委会委员、检察员。任免：各级人员任免权限（人大/常委会），检察长任免需上一级检察长提请批准。分类管理：检察官、检察辅助、司法行政。员额制。检察官选任：遴选委员会审核，逐级遴选。助理/书记员/司法警察职责</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_36pj0mzhb">
+                        <title>第五章　人民检察院行使职权的保障</title>
+                        <notes>
+                            <plain>拒绝超职责事务，干预记录追责。办案安全保障。培训制度。编制专项管理。经费保障。信息化建设</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_yak192277">
+                        <title>第六章　附则</title>
+                        <notes>
+                            <plain>施行日期：2019.1.1</plain>
+                        </notes>
+                    </topic>
+                            </topics>
+                        </children>
+                    </topic>
+            <children>
+                <topics type="attached">
+                    <topic id="topic_1758727979732_2zs7qks33">
+                        <title>中华人民共和国检察官法</title>
+                        <children>
+                            <topics type="attached">
+                    <topic id="topic_1758727979732_88fwaektj">
+                        <title>第一章　总则</title>
+                        <notes>
+                            <plain>检察官定义：行使检察权的检察人员。宗旨：忠实宪法法律，维护公平正义。原则：勤勉廉洁，事实法律为准，客观公正，追诉与保障无罪并重。依法履职受保护</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_75wmt8fjb">
+                        <title>第二章　检察官的职责、义务和权利</title>
+                        <notes>
+                            <plain>职责：侦查、批捕公诉、公益诉讼、诉讼监督等。检察长等额外职责。义务：守法、秉公、保障权利、维护公益、保密、接受监督、以案释法等。权利：职权条件、职务保障、待遇、安全、申诉控告等</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_aged8tg3m">
+                        <title>第三章　检察官的条件和遴选</title>
+                        <notes>
+                            <plain>任职条件：同法官（国籍、宪法拥护、品行、身体、学历学位、工作年限、法律职业资格）。禁止任职：同法官。遴选：初任（考试考核）；检察长等任职要求；公开选拔（律师5年/法学教研5年+中级职称）。遴选委员会：省级/最高检设立，法官代表占比。任职去向：初任到基层，上级逐级遴选</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_4zdm9v64l">
+                        <title>第四章　检察官的任免</title>
+                        <notes>
+                            <plain>任免权限：各级检察院人员任免主体。宪法宣誓。免职情形：同法官。任命撤销。任职回避：同法官（兼职、亲属关系、配偶等从业限制）</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_3hs8juvtc">
+                        <title>第五章　检察官的管理</title>
+                        <notes>
+                            <plain>员额制、单独职务序列与等级（十二级）。职前培训、继续教育。考核。辞职辞退。离任限制：同法官</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_qjjlngzw0">
+                        <title>第六章　检察官的考核、奖励和惩戒</title>
+                        <notes>
+                            <plain>考核：考评委员会，内容（检察实绩等），结果等次。奖励情形。惩戒情形（含刑讯逼供）。检察官惩戒委员会职责程序</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_0fpk3eifq">
+                        <title>第七章　检察官的职业保障</title>
+                        <notes>
+                            <plain>权益保障委员会。检察业务岗位调动限制。履职保障（拒绝干涉、人身安全、名誉保护、工资待遇、退休、申诉赔偿）</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_iz9ke68yn">
+                        <title>第八章　附则</title>
+                        <notes>
+                            <plain>法律职业资格考试。检察官助理职责。参照公务员管理。施行日期：2019.10.1</plain>
+                        </notes>
+                    </topic>
+                            </topics>
+                        </children>
+                    </topic>
+            <children>
+                <topics type="attached">
+                    <topic id="topic_1758727979732_p7odf4a5c">
+                        <title>中华人民共和国检察官职业道德基本准则</title>
+                        <notes>
+                            <plain>核心：忠诚品格、为民宗旨、担当精神、公正理念、廉洁操守。实施与废止旧准则</plain>
+                        </notes>
+                    </topic>
+            <children>
+                <topics type="attached">
+                    <topic id="topic_1758727979732_xs2dig7ct">
+                        <title>检察人员纪律处分条例</title>
+                        <children>
+                            <topics type="attached">
+                    <topic id="topic_1758727979732_uozjplqf3">
+                        <title>第一章　总则</title>
+                        <notes>
+                            <plain>目的：严肃纪律，规范行为。原则：全面从严、实事求是、平等、相当、惩戒教育结合。适用范围：检察人员。处分种类：警告（6月）、记过（12月）、记大过（18月）、降级（24月）、撤职（24月）、开除。适用规则：数错并罚、共同违纪、从轻减轻/从重加重情形。违法犯罪处理：衔接刑事处罚与党纪。处分程序：告知、送达、备案。附则：术语定义</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_c34jc320m">
+                        <title>第二章　分则</title>
+                        <notes>
+                            <plain>政治纪律：公开发表错误言论、组织参与非法活动、对抗组织调查等。组织纪律：违反民主集中制、拒不执行决定、瞒报个人事项、选人用人违规等。办案纪律：伪造证据、泄密、违规强制措施、利益冲突、干预办案等。廉洁纪律：权钱交易、违规收受财物、营利活动、挥霍公款等。群众纪律：摊派、刁难群众、消极应付、态度恶劣等。工作纪律：失职渎职、干预市场经济、泄密、考试舞弊等。生活纪律：奢靡、不正当性关系、赌博、吸毒等</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_g67ktx2tg">
+                        <title>第三章　附则</title>
+                        <notes>
+                            <plain>解释权：最高检。施行日期，废止旧条例。溯及力规定</plain>
+                        </notes>
+                    </topic>
+                            </topics>
+                        </children>
+                    </topic>
+            <children>
+                <topics type="attached">
+                    <topic id="topic_1758727979732_mr82l76cu">
+                        <title>中华人民共和国律师法</title>
+                        <children>
+                            <topics type="attached">
+                    <topic id="topic_1758727979732_o1b9y34o7">
+                        <title>第一章　总则</title>
+                        <notes>
+                            <plain>律师定义：持执业证，提供法律服务。职责：维护当事人权益、法律实施、公平正义。原则：遵守宪法法律、职业道德纪律、事实法律为准、接受监督。监督：司法行政部门监督指导，律师协会自律</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_g4m16wwrl">
+                        <title>第二章　律师执业许可</title>
+                        <notes>
+                            <plain>条件：拥护宪法、法律职业资格、实习1年、品行。程序：申请材料、审核（市级初审省级核准）。不予颁发：无/限制民事行为能力、刑事处罚（过失除外）、开除公职、吊销执业证。特许执业：特殊领域15年+高级职称等。执业限制：1所执业，不得跨所；公务员不得兼职；人大常委任职期间不得诉讼代理辩护；兼职律师条件</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_cxf8tpz5y">
+                        <title>第三章　律师事务所</title>
+                        <notes>
+                            <plain>设立条件：名称住所章程、律师、设立人执业经历（3年无停执业）、资产。类型：合伙（普通/特殊普通）、个人、国家出资。分所设立：3年+20名律师，条件（律师、资产）。变更终止：重大事项报批备案，终止情形（不达标、吊销、解散等）。管理制度：执业、利益冲突、收费财务等。禁止行为：不正当承揽、非法律服务经营</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_8cgxf4924">
+                        <title>第四章　律师的业务和权利、义务</title>
+                        <notes>
+                            <plain>业务范围：法律顾问、诉讼代理、辩护、申诉、调解仲裁、非诉讼、咨询代写。权利：会见不监听、阅卷、调查取证、辩论辩护权、人身权利（言论豁免除外情形）。义务：保密（例外：危害安全等犯罪）、利益冲突回避、禁止行为（私自收案、牟取争议权益、行贿、伪造证据等）。离任限制：法官检察官离任2年不得代理辩护</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_gs36tyg8c">
+                        <title>第五章　律师协会</title>
+                        <notes>
+                            <plain>性质：社团法人，自律组织。职责：保障权益、经验交流、行业规范、培训考核、实习管理、奖惩、投诉处理</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_x1dfo5nnj">
+                        <title>第六章　法律责任</title>
+                        <notes>
+                            <plain>律师违法：警告、罚款、没收所得、停止执业、吊销证（视情节）。律所违法：警告、停业整顿、罚款、吊销证。责任衔接：民事赔偿、刑事责任。无执业证执业处罚</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_st451l6g2">
+                        <title>第七章　附则</title>
+                        <notes>
+                            <plain>军队律师、外国律所管理、收费办法、施行日期：2008.6.1</plain>
+                        </notes>
+                    </topic>
+                            </topics>
+                        </children>
+                    </topic>
+            <children>
+                <topics type="attached">
+                    <topic id="topic_1758727979732_mdio6zoan">
+                        <title>律师事务所管理办法</title>
+                        <children>
+                            <topics type="attached">
+                    <topic id="topic_1758727979732_tmrqmof3l">
+                        <title>第一章　总则</title>
+                        <notes>
+                            <plain>目的：规范设立与管理。原则：统筹规划、党建引领、依法执业、监督自律。监督：司法行政监督，律师协会自律。表彰奖励</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_35kwp1z4n">
+                        <title>第二章　律师事务所的设立条件</title>
+                        <notes>
+                            <plain>类型：合伙（普通/特殊普通）、个人、国家出资。基本条件：名称、住所、章程、律师、设立人、资产。各类型额外条件：普通合伙（3人3年执业+30万）、特殊普通（20人3年+1000万）、个人（5年执业+10万）、国家出资（2名律师+编制经费）。名称检索、负责人产生、章程与合伙协议内容</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_hj35tms6c">
+                        <title>第三章　律师事务所设立许可程序</title>
+                        <notes>
+                            <plain>程序：市级受理初审→省级审核。申请材料：申请书、名称章程、设立人材料、住所资产证明等。受理与审核时限。执业证书管理。开业准备与备案</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_lo6x7tr9y">
+                        <title>第四章　律师事务所的变更和终止</title>
+                        <notes>
+                            <plain>变更：名称负责人等报批，住所合伙人备案。合伙人变更（新入/退伙/除名条件）。组织形式变更。终止情形：不达标、吊销、解散等，终止程序（公告、清算、注销）</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_ohavoivc8">
+                        <title>第五章　律师事务所分所的设立、变更和终止</title>
+                        <notes>
+                            <plain>分所设立条件：总所3年+20名律师，分所（名称、住所、3名律师、30万，欠发达地区可放宽）。申请材料与程序。分所变更（负责人、律师、住所）。终止情形与程序</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_v48euy4ft">
+                        <title>第六章　律师事务所执业和管理规则</title>
+                        <notes>
+                            <plain>内部制度：执业、利益冲突、收费财务等。权利义务保障。违规律师处理。禁止行为：兴办企业、不正当竞争、违规收案、拒绝法律援助等。重大案件管理。财务保险。负责人职责。信息公开。分所管理职责</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_k0hqrg9vp">
+                        <title>第七章　司法行政机关的监督管理</title>
+                        <notes>
+                            <plain>县级：日常监督、投诉处理、整改监督。市级：规划、指导、表彰、处罚、考核、许可审核。省级：规划政策、监督指导、表彰、吊销处罚、许可审批。责任衔接：行业处分与行政处罚。信息公开。协作机制</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_qegti8nl1">
+                        <title>第八章　附则</title>
+                        <notes>
+                            <plain>军队法律顾问处、施行日期：2016.11.1，废止旧规定</plain>
+                        </notes>
+                    </topic>
+                            </topics>
+                        </children>
+                    </topic>
+            <children>
+                <topics type="attached">
+                    <topic id="topic_1758727979732_p643liwqr">
+                        <title>律师执业管理办法</title>
+                        <children>
+                            <topics type="attached">
+                    <topic id="topic_1758727979732_sbifsstv8">
+                        <title>第一章　总则</title>
+                        <notes>
+                            <plain>目的：规范许可与管理。从业要求：拥护党与社会主义法治。职责：维护权益、法律实施、公平正义。监督：司法行政监督，律师协会自律。表彰奖励</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_rlksw2jff">
+                        <title>第二章　律师执业条件</title>
+                        <notes>
+                            <plain>执业条件：拥护宪法、法律职业资格、实习1年、品行。兼职条件：法学教研+单位同意。特许条件：依律师法与条例。禁止执业：无/限制民事行为能力、刑事处罚（过失除外）、开除公职、吊销执业证</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_d2kvbnhkt">
+                        <title>第三章　律师执业许可程序</title>
+                        <notes>
+                            <plain>程序：市级受理初审→省级核准。申请材料：申请书、资格证、实习考核、身份证明、律所接收证明。变更执业机构：材料与程序，限制情形（停执业/投诉调查等）。注销情形：吊销、撤销、不再执业等</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_kny6gk70j">
+                        <title>第四章　律师执业行为规范</title>
+                        <notes>
+                            <plain>原则：依法诚信规范，事实法律为准。业务范围：同律师法。委托关系：律所统一收案，利益冲突审查，不得拒绝辩护代理（例外：违法等）。回避：同所代理冲突、离任法官检察官回避。履职要求：客观意见、风险告知、及时通报。禁止行为：牟取私利、串通对方、违规接触司法人员、煽动非法维权、恶意炒作、妨碍诉讼等。竞争规则：公平竞争，禁止诋毁、介绍费等。保密义务。收费：律所统一收费。法律援助义务。执业证书管理</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_tn65qivew">
+                        <title>第五章　司法行政机关的监督管理</title>
+                        <notes>
+                            <plain>县级：日常监督、投诉处理。市级：规划、指导、表彰、处罚、考核备案。省级：规划政策、监督指导、吊销处罚、许可审批。责任衔接：行业处分与行政处罚。信息公开。协作机制</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_7qn974gf4">
+                        <title>第六章　附则</title>
+                        <notes>
+                            <plain>军队律师、施行日期：2016.11.1，废止旧规定</plain>
+                        </notes>
+                    </topic>
+                            </topics>
+                        </children>
+                    </topic>
+            <children>
+                <topics type="attached">
+                    <topic id="topic_1758727979732_u6xbfhceu">
+                        <title>律师和律师事务所违法行为处罚办法</title>
+                        <children>
+                            <topics type="attached">
+                    <topic id="topic_1758727979732_49fd2geef">
+                        <title>第一章　总则</title>
+                        <notes>
+                            <plain>目的：监督规范执业。适用：律师与律所违法处罚。原则：公正公开、事实相当、惩戒教育结合。监督制度：上级监督</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_oadte1e5f">
+                        <title>第二章　律师应予处罚的违法行为</title>
+                        <notes>
+                            <plain>利益冲突：同时执业、不正当承揽、同案代理冲突、离任2年执业等。不尽责：私自收案、拒绝代理、牟取争议权益、泄密。妨碍司法：违规会见、行贿、伪造证据、串通对方、扰乱法庭等。其他：虚假材料、发表违法言论、泄露国家秘密</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_r7droj58x">
+                        <title>第三章　律师事务所应予处罚的违法行为</title>
+                        <notes>
+                            <plain>违规收案收费、变更未报批、非法律服务经营、不正当承揽、利益冲突受理、拒绝法律援助、虚假材料、疏于管理</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_3tr2nd4j1">
+                        <title>第四章　行政处罚的实施</title>
+                        <notes>
+                            <plain>管辖：市级（警告等），省级（吊销）。处罚标准：依违法情形分档。程序：陈述申辩、听证、调查取证。裁量：从轻减轻/从重情形。衔接：多次违法加重，刑事责任优先。执行：处分期间限制，赔偿追偿</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_r5mf1g6em">
+                        <title>第五章　附则</title>
+                        <notes>
+                            <plain>分所处罚、术语定义、施行日期：2010.6.1，废止旧办法</plain>
+                        </notes>
+                    </topic>
+                            </topics>
+                        </children>
+                    </topic>
+            <children>
+                <topics type="attached">
+                    <topic id="topic_1758727979732_4betiu4oi">
+                        <title>律师职业道德基本准则</title>
+                        <notes>
+                            <plain>核心：坚定理想信念、执业为民、法治信仰、公平正义、诚信、职业修养。要求：拥护党与社会主义制度，维护群众利益，依法执业，诚信自律，尊重同行</plain>
+                        </notes>
+                    </topic>
+            <children>
+                <topics type="attached">
+                    <topic id="topic_1758727979732_f307mkt2k">
+                        <title>律师执业行为规范（试行）</title>
+                        <children>
+                            <topics type="attached">
+                    <topic id="topic_1758727979732_id5s157d2">
+                        <title>第一章　总则</title>
+                        <notes>
+                            <plain>目的：规范行为，保障权益。性质：指引、行业标准、自律准则。从业要求：拥护党与社会主义法治。适用：律师与律所，其他人员参照</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_kod0r0qwg">
+                        <title>第二章　律师执业基本行为规范</title>
+                        <notes>
+                            <plain>忠于宪法法律，禁止危害国家安全等行为。诚信勤勉，保守秘密。尊重同行，公益事业。执业限制：不得非律师执业，1所执业，停执业期间不得执业。利益冲突回避。人大常委任职限制。禁止不良行为</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_n4vms7xtr">
+                        <title>第三章　律师业务推广行为规范</title>
+                        <notes>
+                            <plain>原则：平等诚信，提高自身能力。推广方式：广告、学术活动、研讨会、公益。广告：可个人/律所名义，内容限制，禁止情形（未考核、停执业等）。宣传：禁止虚假宣传、自称权威、比较宣传</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_x1icpoflj">
+                        <title>第四章　律师与委托人或当事人的关系规范</title>
+                        <notes>
+                            <plain>委托关系：协议签订，勤勉履职，及时答复，档案保管，权限限制，拒绝辩护代理情形。禁止虚假承诺。禁止牟取争议权益。利益冲突审查：绝对禁止情形，相对禁止（委托人同意）。财产保管：分离保管。转委托：委托人同意（紧急例外）。委托关系解除终止：情形与费用</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_ac29ns3v6">
+                        <title>第五章　律师参与诉讼或仲裁规范</title>
+                        <notes>
+                            <plain>调查取证：依法，不得虚假证据。尊重法庭：遵守纪律，规范接触司法人员。庭审仪表语态：规范得体</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_zomg1lenw">
+                        <title>第六章　律师与其他律师的关系规范</title>
+                        <notes>
+                            <plain>尊重合作：庭审礼貌，不诋毁同行。变更执业机构：维护原所利益。禁止不正当竞争：诋毁、回扣、暗示特殊关系、虚假承诺等</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_dot4iq0yx">
+                        <title>第七章　律师与所任职的律师事务所关系规范</title>
+                        <notes>
+                            <plain>律所职责：教育管理监督。制度：执业、利益冲突等。律所收案收费，依法纳税。培训实习人员。禁止非法律服务经营。法律援助义务。禁止无执业证人员以律师名义执业。辅助人员责任</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_mho0ikspz">
+                        <title>第八章　律师与律师协会关系规范</title>
+                        <notes>
+                            <plain>遵守协会规则，履行义务。参加培训考核。国际组织备案。违法报告。公益活动。纠纷处理。执行协会决定，缴纳会费</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_0hk2nuv10">
+                        <title>第九章　附则</title>
+                        <notes>
+                            <plain>处分依据。地方实施细则。施行与修改。解释权：全国律协</plain>
+                        </notes>
+                    </topic>
+                            </topics>
+                        </children>
+                    </topic>
+            <children>
+                <topics type="attached">
+                    <topic id="topic_1758727979732_ti70atfyd">
+                        <title>律师协会会员违规行为处分规则（试行）</title>
+                        <children>
+                            <topics type="attached">
+                    <topic id="topic_1758727979732_91u2lihen">
+                        <title>第一章　总则</title>
+                        <notes>
+                            <plain>目的：加强道德纪律，规范惩戒。适用：会员违规。范围：列举与其他违法违规行为。公职/公司律师适用。术语：投诉、投诉人。原则：客观公正公开，事实法律为准，教育惩戒结合，调查惩戒分离</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_z7v9kalu7">
+                        <title>第二章　惩戒委员会</title>
+                        <notes>
+                            <plain>设置：全国/省级/市级。管辖：违规发生地，变更执业机构协助，争议指定。组成：执业8年+或行业管理经验，主任副主任产生，委员产生。日常工作：投诉受理查处中心职责</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_yy6s6jmi6">
+                        <title>第三章　纪律处分的种类、适用</title>
+                        <notes>
+                            <plain>种类：训诫、警告、通报批评、公开谴责、中止权利1月-1年、取消资格。附加措施：专门培训、限期整改。权限：市级（前五项），省级（取消资格）。衔接：行政处罚与行业处分。从轻减轻免予：初犯轻微、反省、改正、挽回损失等。从重：严重后果、逃避调查、打击报复、曾受处分</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_nonw3gd9c">
+                        <title>第四章　违规行为与处分的适用</title>
+                        <notes>
+                            <plain>利益冲突：代理冲突、回避违规等。不尽责：超权限、拒绝代理、法律援助失职等。泄密：商业秘密、隐私、案件信息、国家秘密。违规收案收费：私自收案、违规收费等。不正当竞争：虚假承诺、暗示关系、诋毁等。妨碍司法：违规会见、行贿、伪造证据、扰乱法庭等。其他：同时执业、不服从管理、律所疏于管理等</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_wqz9owodk">
+                        <title>第五章　纪律处分程序</title>
+                        <notes>
+                            <plain>受理立案：投诉方式，主动调查，材料要求，立案决定，不予立案情形。回避：委员回避情形与决定。调查：调查组，全面取证，调查终结报告，中止调查。决定程序：听证权利，听证程序，审议规则（三分之二出席，二分之一通过），决定书内容，送达，执行，衔接司法行政机关，披露</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_cnyawefz1">
+                        <title>第六章　复查</title>
+                        <notes>
+                            <plain>复查委员会：设置与组成，不得与惩戒委员会交叉。申请：时限（15工作日），条件，材料。受理：审查与处理。审查：书面审查，质证，决定（维持、变更、撤销）。复查决定效力</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_zhnifyf9z">
+                        <title>第七章　调解</title>
+                        <notes>
+                            <plain>阶段：调查、听证、处分各阶段。原则：合法自愿。效果：和解谅解可从轻减轻免予。限制：复查程序不调解</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_89yxh2b9c">
+                        <title>第八章　附则</title>
+                        <notes>
+                            <plain>时效：2年，严重除外，行刑后起算。送达：参照决定书。地方实施细则。期间调整。备案。废止旧规则。施行日期：2017.3.31，解释权：全国律协</plain>
+                        </notes>
+                    </topic>
+                            </topics>
+                        </children>
+                    </topic>
+            <children>
+                <topics type="attached">
+                    <topic id="topic_1758727979732_yywc7rt1f">
+                        <title>法律援助条例</title>
+                        <children>
+                            <topics type="attached">
+                    <topic id="topic_1758727979732_05tpv8u3u">
+                        <title>第一章　总则</title>
+                        <notes>
+                            <plain>目的：保障经济困难者法律服务，规范法律援助。定义：无偿法律服务。责任：政府责任，财政支持。监督：司法行政部门，律师协会协助。机构：司法行政部门设法律援助机构。律师义务。社会捐助鼓励。表彰奖励</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_2p9xdgufl">
+                        <title>第二章　法律援助范围</title>
+                        <notes>
+                            <plain>民事行政：国家赔偿、社保低保、抚恤金、赡养费抚养费扶养费、劳动报酬、见义勇为。刑事：经济困难无律师、被害人无代理人、自诉人无代理人；指定辩护（盲聋哑/未成年/死刑无律师）。经济困难标准：省级政府定</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_ogbfc207k">
+                        <title>第三章　法律援助申请和审查</title>
+                        <notes>
+                            <plain>申请地点：民事（义务机关/义务人所在地），刑事（审理法院所在地）。特殊申请：羁押者由看守所转交，无/限制行为能力人由法定代理人代理。材料：身份证明、经济困难证明、案件材料。审查：补充材料、查证，决定与告知。异议：向司法行政部门申请审查</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_jpkp1n2wa">
+                        <title>第四章　法律援助实施</title>
+                        <notes>
+                            <plain>指定辩护：法院10日前通知，机构3日前回复。实施：指派律所/本机构人员/社会组织人员。义务：不得收费。终止情形：经济变化、案件终止、自行委托、要求终止。结案：材料提交，补贴支付（标准省级定）。咨询：即时或预约</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_z8or8xmas">
+                        <title>第五章　法律责任</title>
+                        <notes>
+                            <plain>机构人员：违规提供/拒绝援助、收费、营利、挪用经费，处分或刑事。律所：拒绝指派，警告停业。律师：拒绝/终止援助、收费，警告停止执业。司法行政人员：滥用职权，处分或刑事</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_om2vktfg8">
+                        <title>第六章　附则</title>
+                        <notes>
+                            <plain>施行日期：2003.9.1</plain>
+                        </notes>
+                    </topic>
+                            </topics>
+                        </children>
+                    </topic>
+            <children>
+                <topics type="attached">
+                    <topic id="topic_1758727979732_pi920d5ed">
+                        <title>中华人民共和国公证法</title>
+                        <children>
+                            <topics type="attached">
+                    <topic id="topic_1758727979732_s9r0u8w8l">
+                        <title>第一章　总则</title>
+                        <notes>
+                            <plain>目的：规范公证，保障权益。定义：公证机构证明民事行为等真实性合法性。原则：遵守法律，客观公正。自律：公证协会（全国/地方）。监督：司法行政部门</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_kvt44ear2">
+                        <title>第二章　公证机构</title>
+                        <notes>
+                            <plain>性质：非营利，独立行使职能，承担民事责任。设置：县/市/区，不按行政区划层层设。条件：名称、住所、2名以上公证员、资金。审批：省级司法行政部门。负责人：3年以上执业公证员推选，核准备案。业务范围：合同、继承、遗嘱等公证事项；登记、提存等事务。禁止行为：虚假公证、毁损档案、不正当竞争、泄密、违规收费等。制度：业务财务资产，监督公证员，执业过错责任，职业保险</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_dgm36ay6j">
+                        <title>第三章　公证员</title>
+                        <notes>
+                            <plain>定义：符合条件执业人员。数量：省级核定。条件：国籍、25-65岁、品行、法律职业资格、实习/法律经历+考核。特殊条件：法学教研高级职称/法律工作10年+考核。禁止：无/限制民事行为能力、刑事处罚、开除公职、吊销执业证。任命：申请→律所推荐→市级审查→省级审核→司法部任命→颁证。义务：守法，职业道德，保密。权利：报酬，辞职申诉，非法定事由不处罚。禁止行为：多所执业、营利、亲属公证、私自出证、虚假公证等。免职：丧失国籍、年满65、辞职、吊销证</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_xvecvk6ku">
+                        <title>第四章　公证程序</title>
+                        <notes>
+                            <plain>申请：住所地等，不动产向不动产所在地。委托：一般可委托，遗嘱等需本人。材料：真实合法充分，可要求补充。审查：身份、材料、事项真实性合法性。核实：必要时核实或委托核实。出证：15日，例外不计入。不予办理：无代理人、无利害关系、专业鉴定、有争议、虚假材料等。公证书：格式，签名盖章，生效，文字，认证。收费：按规定，法律援助减免。档案：立卷归档，移交档案馆</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_ior60o225">
+                        <title>第五章　公证效力</title>
+                        <notes>
+                            <plain>证据效力：作为认定事实依据（相反证据推翻除外）。强制执行效力：债权文书载明愿意执行，可申请执行（错误除外）。法定公证效力：依法律规定。复查：公证书错误可复查，撤销（违法/不符事实）或更正。争议：民事诉讼</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_yw5f266w5">
+                        <title>第六章　法律责任</title>
+                        <notes>
+                            <plain>机构公证员：不正当竞争、违规收费、多所执业等，警告罚款停执业；私自出证、虚假公证等，停业吊销证刑事责任。赔偿：机构赔偿，可向故意重大过失公证员追偿。当事人：虚假材料、利用公证书欺诈、伪造公证书，民事治安刑事处罚</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_w9iqci3w6">
+                        <title>第七章　附则</title>
+                        <notes>
+                            <plain>驻外使领馆公证。收费标准：省级价格+司法行政部门定。施行日期：2006.3.1</plain>
+                        </notes>
+                    </topic>
+                            </topics>
+                        </children>
+                    </topic>
+            <children>
+                <topics type="attached">
+                    <topic id="topic_1758727979732_7gyxskaco">
+                        <title>公证机构执业管理办法</title>
+                        <children>
+                            <topics type="attached">
+                    <topic id="topic_1758727979732_9j195067a">
+                        <title>第一章　总则</title>
+                        <notes>
+                            <plain>目的：规范审批与监督。设立原则：统筹规划，总量控制。执业原则：依法，客观公正，遵守规范纪律。自律：加入公证协会。独立执业，不受干预。监督：司法行政部门</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_78y0315kq">
+                        <title>第二章　公证机构设立审批</title>
+                        <notes>
+                            <plain>审批：省级司法行政部门。设置：县/市/区，不层层设。设置方案：省级拟定，司法部核定（含执业区域）。执业区域：县/市/区或设区市辖区。设立条件：名称、住所、2名公证员、资金，符合设置方案。负责人：3年以上执业公证员推选，核准备案。开办资金：省级定。申请材料：申请书、名称、人员材料等。审核时限：30日，批准颁证，备案公告。变更：名称等报批，住所合伙人备案，分立合并变更执业区域报批。公告：批准设立与变更</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_uwki7icvt">
+                        <title>第三章　公证机构名称和执业证书管理</title>
+                        <notes>
+                            <plain>冠名：县/市（省+县/市+公证处），设区市/直辖市（省/直辖市+字号+公证处）。名称要求：通用文字，民族地区可加民族文字，字号独特。专用权：核定后享有。执业证书：正本副本，内容（名称、负责人等），管理（不得涂改出借，损毁遗失补换）。换发：变更时申请，停业整顿缴存</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_b0z8ekood">
+                        <title>第四章　公证机构执业监督检查</title>
+                        <notes>
+                            <plain>监督内容：组织、队伍、执业、质量、管理等。省级监督：设立条件、报批备案、执业、质量等。市级/所在地监督：组织、执业、质量、考核等。律所制度：业务档案财务资产，监督公证员，执业过错，收费，职业保险。禁止行为：虚假公证、毁损档案、不正当竞争、泄密、违规收费等。执业区域：按核定。报告：业务统计，年度报告（2月1日前）。考核：年度考核（第一季度），等次。重点监督：投诉、不良记录、不达标、管理问题。调查：实地检查，调阅材料，核实情况。执业档案</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_7yqko2ena">
+                        <title>第五章　法律责任</title>
+                        <notes>
+                            <plain>处罚：依公证法，跨区域执业制止纠正。程序：按行政处罚规定。权利：陈述申辩听证复议诉讼。调查：立案，委托协会调查。行业处分：协会依章程，衔接行政处罚。赔偿：机构赔偿，追偿。司法行政人员：滥用职权，处分刑事</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_6konfr4no">
+                        <title>第六章　附则</title>
+                        <notes>
+                            <plain>所在地司法行政机关定义。原有公证机构调整：省级拟定，司法部核定。解释权：司法部。施行日期：2006.3.1</plain>
+                        </notes>
+                    </topic>
+                            </topics>
+                        </children>
+                    </topic>
+            <children>
+                <topics type="attached">
+                    <topic id="topic_1758727979732_7ufbgekdq">
+                        <title>公证员执业管理办法</title>
+                        <children>
+                            <topics type="attached">
+                    <topic id="topic_1758727979732_etpjfc5i3">
+                        <title>第一章 总则</title>
+                        <notes>
+                            <plain>目的：规范任职与监督。定义：持执业证执业人员。配备：省级编制核定。权利：依法执业受保护，报酬，辞职申诉，非法定事由不处罚。义务：守法，职业道德，保密，加入公证协会。监督：司法行政部门，协会自律。表彰奖励</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_s5iq0bad5">
+                        <title>第二章 公证员任职条件</title>
+                        <notes>
+                            <plain>基本条件：国籍、25-65岁、品行、法律职业资格、实习2年/法律经历3年+实习1年+考核。特殊条件：法学教研高级职称/法律工作10年+考核+离开原岗位。禁止：无/限制民事行为能力、刑事处罚、开除公职、吊销执业证</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_hpis97yd9">
+                        <title>第三章 公证员任职程序</title>
+                        <notes>
+                            <plain>申请：本人申请→律所推荐→市级审查/考核→省级审核→司法部任命→省级颁证。材料：申请书、推荐书、身份简历、资格证/经历证明、实习考核/考核意见等。审核时限：省级20日，司法部20日，省级10日颁证。变更执业机构：原所同意→拟聘所推荐→市级同意→省级核准（跨省需两地核准）。免职：丧失国籍、年满65、辞职、吊销证，市级报告→省级提请→司法部免职。公告：省级20日公告，司法部全国公告</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_2pgbzbd91">
+                        <title>第四章 公证员执业证书管理</title>
+                        <notes>
+                            <plain>性质：执业有效证件，司法部统一制。管理：本人持有，不得涂改出借。补换：损毁遗失申请→律所证明→市级报省级补换，遗失声明。换发：变更执业机构。缴存：停执业期间。注销：吊销、免职等</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_uk3cs4c3u">
+                        <title>第五章 公证员执业监督检查</title>
+                        <notes>
+                            <plain>监督：行政监督与行业自律。律所管理：内部制度，执业监督，考核，保障。禁止行为：多所执业、营利、亲属公证、私自出证、虚假公证等。考核：律所年度考核，负责人由司法行政部门考核，整改。重点监督：投诉、不良记录、考核问题。调查：检查，调阅材料，核实。培训：每年≥40学时，司法行政部门规划，协会组织。执业档案：记录任职、考核、奖惩等，跨区域变更移交</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_i0qhbzsqi">
+                        <title>第六章 法律责任</title>
+                        <notes>
+                            <plain>处罚：依公证法，吊销由市级报省级决定。程序：按行政处罚规定，可委托协会调查。权利：陈述申辩听证复议诉讼。行业处分：协会衔接行政处罚。赔偿：机构赔偿追偿。虚假任命：撤销任命，注销证书。司法行政人员：滥用职权，处分刑事</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_kw242e292">
+                        <title>第七章 附则</title>
+                        <notes>
+                            <plain>配备方案：依需求核定调整。考核办法：省级定。原有公证员：适用本法。所在地司法行政机关定义。解释权：司法部。施行日期：发布之日，废止旧办法</plain>
+                        </notes>
+                    </topic>
+                            </topics>
+                        </children>
+                    </topic>
+            <children>
+                <topics type="attached">
+                    <topic id="topic_1758727979732_k70kf5dnn">
+                        <title>公证员职业道德基本准则</title>
+                        <notes>
+                            <plain>忠于法律：尽职履责，回避，保密，纠正违法。爱岗敬业：服务意识，告知义务，平等对待，效率，礼仪，纠错，言论限制。加强修养：荣辱观，品行，正义，团结，终身学习。廉洁自律：廉洁意识，禁止牟利，拒绝馈赠，尊重同行，禁止不正当竞争。适用：助理等参照，协会监督，解释权：中国公证协会</plain>
+                        </notes>
+                    </topic>
+            <children>
+                <topics type="attached">
+                    <topic id="topic_1758727979732_s4hacddm8">
+                        <title>中华人民共和国公职人员政务处分法</title>
+                        <children>
+                            <topics type="attached">
+                    <topic id="topic_1758727979732_2hgj8h036">
+                        <title>第一章　总则</title>
+                        <notes>
+                            <plain>目的：规范政务处分，监督公职人员。适用：监察机关处分，任免机关单位参照第二章第三章。公职人员：监察法第十五条人员。原则：党管干部，集体决定，法律面前平等，事实法律为准，惩戒教育结合，宽严相济。要求：事实清楚、证据确凿等。权利：非法定事由程序不受处分</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_ddjo73sxn">
+                        <title>第二章　政务处分的种类和适用</title>
+                        <notes>
+                            <plain>种类：警告（6月）、记过（12月）、记大过（18月）、降级（24月）、撤职（24月）、开除。共同违法：分别处分。集体违法：追究领导与直接责任。从轻减轻：主动交代、配合、检举、挽回损失等。免予：情节轻微+从轻情形，被裹挟胁迫悔改。从重：处分期内再犯、阻止检举、串供伪造证据等。犯罪处分：故意犯罪/过失3年以上/剥夺政治权利→开除；过失3年以下→一般开除，特殊撤职；单罚金/不起诉/免刑→撤职，不良影响→开除。数罪并罚：执行最重，相同处分合并计算（≤48月）。不重复处分：监察与任免机关不重复。组织处理与政务处分并行。撤职待遇：降职级待遇。不同主体处分：公务员、事业单位、国企、基层自治组织人员差异。开除录用限制：不得录用为公务员等。违法所得：没收追缴退赔，利益纠正。处分解除：开除外期满自动解除，不恢复待遇。退休离职：不处分，立案调查，调整待遇，处理财物</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_ivj2uf1pn">
+                        <title>第三章　违法行为及其适用的政务处分</title>
+                        <notes>
+                            <plain>政治纪律：有损宪法党国家言论、非法活动、拒不执行决策、民族宗教问题、对抗组织调查等。组织纪律：不请示报告、瞒报个人事项、篡改档案、违反民主集中制、拒不执行决定等。廉洁纪律：贪污贿赂、谋私利、纵容亲属谋利、收受礼品、违规薪酬、营利活动等。群众纪律：摊派、刁难、消极应付、态度恶劣、不公开信息等。工作纪律：滥用职权、玩忽职守、形式主义、弄虚作假、泄密等。生活纪律：公序良俗、迷信、赌博、赡养义务、家庭暴力、吸毒嫖娼等</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_kfmjqq9uh">
+                        <title>第四章　政务处分的程序</title>
+                        <notes>
+                            <plain>调查：2人以上，依法取证，非法证据排除。陈述申辩：告知事实依据，听取申辩，采纳合理意见。处理决定：确有违法→处分；无→撤案；免予→免予决定；其他→移送。决定书：内容（姓名、事实、依据、申诉途径等），盖章。送达：及时送达，宣布，告知相关机关。回避：近亲属、证人、利害关系等。衔接司法：依司法判决处分，判决变更→重新处理。特殊任免：人大选举任命人员→先罢免撤销免去→处分。暂停履职：立案调查不宜履职→暂停。澄清事实：不实举报→澄清。档案待遇：存入档案，降级以上1月内变待遇</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_3wmiyso25">
+                        <title>第五章　复审、复核</title>
+                        <notes>
+                            <plain>申请：向原机关复审，再向上一级复核。不停止执行：复审复核期间。撤销：事实不清、程序违法、越权滥用权。变更：适用法律错误、情节认定错误、处分不当。维持：事实清楚适用正确。后果：变更→调整待遇；撤销→恢复待遇，返还赔偿</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_g64k3s8kv">
+                        <title>第六章　法律责任</title>
+                        <notes>
+                            <plain>机关责任：拒不采纳监察建议→处分。个人责任：拒不执行、阻碍调查、打击报复等→处分。监察机关责任：违规处置线索、泄密、逼供、受贿等→处分刑事。刑事责任：违法构成犯罪→追究</plain>
+                        </notes>
+                    </topic>
+                    <topic id="topic_1758727979732_59q9sjpak">
+                        <title>第七章　附则</title>
+                        <notes>
+                            <plain>事业单位国企：国务院等制定规定。军事：中央军委规定。溯及力：从旧兼从轻。施行日期：2020.7.1</plain>
+                        </notes>
+                    </topic>
+                            </topics>
+                        </children>
+                    </topic>
+            <children>
+                <topics type="attached">
+                    <topic id="topic_1758727979732_dzvydy9ep">
+                        <title>中华人民共和国法律援助法</title>
+                        <notes>
+                            <plain>总则：定义：国家无偿法律服务。原则：党领导，以人民为中心，公开公平公正，国家保障与社会参与。政府责任：纳入规划，经费保障。部门职责：司法行政监督指导，法检公保障。律师协会：指导支持。社会参与：群团组织等，捐助激励。宣传奖励。机构人员：法律援助机构（受理审查指派付费），工作站，值班律师，政府采购，律所律师义务，志愿者，跨区域服务，法律援助人员义务（合规、保密、不收费）。形式范围：形式（咨询、代书、刑事辩护代理、公益诉讼代理等）。刑事法律援助：申请（经济困难等），通知（未成年、盲聋哑等），死刑案件辩护要求。民事行政法律援助：国家赔偿、社保等事项。不受经济困难限制：英烈近亲属、见义勇为等。申诉再审法律援助。经济困难标准：省级定。程序实施：告知义务，通知指派时限（3日），值班律师保障，申请地点，羁押人员申请转交，法定代理人代为申请，经济困难核查与豁免，审查决定时限（7日），先行法律援助，无障碍服务，法律援助人员义务（不得拒绝拖延终止），受援人义务（如实陈述），终止情形（欺诈、虚假、违法等），异议处理（司法行政部门5日审查），结案报告。保障监督：信息化，补贴（省级定，免税），费用减免（诉讼费、公证费等），培训，投诉处理，质量考核（第三方评估），信息公开，督促质量，律师协会考核惩戒。法律责任：机构人员（违规提供/拒绝援助等）→处分；律所律师（拒绝/终止援助等）→处罚；受援人（欺诈）→缴费罚款；冒用→没收违法所得罚款；国家机关人员→处分刑事。附则：群团组织适用，外国人援助（依法律/条约/互惠），军人军属办法，施行日期：2022.1.1</plain>
+                        </notes>
+                    </topic>
+                </topics>
+            </children>
+        </topic>
+    </sheet>
+</xmap-content>
