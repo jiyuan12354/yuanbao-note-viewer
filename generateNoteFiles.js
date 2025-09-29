@@ -6,7 +6,7 @@ import os from "os"; // 用于获取用户目录
 // Get __dirname equivalent in ES Modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const folderName = 'keguanshuati';
+const folderName = '';
 
 // 递归扫描文件夹
 async function scanNotesRecursively(dir, basePath = '/notes') {
