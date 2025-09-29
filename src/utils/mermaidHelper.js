@@ -186,8 +186,10 @@ export function cleanMermaidMindmapCode(cleanCode) {
     // 处理中文特殊字符，避免Mermaid解析错误
     .replace(/《/g, '「')      // 将书名号替换为日文引号
     .replace(/》/g, '」')
-    .replace(/（/g, '(')       // 将中文括号替换为英文括号
-    .replace(/）/g, ')')
+    .replace(/（/g, '【')       // 将中文括号替换为方括号，避免mindmap语法错误
+    .replace(/）/g, '】')
+    .replace(/\(/g, '【')       // 将英文括号替换为方括号，避免mindmap语法错误
+    .replace(/\)/g, '】')
     .replace(/：/g, ':')       // 将中文冒号替换为英文冒号
     .replace(/；/g, ';')       // 将中文分号替换为英文分号
     .replace(/，/g, ',')       // 将中文逗号替换为英文逗号
